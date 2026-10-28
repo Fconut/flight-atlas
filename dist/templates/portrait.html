@@ -1,0 +1,107 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:#101c2a;font-family:'Segoe UI','Microsoft YaHei',sans-serif;color:#eef3f5}#poster{width:1600px;height:1280px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 56% 24%,#21374a 0%,#142331 48%,#101c2a 100%)}
+header{position:absolute;left:64px;right:64px;top:46px;display:flex;justify-content:space-between;align-items:end;z-index:2}.eyebrow{color:#91a6b8;letter-spacing:4px;font-size:15px;margin-bottom:14px}h1{font-size:44px;letter-spacing:5px;font-weight:500;margin:0}.years{font-size:18px;letter-spacing:4px;color:#a5b5c3;margin-top:15px}.totals{display:flex;gap:45px;padding-bottom:4px}.stat .value{font-size:39px;font-weight:400;letter-spacing:1px}.stat .label{margin-top:8px;font-size:14px;color:#9db1c2;letter-spacing:2px}.stat{padding-left:28px;border-left:1px solid #344557}
+#map{position:absolute;left:0;top:110px;width:1600px;height:850px}.land{fill:#304355;stroke:#415568;stroke-width:.5}.graticule{fill:none;stroke:#587083;stroke-width:.5;opacity:.17}.route-glow{fill:none;stroke:#dfb76f;opacity:.08}.route{fill:none;stroke:#e8bf79;stroke-linecap:round;opacity:.78}.airport{fill:#fae3b4;stroke:#172b3a;stroke-width:1.4}.airport-label{fill:#ecf1f4;font-size:14px;paint-order:stroke;stroke:#172634;stroke-width:4px;stroke-linejoin:round}.region{fill:#9aafbd;opacity:.28;font-size:16px;letter-spacing:7px;text-anchor:middle}.extreme-ring{fill:none;stroke:#f5d59a;stroke-width:1;opacity:.7}
+.records{position:absolute;right:65px;bottom:45px;width:478px;padding:26px 28px 22px;background:linear-gradient(140deg,rgba(25,43,59,.97),rgba(18,34,49,.97));border-top:1px solid #a98d5e;border-bottom:1px solid #405164;z-index:2}.records-title{font-size:16px;font-weight:500;letter-spacing:4px;margin-bottom:22px;color:#f1d4a1}.extremes{display:grid;grid-template-columns:1fr 1fr;gap:23px 30px}.record-label{font-size:12px;letter-spacing:2px;color:#92a8b9;margin-bottom:7px}.record-main{font-size:19px;letter-spacing:1px;color:#f2f4f6}.record-main span{color:#dfbc7e;font-size:16px;margin-left:8px}.coord{font-size:12px;color:#a1b4c2;margin-top:6px;letter-spacing:.6px}.distance-record{padding-top:16px;margin-top:18px;border-top:1px solid #3b4d5e;display:flex;align-items:center;justify-content:space-between;gap:15px}.distance-record .record-main{font-size:16px;letter-spacing:0}.distance{font-size:23px;color:#f0d5a4;white-space:nowrap}.distance small{font-size:12px;color:#a9b8c3;margin-left:5px}
+footer{position:absolute;left:64px;right:64px;bottom:28px;display:flex;justify-content:space-between;gap:30px;align-items:end;color:#7f97aa;font-size:12px;line-height:1.9;border-top:1px solid #314556;padding-top:14px}.legend{position:absolute;left:66px;bottom:65px;font-size:13px;color:#9eb2c2;letter-spacing:1px}.legend i{display:inline-block;width:36px;border-top:2px solid #e8bf79;margin-right:12px;vertical-align:middle}
+.records{padding:20px 28px 18px}.records-title{margin-bottom:14px}.extremes{gap:12px 28px}.record-label{font-size:11px;margin-bottom:4px}.record-main{font-size:18px}.coord{font-size:11px;margin-top:4px}.distance-record{padding-top:10px;margin-top:10px}.distance-record .record-main{font-size:15px}.distance{font-size:22px}
+.records{width:540px;bottom:25px;padding:22px 24px}.records-title{margin-bottom:18px}.overview{display:grid;grid-template-columns:1fr 1fr;gap:16px 25px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid #3b4d5e}.overview .record-main{font-size:21px}.overview .record-main small{font-size:12px;color:#a1b4c2;margin-left:5px}.overview .record-main.airport-name{font-size:18px}.extremes{gap:14px 25px}.extremes .record-main{font-size:17px}.extremes .record-main span{font-size:14px}.extremes .coord{margin-top:3px}#distances{display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid #3b4d5e;margin-top:16px;padding-top:14px}.distance-record{display:block;border:0;margin:0;padding:0}.distance-record .distance{margin-top:8px;font-size:22px}.distance-record .record-main{font-size:14px}.distance-record .coord{display:none}
+
+.airport-label{font-size:13px;stroke-width:2px}.airport-leader{stroke:#abb7bc;stroke-width:.65;opacity:.55;fill:none}.records{left:64px;right:auto;top:947px;bottom:auto;width:900px;padding:21px 25px;background:linear-gradient(140deg,rgba(25,43,59,.97),rgba(18,34,49,.97))}.records-title{margin-bottom:15px}.overview{grid-template-columns:repeat(4,1fr);gap:20px;padding-bottom:13px;margin-bottom:14px}.extremes{grid-template-columns:repeat(4,1fr);gap:20px}.extremes .record-main{font-size:16px}.extremes .record-main span{font-size:13px;margin-left:5px}#distances{gap:40px;margin-top:14px;padding-top:12px}.distance-record{display:flex;align-items:center;justify-content:space-between}.distance-record .distance{margin-top:0}.distance-record .record-label{margin-bottom:4px}
+#poster{width:1080px;height:1620px}header{left:64px;right:64px;top:47px}.eyebrow{font-size:17px;letter-spacing:3px}#map{left:0;top:115px;width:1080px;height:574px}.airport-label{font-size:21px;stroke-width:2px}.region{font-size:19px}.records{left:64px;right:64px;top:730px;width:auto;padding:27px 30px;background:linear-gradient(140deg,rgba(25,43,59,.75),rgba(18,34,49,.55))}.records-title{font-size:25px;letter-spacing:5px;margin-bottom:27px}.overview{grid-template-columns:1fr 1fr;gap:24px 48px;padding-bottom:26px;margin-bottom:25px}.record-label{font-size:17px;letter-spacing:2px;margin-bottom:9px}.overview .record-main{font-size:34px}.overview .record-main small{font-size:18px}.overview .record-main.airport-name{font-size:28px}.record-main span{font-size:21px;margin-left:10px}.extremes{grid-template-columns:1fr 1fr;gap:24px 48px}.extremes .record-main{font-size:25px}.extremes .record-main span{font-size:20px;margin-left:10px}.coord{font-size:16px;margin-top:7px}.extremes .coord{margin-top:7px}#distances{grid-template-columns:1fr 1fr;gap:48px;margin-top:25px;padding-top:23px}.distance-record{display:block}.distance-record .record-main{font-size:21px}.distance-record .record-label{margin-bottom:9px}.distance-record .distance{font-size:29px;margin-top:11px}.distance small{font-size:16px}#poster{height:1280px}.records{top:730px;padding:23px 28px}.records-title{font-size:22px;margin-bottom:20px}.overview{grid-template-columns:repeat(4,1fr);gap:18px;padding-bottom:20px;margin-bottom:20px}.record-label{font-size:14px;letter-spacing:1px;margin-bottom:8px}.overview .record-main{font-size:27px}.overview .record-main small{font-size:14px}.overview .record-main.airport-name{font-size:21px}.record-main span{font-size:17px;margin-left:7px}.extremes{grid-template-columns:1fr 1fr;gap:17px 40px}.extremes .record-main{font-size:21px}.extremes .record-main span{font-size:17px;margin-left:7px}.coord,.extremes .coord{font-size:14px;margin-top:5px}#distances{gap:40px;margin-top:20px;padding-top:18px}.distance-record .record-main{font-size:18px}.distance-record .distance{font-size:25px;margin-top:8px}.distance small{font-size:14px}#poster{height:1150px}.extremes{grid-template-columns:repeat(4,1fr);gap:16px}.extremes .record-main{font-size:18px;white-space:nowrap}.extremes .record-main span{font-size:14px;margin-left:5px}.extremes .coord{font-size:13px}.records{padding-bottom:23px}.distance-group .record-label{margin-bottom:5px}.distance-record{display:flex;gap:12px;align-items:center;padding:8px 0}.distance-record+.distance-record{border-top:1px solid rgba(146,168,185,.13)}.distance-record .record-main{font-size:16px;line-height:1.45;letter-spacing:0}.distance-record .distance{font-size:21px;margin:0}.distance small{font-size:12px}.records-title{margin-bottom:16px}.overview{padding-bottom:14px;margin-bottom:14px}#distances{margin-top:14px;padding-top:12px}</style></head><body><div id="poster"><header><div><div class="eyebrow">A PERSONAL ATLAS OF JOURNEYS</div></div></header><svg id="map" viewBox="0 0 1600 850"></svg><aside class="records"><div class="records-title">足迹的边界</div><div class="overview" id="overview"></div><div class="extremes" id="extremes"></div><div id="distances"></div></aside></div>
+<script src="palette.js"></script><script src="vendor/d3.min.js"></script><script src="vendor/topojson.min.js"></script><script src="vendor/html-to-image.js"></script><script>
+
+const feature=topojson.feature;
+const data=__DATA__;
+applyAtlasTheme(data.colors);
+const world=__WORLD__;
+;
+const airports=data.airports;
+const names={SHA:'上海虹桥',PVG:'上海浦东',PKX:'北京大兴',PEK:'北京首都',CAN:'广州',SZX:'深圳',LAX:'洛杉矶',JFK:'纽约',CDG:'巴黎',IST:'伊斯坦布尔',HND:'东京羽田',NRT:'东京成田',KIX:'大阪关西',MNL:'马尼拉',CAI:'开罗',LXR:'卢克索',ASW:'阿斯旺',ORD:'芝加哥',RDU:'罗利',DTW:'底特律',MAN:'曼彻斯特',MUC:'慕尼黑',FRA:'法兰克福',HKG:'香港',KEF:'凯夫拉维克',PEN:'槟城',KUL:'吉隆坡',SIN:'新加坡',SEA:'西雅图',AES:'奥勒松',BGO:'卑尔根',DXB:'迪拜',LYR:'朗伊尔城'};
+
+function airportName(code){
+ if(data.airportNames?.[code])return data.airportNames[code];
+ if(names[code])return names[code];
+ const a=airports[code]||{};
+ for(const value of [a.city,a.name]){const name=String(value||'').trim();if(name&&name.toUpperCase()!==code.toUpperCase())return name;}
+ return code;
+}
+function airportLabel(code){const name=airportName(code);return name.toUpperCase()===code.toUpperCase()?code:`${name} ${code}`;}
+function escapeLabel(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function airportHtml(code){const name=airportName(code);return name.toUpperCase()===code.toUpperCase()?escapeLabel(code):`${escapeLabel(name)}<span>${escapeLabel(code)}</span>`;}
+
+const projection=d3.geoMercator().rotate([-125,0]).center([0,36]).scale(1600/(2*Math.PI)).translate([800,425]).clipExtent([[0,0],[1600,850]]),path=d3.geoPath(projection),svg=d3.select('#map');
+svg.append('path').datum(d3.geoGraticule10()).attr('class','graticule').attr('d',path);
+svg.append('g').selectAll('path').data(feature(world,world.objects.countries).features).join('path').attr('class','land').attr('d',path);
+for(const [n,xy] of [['欧洲',[20,51]],['非洲',[20,0]],['亚洲',[79,40]],['北美洲',[-105,48]],['南美洲',[-60,-16]],['印度洋',[76,-18]],['太平洋',[167,0]]]){const [x,y]=projection(xy);svg.append('text').attr('class','region').attr('x',x).attr('y',y).text(n)}
+const routeGeo=r=>({type:'LineString',coordinates:[airports[r.a].xy,airports[r.b].xy]});
+svg.append('g').selectAll('path').data(data.routes).join('path').attr('class','route-glow').attr('d',r=>path(routeGeo(r))).attr('stroke-width',r=>5+Math.sqrt(r.flights.length)*1.9);
+svg.append('g').selectAll('path').data(data.routes).join('path').attr('class','route').attr('d',r=>path(routeGeo(r))).attr('stroke-width',r=>.9+Math.sqrt(r.flights.length)*.8);
+svg.append('g').selectAll('circle').data(Object.entries(airports).sort((a,b)=>a[1].n-b[1].n)).join('circle').attr('class','airport').attr('cx',([c,a])=>projection(a.xy)[0]).attr('cy',([c,a])=>projection(a.xy)[1]).attr('r',([c,a])=>2+Math.sqrt(a.n)*.55);
+const extremes=new Set(Object.values(data.extremes));svg.append('g').selectAll('circle').data([...extremes]).join('circle').attr('class','extreme-ring').attr('cx',c=>projection(airports[c].xy)[0]).attr('cy',c=>projection(airports[c].xy)[1]).attr('r',10);
+
+const routeSamples=[];
+svg.selectAll('.route').each(function(){const length=this.getTotalLength();for(let t=0;t<length;t+=5){const p=this.getPointAtLength(t);routeSamples.push([p.x,p.y]);}});
+const airportPoints=Object.entries(airports).map(([code,a])=>({code,p:projection(a.xy)}));
+const boxes=[];
+const labelGroup=svg.append('g');
+for(const c of new Set(Array.isArray(data.labels)?data.labels:[...Object.values(data.extremes),'CDG','DXB','IST','CAI','LAX','RDU'])){
+ if(!airports[c])continue;
+ const [px,py]=projection(airports[c].xy),text=airportLabel(c);
+ const node=labelGroup.append('text').attr('class','airport-label').text(text);
+ const width=node.node().getComputedTextLength(),height=26;
+ const radius=extremes.has(c)?11:2+Math.sqrt(airports[c].n)*.55;
+ const options=[];
+ for(const gap of [5,10,16]){
+  const r=radius+gap;
+  options.push([px+r,py-height/2],[px-r-width,py-height/2],[px-width/2,py-r-height],[px-width/2,py+r],[px+r*.7,py-r-height],[px-r*.7-width,py-r-height],[px+r*.7,py+r],[px-r*.7-width,py+r]);
+ }
+ let best=null;
+ for(const [x,y] of options){
+  if(x<10||x+width>1590||y<5||y+height>845)continue;
+  const b=[x-2,y-2,width+4,height+4];
+  const overlaps=boxes.filter(o=>b[0]<o[0]+o[2]+6&&b[0]+b[2]+6>o[0]&&b[1]<o[1]+o[3]+4&&b[1]+b[3]+4>o[1]).length;
+  let crossings=0;for(const p of routeSamples)if(p[0]>b[0]&&p[0]<b[0]+b[2]&&p[1]>b[1]&&p[1]<b[1]+b[3])crossings++;
+  let points=0;for(const a of airportPoints)if(a.code!==c&&a.p[0]>b[0]-3&&a.p[0]<b[0]+b[2]+3&&a.p[1]>b[1]-3&&a.p[1]<b[1]+b[3]+3)points++;
+  const ax=Math.max(x,Math.min(x+width,px)),ay=Math.max(y,Math.min(y+height,py));
+  const distance=Math.hypot(ax-px,ay-py);
+  const score=overlaps*10000+points*120+crossings*4+distance*.6;
+  if(!best||score<best.score)best={x,y,b,ax,ay,distance,score};
+ }
+ if(c === 'RDU'){const x=Math.min(px+12,1588-width),y=py-7,ax=Math.max(x,Math.min(x+width,px)),ay=y;best={x,y,b:[x-2,y-2,width+4,height+4],ax,ay,distance:Math.hypot(ax-px,ay-py),score:0};}
+ if(!best){node.remove();continue;}
+ boxes.push(best.b);
+ node.attr('data-airport',c).attr('x',best.x).attr('y',best.y+20);
+ if(best.distance>radius+9){const dx=best.ax-px,dy=best.ay-py,l=Math.hypot(dx,dy);labelGroup.insert('path','text').attr('class','airport-leader').attr('d',`M${px+dx/l*(radius+2)},${py+dy/l*(radius+2)} L${best.ax},${best.ay}`);}
+}
+const labels={north:'最北到达',south:'最南到达',east:'最东到达',west:'最西到达'};
+for(const k of ['north','south','east','west']){const c=data.extremes[k],a=airports[c],[lon,lat]=a.xy;const coord=k==='north'||k==='south'?`${Math.abs(lat).toFixed(2)}° ${lat>=0?'N':'S'}`:`${Math.abs(lon).toFixed(2)}° ${lon>=0?'E':'W'}`;document.getElementById('extremes').insertAdjacentHTML('beforeend',`<div><div class="record-label">${labels[k]}</div><div class="record-main">${airportHtml(c)}</div><div class="coord">${coord}</div></div>`)}
+for(const [k,label] of [['longestRoutes','最长航程'],['shortestRoutes','最短航程']]){
+ const group=document.createElement('section');group.className='distance-group';
+ const title=document.createElement('div');title.className='record-label';title.textContent=label;group.append(title);
+ for(const [index,r] of data[k].entries()){
+  const row=document.createElement('div');row.className='distance-record';
+  const route=document.createElement('div');route.className='record-main';route.textContent=`${airportName(r.a)} → ${airportName(r.b)}`;
+  const value=document.createElement('div');value.className='distance';value.textContent=Math.round(r.km).toLocaleString('en-US');
+  const unit=document.createElement('small');unit.textContent='km';value.append(unit);row.append(route,value);group.append(row);
+ }document.getElementById('distances').append(group);
+}
+
+const overview=document.getElementById('overview');
+const busiest=data.busiest;
+overview.innerHTML=`<div><div class="record-label">累计飞行里程（估算）</div><div class="record-main">${data.totalKm.toLocaleString('en-US')}<small>km</small></div></div><div><div class="record-label">飞行次数</div><div class="record-main">${data.total}<small>次</small></div></div><div><div class="record-label">航司数量</div><div class="record-main">${data.airlineCount}<small>家</small></div></div><div><div class="record-label">最多起降机场 · ${airports[busiest].n} 次</div><div class="record-main airport-name">${airportHtml(busiest)}</div></div>`;
+document.getElementById('poster').dataset.ready='true';
+</script></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
