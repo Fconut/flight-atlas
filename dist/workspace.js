@@ -23,3 +23,22 @@ document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',(
 const updateWorkspace=()=>{$('nav-record-count').textContent=String(state.rows?.length||0);$('empty-add').disabled=$('manual-start').disabled;};window.addEventListener('atlas:rows',updateWorkspace);new MutationObserver(updateWorkspace).observe($('manual-start'),{attributes:true,attributeFilter:['disabled']});
 new MutationObserver(()=>{$('workspace-save').textContent=$('draft-status').textContent;$('workspace-save').classList.toggle('save-error',$('draft-status').classList.contains('storage-error'));}).observe($('draft-status'),{childList:true,characterData:true,subtree:true,attributes:true});
 showWorkspace('map');updateWorkspace();
+
+// Remove only the requested notes; retain the established workspace layout.
+document.querySelector('.brand-icon')?.remove();
+document.querySelector('.local-badge').hidden=true;
+document.querySelector('.editor-local-note')?.remove();
+for(const note of document.querySelectorAll('.micro'))if(note.textContent.includes('四个方位极值与少数区域节点'))note.remove();
+document.querySelector('.preview-footer>span').remove();
+$('diagnostics').hidden=true;
+
+document.querySelector('.topbar').hidden=true;
+$('summary').hidden=true;
+const deleteAll=$('clear-draft');deleteAll.textContent='删除全部航班';deleteAll.className='secondary-button delete-all';deleteAll.hidden=false;document.querySelector('.records-actions').prepend(deleteAll);
+document.querySelector('.draft-storage').hidden=true;
+const updateDeleteAll=()=>{deleteAll.disabled=!(state.rows?.length||state.sheets.some(s=>s.rows.length));};window.addEventListener('atlas:rows',updateDeleteAll);updateDeleteAll();
+deleteAll.addEventListener('click',async()=>{
+ const count=state.sheets.length?state.sheets.reduce((n,s)=>n+s.rows.length,0):(state.rows?.length||0);
+ if(!count||!confirm(`删除全部 ${count} 条航班记录？所有工作表中的航班都会删除，配色和标注设置会保留。`))return;
+ state.rows=[];state.sheets=[];state.fileName='';$('file').value='';$('sheet').replaceChildren();$('sheet-wrap').hidden=true;$('file-info').textContent='支持 Flighty 导出及常见中文列名；导入会新增航班，并自动跳过重复记录。';$('record-search').value='';$('record-filter').value='all';await regenerate();await draftWrites;updateDeleteAll();
+});
