@@ -4,8 +4,8 @@
 
 1. 打开项目的 SQL Editor，执行 `supabase/setup.sql`（仅首次执行）。它会创建记录表、仅限本人访问的 RLS 规则及防覆盖保存函数。
 2. Authentication → URL Configuration：Site URL 设为实际 Cloudflare Pages 站点完整地址；Redirect URLs 加入该站点首页的完整 URL。预览域名需要单独添加。
-3. Authentication → Providers → Email：启用 Email 登录，允许新用户注册。默认 Magic Link 邮件模板即可。正式开放注册前配置自己的 SMTP；默认邮件服务可能只允许给团队成员发送且有频率限制。
-4. 合并本分支后，等待 Cloudflare Pages 构建完成。打开“登录 / 云端记录”，输入邮箱，点击邮件链接登录。
+3. Authentication → Providers → Email：启用 Email 登录，允许新用户注册。保留注册确认与重置密码邮件模板。正式开放注册前配置自己的 SMTP；默认邮件服务可能只允许给团队成员发送且有频率限制。
+4. 合并本分支后，等待 Cloudflare Pages 构建完成。打开“登录 / 云端记录”，首次使用邮箱和密码注册，再打开确认邮件；日常使用邮箱和密码登录。已有邮件登录账号可在账号面板设置密码。
 
 `dist/auth-config.js` 只有公开的项目 URL 与 Publishable key。切勿填入 service_role、Secret key、数据库密码。
 
@@ -22,3 +22,6 @@
 真实启用前必须验证：邮箱收信及回跳；账号 A/B 不能互读或互写；游客不能读取表；跨设备恢复；保存冲突；退出隔离。浏览器本地隔离不能代替数据库 RLS。
 
 Supabase JS 2.49.1（MIT）保存在 `dist/vendor/supabase.js`，来源 https://www.npmjs.com/package/@supabase/supabase-js 。
+
+## 密码登录
+注册验证和忘记密码仍发送邮件；日常密码登录不发送邮件。重置邮件回跳后会显示新密码表单。首次测试请分别验证注册确认、密码登录、忘记密码和已有账号设置密码。
