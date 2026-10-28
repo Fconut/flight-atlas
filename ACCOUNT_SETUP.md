@@ -1,0 +1,24 @@
+# 邮箱账号与云端记录
+
+## Supabase 配置
+
+1. 打开项目的 SQL Editor，执行 `supabase/setup.sql`（仅首次执行）。它会创建记录表、仅限本人访问的 RLS 规则及防覆盖保存函数。
+2. Authentication → URL Configuration：Site URL 设为实际 Cloudflare Pages 站点完整地址；Redirect URLs 加入该站点首页的完整 URL。预览域名需要单独添加。
+3. Authentication → Providers → Email：启用 Email 登录，允许新用户注册。默认 Magic Link 邮件模板即可。正式开放注册前配置自己的 SMTP；默认邮件服务可能只允许给团队成员发送且有频率限制。
+4. 合并本分支后，等待 Cloudflare Pages 构建完成。打开“登录 / 云端记录”，输入邮箱，点击邮件链接登录。
+
+`dist/auth-config.js` 只有公开的项目 URL 与 Publishable key。切勿填入 service_role、Secret key、数据库密码。
+
+## 第一版交互
+
+- 游客记录仍使用原浏览器记录；每个账号使用独立本地记录空间。
+- 登录不会自动上传游客数据；可点击“导入本机游客记录”，按现有规则合并去重。
+- 第一次在新设备使用，先“从云端恢复”，再编辑；完成后“保存到云端”。这一版为手动云端同步。
+- 恢复会先确认替换；保存为空记录也会先确认。不同设备并发保存时，旧版本会被拒绝，防止静默覆盖。
+- 退出回到游客记录；账号本地记录会保留在该浏览器中，可在再次登录后恢复。共享设备应导出备份并通过浏览器清理站点数据。
+
+## 验证
+
+真实启用前必须验证：邮箱收信及回跳；账号 A/B 不能互读或互写；游客不能读取表；跨设备恢复；保存冲突；退出隔离。浏览器本地隔离不能代替数据库 RLS。
+
+Supabase JS 2.49.1（MIT）保存在 `dist/vendor/supabase.js`，来源 https://www.npmjs.com/package/@supabase/supabase-js 。
