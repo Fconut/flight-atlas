@@ -1,6 +1,6 @@
 'use strict';
 document.querySelector('.upload-panel').insertAdjacentHTML('beforeend','<div class="draft-storage"><span id="draft-status" role="status" aria-live="polite">正在检查本地记录…</span><button type="button" id="clear-draft" hidden>清除本地记录</button></div>');
-document.querySelector('.editor-local-note').textContent='航班记录自动保存在此浏览器，也可导出 Excel 备份。';
+
 const draftStatus=$('draft-status'),clearDraft=$('clear-draft');
 let draftKey='current';let restoringDraft=false,draftReadFinished=false,draftTouched=false,draftEpoch=0,draftWrites=Promise.resolve(),draftFailed=false;
 const draftDB=new Promise((resolve,reject)=>{let req;try{req=indexedDB.open('flight-atlas-local',1);}catch(e){reject(e);return;}req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('drafts'))req.result.createObjectStore('drafts');};req.onsuccess=()=>{const db=req.result;db.onversionchange=()=>db.close();resolve(db);};req.onerror=()=>reject(req.error||Error('IndexedDB unavailable'));req.onblocked=()=>reject(Error('Local database blocked'));});
