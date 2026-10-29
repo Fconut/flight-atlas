@@ -9,12 +9,13 @@
 .fleet-card:focus-visible{outline:2px solid #a77b36;outline-offset:6px}
 .fleet-icon{position:relative;aspect-ratio:1;width:100%;margin:0;filter:drop-shadow(0 6px 5px #76562825)}
 .fleet-icon img{display:block;width:100%;height:100%;object-fit:contain}
-.fleet-card h3{position:absolute;top:78%;left:15%;width:70%;margin:0;transform:translateY(-50%);padding:3px 4px;border:0;border-radius:8px;background:#fff2d5;color:#20354e;font-family:Georgia,'Times New Roman',serif;font-size:clamp(11px,1.1vw,15px);min-height:9%;display:flex;align-items:center;justify-content:center;line-height:1.15;font-weight:700;overflow-wrap:anywhere;box-sizing:border-box}
+.fleet-card h3{margin:8px 0 0;font-size:13px;line-height:1.3;color:#25454d;background:none;position:static;font-weight:500}
+.fleet-card h3.fleet-name-a11y{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .fleet-card p{margin:7px 0 0;font-size:12px;line-height:1.4;color:#7d847f}
 .fleet-card small,.fleet-tag{display:none}
 .fleet-leg{padding:14px 0;border-bottom:1px solid #e3e9e2}
 .fleet-leg strong{font-size:13px;font-weight:500;display:block}
 .fleet-leg span{display:block;font-size:11px;color:#8a9c94;margin-top:7px}
 @media(max-width:1000px){.nav-hint{display:none}}
-@media(max-width:720px){.fleet-page{padding:18px}.fleet-heading{align-items:stretch;flex-direction:column;gap:8px}.fleet-heading input{max-width:none}.fleet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.fleet-card h3{font-size:10px;padding:3px 2px;border-radius:7px;left:15%;width:70%}.fleet-card p{font-size:11px;margin-top:4px}.view-links{gap:10px}.view-links button{font-size:11px}.account-box button{font-size:9px}}
+@media(max-width:720px){.fleet-page{padding:18px}.fleet-heading{align-items:stretch;flex-direction:column;gap:8px}.fleet-heading input{max-width:none}.fleet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.fleet-card p{font-size:11px;margin-top:4px}.view-links{gap:10px}.view-links button{font-size:11px}.account-box button{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.fleet-card{transition:none}}
