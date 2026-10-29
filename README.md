@@ -49,3 +49,9 @@ python -m http.server 8000 --directory dist
 使用“下载完整备份”导出 JSON，包含航班、配色、标注和未来行程设置，不含登录凭据。Excel 用于航班表格交换，不作为完整备份。取消航班不纳入产品范围。
 
 恢复 JSON 或云端记录前，先自动保留当前账号的一份本机副本；点击“找回替换前副本”下载。每次替换更新这份副本，重要版本请另行下载。云端版本冲突会拒绝覆盖，本机修改保留；先下载完整备份，再恢复云端并整理记录。账号配置见 ACCOUNT_SETUP.md。
+
+## Cloudflare Workers 部署
+
+仓库根目录的 `wrangler.json` 将 `dist/` 作为静态资源目录，并启用 Workers Previews。Cloudflare 构建根目录应为仓库根目录，无需构建命令；生产部署命令为 `npx wrangler deploy`，非生产分支预览命令为 `npx wrangler preview`。不需要新增 Worker 脚本或数据库绑定。
+
+预览域名的浏览器本地记录与正式域名隔离。测试时使用虚构航班；若测试账号登录，需要在 Supabase 添加预览回调地址。
