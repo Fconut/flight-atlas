@@ -18,3 +18,5 @@
 @media(min-width:1001px){.records-toolbar{grid-template-columns:minmax(190px,1fr) 135px 180px 125px}}
 
 .record-table{min-width:820px}.record-aircraft{max-width:185px;overflow-wrap:anywhere}
+
+.file-info:empty{display:none}.settings .upload-panel>.help{padding:12px 0 0;margin:10px 0 12px;border:0;border-top:1px solid #edf0eb}.settings .upload-panel>.help p{font-size:11px;line-height:1.8}.settings .upload-panel>.help summary{font-size:11px}

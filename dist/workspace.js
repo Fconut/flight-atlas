@@ -40,5 +40,8 @@ const updateDeleteAll=()=>{deleteAll.disabled=!(state.rows?.length||state.sheets
 deleteAll.addEventListener('click',async()=>{
  const count=state.sheets.length?state.sheets.reduce((n,s)=>n+s.rows.length,0):(state.rows?.length||0);
  if(!count||!confirm(`删除全部 ${count} 条航班记录？所有工作表中的航班都会删除，配色和标注设置会保留。`))return;
- state.rows=[];state.sheets=[];state.fileName='';$('file').value='';$('sheet').replaceChildren();$('sheet-wrap').hidden=true;$('file-info').textContent='支持 Flighty 导出及常见中文列名；导入会新增航班，并自动跳过重复记录。';$('record-search').value='';$('record-filter').value='all';await regenerate();await draftWrites;updateDeleteAll();
+ state.rows=[];state.sheets=[];state.fileName='';$('file').value='';$('sheet').replaceChildren();$('sheet-wrap').hidden=true;$('file-info').textContent='';$('record-search').value='';$('record-filter').value='all';await regenerate();await draftWrites;updateDeleteAll();
 });
+
+// Keep all import guidance beside the upload entry.
+document.querySelector('.file-info').after(document.querySelector('.help'));
