@@ -1,11 +1,11 @@
 // Names are painted into each ribbon; HTML headings remain for accessibility.
-const ribbonBadges=[["a319","AIRBUS A319"],["a320","AIRBUS A320"],["a320neo","AIRBUS A320neo"],["a321","AIRBUS A321"],["a321neo","AIRBUS A321neo"],["a330-200","AIRBUS A330-200"],["a330-300","AIRBUS A330-300"],["a350-900","AIRBUS A350-900"],["a380-800","AIRBUS A380-800"],["b737-300","BOEING 737-300"],["b737-800","BOEING 737-800"],["b737-max8","BOEING 737 MAX 8"],["b747-400","BOEING 747-400"],["b767-300","BOEING 767-300"],["b777-300","BOEING 777-300"],["b777-300er","BOEING 777-300ER"],["b787-8","BOEING 787-8"],["b787-9","BOEING 787-9"],["atr72","ATR 72"],["dash8-400","DASH 8-400"],["e195","EMBRAER E195"],["md88","MD-88"],["c919","COMAC C919"]];
+const ribbonBadges=[["a319","AIRBUS A319"],["a320","AIRBUS A320"],["a320neo","AIRBUS A320neo"],["a321","AIRBUS A321"],["a321neo","AIRBUS A321neo"],["a330-200","AIRBUS A330-200"],["a330-300","AIRBUS A330-300"],["a350-900","AIRBUS A350-900"],["a350-1000","AIRBUS A350-1000"],["a380-800","AIRBUS A380-800"],["b737-300","BOEING 737-300"],["b737-700","BOEING 737-700"],["b737-800","BOEING 737-800"],["b737-max8","BOEING 737 MAX 8"],["b747-400","BOEING 747-400"],["b767-300","BOEING 767-300"],["b777-300","BOEING 777-300"],["b777-300er","BOEING 777-300ER"],["b787-8","BOEING 787-8"],["b787-9","BOEING 787-9"],["atr72","ATR 72"],["dash8-400","DASH 8-400"],["e195","EMBRAER E195"],["md88","MD-88"],["c909","COMAC C909"],["c919","COMAC C919"]];
 function ribbonKey(value){return String(value).toUpperCase().replace(/[^A-Z0-9]/g,'').replace(/^(AIRBUS|BOEING|COMAC)/,'').replace(/^B(?=7\d\d)/,'');}
 function ribbonEntry(name){
  const key=ribbonKey(name);
  let entry=ribbonBadges.find(([,label])=>ribbonKey(label)===key);
  if(!entry){
-  const aliases={A380:'a380-800',A350:'a350-900',A330:'a330-300','737MAX8':'b737-max8',EMBRAER195:'e195',EMBRAERE195:'e195',E195:'e195',MCDONNELLDOUGLASMD88:'md88',DHC8400DASH8Q:'dash8-400',DHC8400:'dash8-400',DEHAVILLANDDASH8400:'dash8-400',DEHAVILLANDDASH8:'dash8-400',DASH8Q400:'dash8-400',ATR72600:'atr72'};
+  const aliases={ARJ21:'c909',ARJ21700:'c909',C909700:'c909',A380:'a380-800',A350:'a350-900',A330:'a330-300','737MAX8':'b737-max8',EMBRAER195:'e195',EMBRAERE195:'e195',E195:'e195',MCDONNELLDOUGLASMD88:'md88',DHC8400DASH8Q:'dash8-400',DHC8400:'dash8-400',DEHAVILLANDDASH8400:'dash8-400',DEHAVILLANDDASH8:'dash8-400',DASH8Q400:'dash8-400',ATR72600:'atr72'};
   const alias=aliases[key];if(alias)entry=ribbonBadges.find(([id])=>id===alias);
  }
  return entry;
