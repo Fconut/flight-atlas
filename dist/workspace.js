@@ -12,7 +12,7 @@ function showSetting(key){for(const b of tabs.children){const active=b.dataset.s
 
 const dataLink=document.createElement('button');dataLink.type='button';dataLink.className='manage-link';dataLink.textContent='查看与编辑全部航班 →';dataLink.addEventListener('click',()=>showWorkspace('records'));document.querySelector('.upload-panel').append(dataLink);
 
-preview.insertBefore($('summary'),document.querySelector('.preview-well'));
+
 const statusBar=document.createElement('div');statusBar.className='workspace-status';statusBar.append($('status'));heading.after(statusBar);
 const emptyActions=document.createElement('div');emptyActions.className='empty-actions';emptyActions.innerHTML='<button type="button" id="empty-import">导入航班文件</button><button type="button" id="empty-add">＋ 手动添加</button>';document.querySelector('.empty-copy').append(emptyActions);$('empty-import').addEventListener('click',()=>{showSetting('data');$('file').click();});$('empty-add').addEventListener('click',()=>$('manual-start').click());
 const mobilePreview=document.createElement('button');mobilePreview.type='button';mobilePreview.className='mobile-preview';mobilePreview.textContent='↓ 查看地图预览';mobilePreview.addEventListener('click',()=>preview.scrollIntoView({behavior:'smooth',block:'start'}));tabs.after(mobilePreview);
@@ -23,9 +23,9 @@ const updateWorkspace=()=>{$('nav-record-count').textContent=String(state.rows?.
 
 showWorkspace('map');updateWorkspace();
 
-$('diagnostics').hidden=true;
 
-$('summary').hidden=true;
+
+
 const deleteAll=$('clear-draft');deleteAll.textContent='删除全部航班';deleteAll.className='secondary-button delete-all';deleteAll.hidden=false;document.querySelector('.records-actions').prepend(deleteAll);
 document.querySelector('.draft-storage').hidden=true;
 const updateDeleteAll=()=>{deleteAll.disabled=!(state.rows?.length||state.sheets.some(s=>s.rows.length));};window.addEventListener('atlas:rows',updateDeleteAll);updateDeleteAll();

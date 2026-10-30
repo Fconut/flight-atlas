@@ -8,3 +8,5 @@ Retain upstream copyright and license notices when redistributing.
 - html-to-image: https://github.com/bubkoo/html-to-image (MIT)
 - OurAirports: https://ourairports.com/data/ (public domain)
 - Natural Earth: https://www.naturalearthdata.com/about/terms-of-use/ (public domain)
+
+- Supabase JS: https://github.com/supabase/supabase-js (MIT); bundled license: dist/vendor/supabase-LICENSE.txt

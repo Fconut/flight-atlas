@@ -65,12 +65,7 @@ select:focus-visible { outline: rgb(177, 155, 115) solid 2px; outline-offset: 2p
 .poster-wrap { margin: auto; }
 .poster-stage { position: relative; overflow: hidden; background: rgb(20, 39, 55); }
 .poster-stage iframe { position: absolute; top: 0px; left: 0px; transform-origin: left top; border: 0px; display: block; pointer-events: none; }
-.summary { display: flex; flex-wrap: wrap; font-size: 11px; color: rgb(116, 133, 140); }
-.summary b { font-weight: 500; color: rgb(48, 75, 91); }
 .preview-footer { display: flex; flex-wrap: wrap; gap: 10px; margin-right: 2px; margin-bottom: 0px; margin-left: 2px; letter-spacing: 0.2px; }
-.diagnostics { color: rgb(133, 146, 152); padding-right: 3px; padding-bottom: 0px; padding-left: 3px; }
-.diagnostics summary { cursor: pointer; }
-.diagnostics p { margin-bottom: 0px; }
 .footer { margin: auto; display: flex; justify-content: space-between; gap: 15px; line-height: 1.8; letter-spacing: 0.4px; }
 .footer-dot { padding: 0px 13px; color: rgb(181, 189, 190); }
 summary:focus-visible { outline: rgb(167, 134, 78) solid 2px; outline-offset: 3px; }

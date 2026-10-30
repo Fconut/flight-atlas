@@ -44,8 +44,6 @@ main { max-width: 1600px; padding: 0px 40px 40px; }
 .preview-heading h2 { font-size: 15px; font-weight: 600; }
 .preview-heading .eyebrow { font-size: 8px; letter-spacing: 2px; margin-bottom: 6px; }
 .preview-tag { font-size: 10px; background: rgb(245, 248, 244); color: rgb(119, 145, 136); border-color: rgb(226, 233, 223); }
-.summary { padding: 0px 0px 15px; justify-content: flex-start; gap: 8px; }
-.summary > span { font-size: 10px; background: rgb(243, 246, 242); color: rgb(109, 132, 132); border: 1px solid rgb(230, 236, 228); padding: 6px 9px; border-radius: 5px; }
 .preview-well { min-height: 0px; }
 .poster-wrap { max-width: 650px; }
 .empty { height: 480px; border-radius: 4px; }
@@ -56,7 +54,6 @@ main { max-width: 1600px; padding: 0px 40px 40px; }
 .empty-actions button + button { background: rgba(255, 255, 255, 0.043); color: rgb(216, 226, 223); border-color: rgba(255, 255, 255, 0.2); }
 .empty-actions button:disabled { opacity: 0.5; }
 .preview-footer { font-size: 9px; color: rgb(145, 162, 155); margin-top: 13px; }
-.diagnostics { font-size: 11px; padding-top: 15px; }
 .records-manager { margin: 0px; padding: 24px; background: rgb(255, 255, 255); border: 1px solid var(--line); border-radius: 12px; }
 .records-heading h2 { font-size: 19px; }
 .records-heading .eyebrow { margin-bottom: 8px; }
@@ -130,10 +127,8 @@ input:focus-visible { outline: rgb(111, 152, 149) solid 2px; outline-offset: 3px
   * { scroll-behavior: auto !important; }
 }
 #draft-status:not(.storage-error) { display: none !important; }
-#diagnostics { display: none !important; }
 .draft-storage { border-top: 0px; margin-top: 0px; padding-top: 6px; }
 .preview-footer { justify-content: flex-end; }
-#summary { display: none !important; }
 .preview-well { background: none; border: 0px; padding: 0px; border-radius: 0px; }
 .poster-stage { box-shadow: none; }
 .preview-heading { margin: 0px 0px 15px; }
