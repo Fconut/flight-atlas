@@ -23,10 +23,9 @@ async function applyBackup(snapshot){
  if(typeof renderRecords==='function')renderRecords();
 }
 const backupBar=document.createElement('div');backupBar.className='backup-bar';
-backupBar.innerHTML='<span id="visible-save" role="status" aria-live="polite"></span><section id="local-backup" class="backup-panel" aria-labelledby="backup-title" hidden><h3 id="backup-title">本地备份</h3><p>将航班、配色和标注保存为电脑上的文件，用于留存旧版本或额外备份。跨设备继续使用，请在账号中保存到云端。</p><div class="backup-actions"><button type="button" class="secondary-button" id="backup-download">导出备份文件</button><button type="button" class="secondary-button" id="backup-import">从文件恢复</button><button type="button" class="text-button" id="backup-recovery">找回替换前副本</button></div><input type="file" id="backup-file" accept=".json,application/json" hidden><span id="backup-message" role="status" aria-live="polite"></span></section>';
+backupBar.innerHTML='<section id="local-backup" class="backup-panel" aria-labelledby="backup-title" hidden><h3 id="backup-title">本地备份</h3><p>将航班、配色和标注保存为电脑上的文件，用于留存旧版本或额外备份。跨设备继续使用，请在账号中保存到云端。</p><div class="backup-actions"><button type="button" class="secondary-button" id="backup-download">导出备份文件</button><button type="button" class="secondary-button" id="backup-import">从文件恢复</button><button type="button" class="text-button" id="backup-recovery">找回替换前副本</button></div><input type="file" id="backup-file" accept=".json,application/json" hidden><span id="backup-message" role="status" aria-live="polite"></span></section>';
 document.querySelector('.workspace-status').append(backupBar);
-const mirrorSave=()=>{const node=$('visible-save');node.textContent=draftStatus.textContent;node.classList.toggle('storage-error',draftStatus.classList.contains('storage-error'));};
-new MutationObserver(mirrorSave).observe(draftStatus,{childList:true,characterData:true,subtree:true,attributes:true});mirrorSave();
+backupBar.prepend(draftStatus);
 $('backup-download').onclick=()=>downloadBackup();
 $('backup-import').onclick=()=>$('backup-file').click();
 $('backup-recovery').onclick=async()=>{try{const db=await draftDB;const snapshot=await new Promise((resolve,reject)=>{const req=db.transaction('drafts').objectStore('drafts').get(draftKey+':recovery');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});if(!snapshot)throw Error('当前账号还没有替换前副本。');downloadBackup(snapshot);$('backup-message').textContent='已下载替换前副本，可通过“从文件恢复”导入。';}catch(e){$('backup-message').textContent=e.message;}};
