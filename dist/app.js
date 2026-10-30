@@ -55,3 +55,11 @@ function topologyFeatures(t,obj){const arcs=t.arcs.map(arc=>{let x=0,y=0;return 
 
 function refreshAtlasDay(){if($('cutoff').value!==localDate()){$('cutoff').value=localDate();if(state.rows)regenerate();}}
 window.addEventListener('focus',refreshAtlasDay);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshAtlasDay();});setInterval(refreshAtlasDay,60000);
+
+function dismissOnBackdrop(dialog,canClose=()=>true,onClose=()=>dialog.close()){
+ let startedOutside=false;
+ const outside=event=>{const box=dialog.getBoundingClientRect();return event.target===dialog&&(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom);};
+ dialog.addEventListener('pointerdown',event=>{startedOutside=outside(event);});
+ dialog.addEventListener('click',event=>{const dismiss=startedOutside&&outside(event);startedOutside=false;if(dismiss&&canClose())onClose();});
+ dialog.addEventListener('close',()=>{startedOutside=false;});
+}

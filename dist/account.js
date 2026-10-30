@@ -32,3 +32,5 @@ $('account-signout').addEventListener('click',()=>accountAction(async()=>{await 
 async function startAtlasAccount(){try{if(!window.supabase)throw Error('登录组件加载失败，游客模式仍可使用。');atlasClient=window.supabase.createClient(ATLAS_AUTH_CONFIG.url,ATLAS_AUTH_CONFIG.publishableKey);atlasClient.auth.onAuthStateChange((event,session)=>{if(['INITIAL_SESSION','SIGNED_IN','SIGNED_OUT','PASSWORD_RECOVERY'].includes(event)){accountQueue=accountQueue.then(async()=>{await onAccountSession(session);if(event==='PASSWORD_RECOVERY'){$('account-user').querySelector('.account-actions').hidden=true;passwordForm.querySelector('details').open=true;accountDialog.showModal();accountMessage('请设置新密码。');}}).catch(()=>accountMessage('账号状态更新失败，请刷新后重试。',true));}});}catch(e){accountMessage(e.message,true);}}
 startAtlasAccount();
 accountDialog.addEventListener('close',clearAccountPasswords);
+
+dismissOnBackdrop(accountDialog,()=>!accountBusy);
