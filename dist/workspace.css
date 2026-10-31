@@ -21,7 +21,7 @@ main { max-width: 1600px; padding: 0px 40px 40px; }
 .settings-tabs { display: flex; background: rgb(248, 250, 248); border-bottom: 1px solid var(--line); padding: 7px 10px 0px; flex-shrink: 0; gap: 3px; }
 .settings-tabs button { flex: 1 1 0%; padding: 13px 4px; border-width: 0px 0px 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: none; background: none; color: rgb(138, 153, 155); font-size: 12px; white-space: nowrap; }
 .settings-tabs button[aria-selected="true"] { border-bottom-color: rgb(49, 92, 97); color: rgb(33, 71, 77); font-weight: 600; }
-.settings-page { overflow-y: auto; overscroll-behavior: contain; padding: 4px 0px; scrollbar-width: thin; }
+.settings-page { overflow-y: auto; overscroll-behavior-y: auto; padding: 4px 0px; scrollbar-width: thin; }
 .settings .panel { border: 0px; border-radius: 0px; padding: 22px; background: none; }
 .settings .panel + .panel { border-top: 1px solid rgb(237, 240, 235); }
 .section-heading { margin-bottom: 17px; }
