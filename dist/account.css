@@ -3,3 +3,5 @@
 .workspace-nav .nav-hint{margin-left:auto;margin-right:18px}.workspace-nav .account-box{margin-left:0;flex-shrink:0}
 
 .account-backup,.account-dialog .backup-panel{border:0;border-top:1px solid var(--line);border-radius:0;background:none;padding:18px 0 0;margin:18px 0 0}.account-dialog h3{font-size:15px;margin:0 0 8px;font-weight:600}.account-dialog .backup-actions{display:flex;flex-wrap:wrap;gap:8px}.account-dialog .backup-actions button{font-size:12px}.account-dialog #backup-message{display:block;font-size:12px;line-height:1.8;margin-top:10px}.account-dialog #backup-message:empty{display:none}
+
+.cloud-sync-info{margin:14px 0;padding:12px 14px;background:#f5f7f4;border-radius:8px}.cloud-sync-info p{font-size:12px;line-height:1.7;margin:4px 0}#cloud-conflict{margin-top:12px;padding-top:10px;border-top:1px solid #dce3df}#cloud-conflict h4{font-size:14px;margin:0 0 8px;color:#8f6339}
