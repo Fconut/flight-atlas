@@ -39,3 +39,6 @@
 .fleet-card.is-locked small{display:block;visibility:hidden}
 @media(max-width:900px){.fleet-sections{gap:28px}.fleet-section .fleet-grid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr))}}
 @media(max-width:720px){.fleet-section .fleet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fleet-card{max-width:none}}
+
+/* Place dividers in the gutters without changing equal column widths. */
+@media(min-width:901px){.fleet-section{position:relative}.fleet-section+.fleet-section::before{content:'';position:absolute;left:-12px;top:0;bottom:0;width:1px;background:var(--line);pointer-events:none}}
