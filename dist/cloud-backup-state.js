@@ -14,3 +14,5 @@ async function saveReviewedCloud({snapshot,readCloud,confirmSave,keepPrevious,wr
  const revision=await writeCloud(snapshot,cloud?.revision||0);
  return {status:'saved',cloud:{payload:snapshot,revision,updated_at:new Date().toISOString()}};
 }
+
+function assertBackupScope(who,key,epoch,currentWho,currentKey,currentEpoch){if(!who||who!==currentWho||key!==currentKey||epoch!==currentEpoch)throw Error('账号已切换，请在当前账号重新操作。');}

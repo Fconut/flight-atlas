@@ -10,10 +10,10 @@ function downloadBackup(snapshot=localSnapshot()){
  const url=URL.createObjectURL(new Blob([JSON.stringify({format:'flight-atlas-backup',version:1,draft:snapshot},null,2)],{type:'application/json'}));
  const link=document.createElement('a');link.href=url;link.download='flight-atlas-backup-'+localDate()+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
 }
-async function applyBackup(snapshot){
+async function applyBackup(snapshot,guard=()=>{}){
  if(!validBackup(snapshot))throw Error('备份格式无效，本机记录未改动。');
- await draftWrites;const key=draftKey,epoch=draftEpoch,recovery=localSnapshot(),db=await draftDB;
- if(key!==draftKey||epoch!==draftEpoch)throw Error('账号已切换，请重新恢复备份。');
+ await draftWrites;guard();const key=draftKey,epoch=draftEpoch,recovery=localSnapshot(),db=await draftDB;
+ guard();if(key!==draftKey||epoch!==draftEpoch)throw Error('账号已切换，请重新恢复备份。');
  // Keep recovery and replacement in one transaction: either both succeed or neither does.
  await draftTransaction(db,'readwrite',store=>{store.put(recovery,key+':recovery');store.put(snapshot,key);});
  if(key!==draftKey||epoch!==draftEpoch)throw Error('账号已切换，备份已保存到原账号，请切回查看。');
@@ -21,6 +21,7 @@ async function applyBackup(snapshot){
  if(state.rows===null)await regenerate();
  for(const id of ['record-search','record-filter','record-year','record-aircraft'])$(id).value=id==='record-search'?'':'all';
  if(typeof renderRecords==='function')renderRecords();
+ if(typeof window!=='undefined')window.dispatchEvent(new Event('atlas:backup-restored'));
 }
 const backupBar=document.createElement('div');backupBar.className='backup-bar';
 backupBar.innerHTML='<section id="local-backup" class="backup-panel" aria-labelledby="backup-title" hidden><h3 id="backup-title">本地备份</h3><p>将航班、配色和标注保存为电脑上的文件，用于留存旧版本或额外备份。跨设备继续使用，请在账号中保存到云端。</p><div class="backup-actions"><button type="button" class="secondary-button" id="backup-download">导出备份文件</button><button type="button" class="secondary-button" id="backup-import">从文件恢复</button><button type="button" class="text-button" id="backup-recovery">找回替换前副本</button></div><input type="file" id="backup-file" accept=".json,application/json" hidden><span id="backup-message" role="status" aria-live="polite"></span></section>';
