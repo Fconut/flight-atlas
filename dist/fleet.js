@@ -32,3 +32,5 @@ const originalShowWorkspace=showWorkspace;showWorkspace=function(view){originalS
 fleetNav.onclick=()=>showWorkspace('fleet');window.addEventListener('atlas:rows',renderFleet);renderFleet();
 
 dismissOnBackdrop(fleetDialog);
+
+if(typeof renderRecords==='function')renderRecords();
