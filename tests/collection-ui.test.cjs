@@ -3,7 +3,7 @@ const {read,section}=require('./helpers/source.cjs');
 function element(tag='div'){return {tag,children:[],style:{},attributes:{},textContent:'',append(...items){this.children.push(...items)},replaceChildren(...items){this.children=items;this.rebuilds=(this.rebuilds||0)+1},setAttribute(k,v){this.attributes[k]=v}}}
 function fleetContext(rows=[]){
  const nodes=new Map(),get=id=>{if(!nodes.has(id))nodes.set(id,element());return nodes.get(id)};
- const c=vm.createContext({state:{rows},today:'2024-12-31',dateValue:x=>x,recordCanceled:r=>!!r.canceled,normalizeAirlineCode:x=>x||'',airportCode:x=>x,$:get,document:{createElement:element},fitFleetBadge:()=>{}});
+ const c=vm.createContext({state:{rows},recordNeedsCorrection:()=>false,editorReady:true,today:'2024-12-31',dateValue:x=>x,recordCanceled:r=>!!r.canceled,normalizeAirlineCode:x=>x||'',airportCode:x=>x,$:get,document:{createElement:element},fitFleetBadge:()=>{}});
  c.localDate=()=>c.today;
  vm.runInContext(read('dist/aircraft-catalog.js'),c);
  const fleet=read('dist/fleet.js');
@@ -58,4 +58,13 @@ test('switching account drafts clears prior import and operation messages',async
  vm.runInContext(section(read('dist/workspace.js'),'function resetDataFeedback','function showSetting')+section(read('dist/account.js'),'async function loadAccountDraft','async function onAccountSession'),c);
  await c.loadAccountDraft('user:new');for(const id of ['import-result','record-feedback','backup-message'])assert.equal(get(id).textContent,'');
  assert.equal(c.draftKey,'user:new');
+});
+
+test('collection refreshes after the airport database becomes available',()=>{
+ const {c,get}=fleetContext([{date:'2024-01-01',aircraft:'Airbus A320',airline:'MU',from:'SHA',to:'NRT'}]);
+ c.editorReady=false;c.editorAirports={};
+ vm.runInContext(read('dist/airlines.js')+section(read('dist/editor.js'),'function recordNeedsCorrection','function recordStatuses'),c);
+ c.renderFleet();assert.match(get('fleet-count').textContent,/已解锁 0/);
+ c.editorAirports={SHA:{},NRT:{}};c.editorReady=true;c.renderFleet();
+ assert.match(get('fleet-count').textContent,/已解锁 1/);
 });

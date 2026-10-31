@@ -75,5 +75,6 @@ function dismissOnBackdrop(dialog,canClose=()=>true,onClose=()=>dialog.close()){
  const outside=event=>{const box=dialog.getBoundingClientRect();return event.target===dialog&&(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom);};
  dialog.addEventListener('pointerdown',event=>{startedOutside=outside(event);});
  dialog.addEventListener('click',event=>{const dismiss=startedOutside&&outside(event);startedOutside=false;if(dismiss&&canClose())onClose();});
+ dialog.addEventListener('cancel',event=>{if(!canClose())event.preventDefault();});
  dialog.addEventListener('close',()=>{startedOutside=false;});
 }
