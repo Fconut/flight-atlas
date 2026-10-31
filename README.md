@@ -55,3 +55,7 @@ python -m http.server 8000 --directory dist
 仓库根目录的 `wrangler.json` 将 `dist/` 作为静态资源目录，并启用 Workers Previews。Cloudflare 构建根目录应为仓库根目录，无需构建命令；生产部署命令为 `npx wrangler deploy`，非生产分支预览命令为 `npx wrangler preview`。不需要新增 Worker 脚本或数据库绑定。
 
 预览域名的浏览器本地记录与正式域名隔离。测试时使用虚构航班；若测试账号登录，需要在 Supabase 添加预览回调地址。
+
+## 航班排序与起飞时间
+
+航班记录列表仍只显示日期，排序按日期、出发地当地起飞时间从新到旧；同一天未填写时间的记录放在有时间的记录之后。添加或编辑航班时可选填起飞时间。导入支持 `Departure Time`、`Scheduled Departure Time`、起飞时间、出发时间等列，也会保留日期单元格中的时分；Excel 导出包含 `Departure Time`。JSON 与云端备份自动保留时间。此前仅保存日期的记录需重新导入含时间的原文件或手动补填，系统不会猜测历史起飞时间。

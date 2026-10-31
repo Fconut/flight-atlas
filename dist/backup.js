@@ -1,7 +1,7 @@
 'use strict';
 // Portable backups contain application data only, never authentication sessions.
 function snapshotRows(draft){return draft.sheets.length?draft.sheets.flatMap(s=>s.rows):draft.rows||[];}
-function validBackupRow(row){return row&&typeof row==='object'&&!Array.isArray(row)&&['date','from','to','airline','flight','aircraft','_id'].every(k=>row[k]===undefined||row[k]===null||['string','number'].includes(typeof row[k]));}
+function validBackupRow(row){return row&&typeof row==='object'&&!Array.isArray(row)&&['date','departureTime','from','to','airline','flight','aircraft','_id'].every(k=>row[k]===undefined||row[k]===null||['string','number'].includes(typeof row[k]));}
 function validBackup(draft){
  if(!validSnapshot(draft)||!draft.sheets.every(sheet=>sheet.rows.every(validBackupRow))||!(draft.rows===null||draft.rows.every(validBackupRow))||!Number.isInteger(draft.activeSheet)||draft.activeSheet < -1||draft.activeSheet>=draft.sheets.length)return false;
  return (draft.labelSelection===null||Array.isArray(draft.labelSelection)&&draft.labelSelection.every(c=>typeof c==='string'&&/^[A-Z]{3}$/.test(c)))&&typeof draft.includeFuture==='boolean';
