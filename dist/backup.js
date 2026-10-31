@@ -17,7 +17,7 @@ async function applyBackup(snapshot,guard=()=>{}){
  // Keep recovery and replacement in one transaction: either both succeed or neither does.
  await draftTransaction(db,'readwrite',store=>{store.put(recovery,key+':recovery');store.put(snapshot,key);});
  if(key!==draftKey||epoch!==draftEpoch)throw Error('账号已切换，备份已保存到原账号，请切回查看。');
- draftTouched=false;state.rows=null;state.sheets=[];await restoreLocalDraft(true);
+ resetDataFeedback();draftTouched=false;state.rows=null;state.sheets=[];await restoreLocalDraft(true);
  if(state.rows===null)await regenerate();
  for(const id of ['record-search','record-filter','record-year','record-aircraft'])$(id).value=id==='record-search'?'':'all';
  if(typeof renderRecords==='function')renderRecords();

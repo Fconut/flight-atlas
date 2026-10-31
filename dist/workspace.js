@@ -8,6 +8,7 @@ heading.querySelector('.studio-export').append($('download'),$('export-note'));
 const tabs=document.createElement('div');tabs.className='settings-tabs';tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','地图设置');settings.prepend(tabs);
 const panels={data:[document.querySelector('.upload-panel'),[...settings.querySelectorAll('.panel')].find(p=>p.querySelector('#cutoff')),document.querySelector('.help')],colors:[document.querySelector('.colors-panel')],labels:[document.querySelector('.labels-panel')]};
 for(const [key,label] of [['data','航班数据'],['colors','图片配色'],['labels','航点标注']]){const button=document.createElement('button');button.type='button';button.id='tab-'+key;button.textContent=label;button.setAttribute('role','tab');button.setAttribute('aria-controls','settings-'+key);button.setAttribute('aria-selected',String(key==='data'));button.tabIndex=key==='data'?0:-1;button.dataset.setting=key;tabs.append(button);const panel=document.createElement('div');panel.id='settings-'+key;panel.className='settings-page';panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',button.id);panel.hidden=key!=='data';panel.append(...panels[key]);settings.append(panel);button.addEventListener('click',()=>showSetting(key));button.addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;e.preventDefault();const buttons=[...tabs.children],index=buttons.indexOf(button),next=e.key==='Home'?0:e.key==='End'?buttons.length-1:(index+(e.key==='ArrowRight'?1:-1)+buttons.length)%buttons.length;showSetting(buttons[next].dataset.setting);buttons[next].focus();});}
+function resetDataFeedback(){for(const id of ['import-result','record-feedback','backup-message']){const node=$(id);if(node)node.replaceChildren();}}
 function showSetting(key){for(const b of tabs.children){const active=b.dataset.setting===key;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;$('settings-'+b.dataset.setting).hidden=!active;}}
 
 const dataLink=document.createElement('button');dataLink.type='button';dataLink.className='manage-link';dataLink.textContent='查看与编辑全部航班 →';dataLink.addEventListener('click',()=>showWorkspace('records'));document.querySelector('.upload-panel').append(dataLink);
@@ -32,7 +33,7 @@ const updateDeleteAll=()=>{deleteAll.disabled=!(state.rows?.length||state.sheets
 deleteAll.addEventListener('click',async()=>{
  const count=state.sheets.length?state.sheets.reduce((n,s)=>n+s.rows.length,0):(state.rows?.length||0);
  if(!count||!confirm(`删除全部 ${count} 条航班记录？所有工作表中的航班都会删除，配色和标注设置会保留。`))return;
- state.rows=[];state.sheets=[];state.fileName='';$('file').value='';$('sheet').replaceChildren();$('sheet-wrap').hidden=true;$('file-info').textContent='';$('record-search').value='';$('record-filter').value='all';await regenerate();await draftWrites;updateDeleteAll();
+ resetDataFeedback();state.rows=[];state.sheets=[];state.fileName='';$('file').value='';$('sheet').replaceChildren();$('sheet-wrap').hidden=true;$('file-info').textContent='';$('record-search').value='';$('record-filter').value='all';await regenerate();await draftWrites;updateDeleteAll();
 });
 
 // Keep all import guidance beside the upload entry.

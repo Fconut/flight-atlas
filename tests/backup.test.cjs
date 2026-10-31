@@ -12,7 +12,7 @@ function harness() {
   draftWrites: Promise.resolve(), draftDB: Promise.resolve({}), draftKey: 'user:a', draftEpoch: 0,
   state: {rows: [{flight:'local'}], sheets: []}, localSnapshot: () => ({local: true}),
   draftTransaction: async (db, mode, operation) => operation({put: (value, key) => writes.push({value, key})}),
-  restoreLocalDraft: async () => {}, regenerate: async () => {}, $: () => ({value: ''})
+  resetDataFeedback: () => {}, restoreLocalDraft: async () => {}, regenerate: async () => {}, $: () => ({value: ''})
  });
  vm.runInContext(persistence.slice(persistence.indexOf('function validSnapshot'), persistence.indexOf('async function restoreLocalDraft')) + backup.slice(backup.indexOf('function snapshotRows'), backup.indexOf('const backupBar')), context);
  return {context, writes};
