@@ -121,3 +121,5 @@
 }
 
 .record-aircraft-content{display:flex;align-items:center;gap:8px}.record-aircraft-badge{width:48px;height:48px;object-fit:contain;flex:0 0 48px}.record-aircraft-content span{min-width:0}@media(max-width:720px){.record-aircraft-badge{width:40px;height:40px;flex-basis:40px}.record-aircraft-content{gap:6px}}
+
+.record-airline-content{display:flex;align-items:center;gap:8px}.record-airline-logo{display:block;width:64px;height:28px;object-fit:contain;flex:0 0 64px;background:#fff;border-radius:3px}.record-airline-content span{min-width:0}@media(max-width:720px){.record-airline-content{gap:6px}.record-airline-logo{width:48px;height:24px;flex-basis:48px}}
