@@ -28,12 +28,13 @@ test('collection does not rebuild for color or label changes but refreshes for r
  c.state.rows.push({date:'2025-01-01',aircraft:'Airbus A320'});c.renderFleet();assert.equal(box.rebuilds,2);assert.match(get('fleet-count').textContent,/已记录 0/);
  c.today='2025-01-01';c.renderFleet();assert.equal(box.rebuilds,3);assert.match(get('fleet-count').textContent,/已解锁 1/);
 });
-test('badge fitting scans pixels once for the same asset, including simultaneous image loads',()=>{
- let scans=0;const c=vm.createContext({document:{createElement:()=>({getContext:()=>({drawImage(){},getImageData(){scans++;return {data:new Uint8Array([0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255])}}})})}});
- vm.runInContext('const fleetBadgeFits=new Map();'+read('dist/fleet.js').slice(read('dist/fleet.js').indexOf('function fitFleetBadge')),c);
- const img=()=>({src:'badge.webp',naturalWidth:2,naturalHeight:2,style:{},addEventListener(event,handler){this.load=handler}});
- const a=img(),b=img();c.fitFleetBadge(a);c.fitFleetBadge(b);a.load();b.load();assert.equal(scans,1);assert.equal(a.style.transform,b.style.transform);
- const d=img();c.fitFleetBadge(d);assert.equal(d.style.transform,a.style.transform);assert.equal(scans,1);
+test('badge fitting uses prepared layouts immediately without pixel access or load listeners',()=>{
+ const c=vm.createContext({});vm.runInContext(read('dist/badge-layout.js'),c);
+ vm.runInContext(read('dist/fleet.js').slice(read('dist/fleet.js').indexOf('function fitFleetBadge')),c);
+ const a={src:'https://example.test/assets/aircraft-ribbon/a320.webp',style:{},addEventListener(){throw Error('Unexpected load listener')}};
+ c.fitFleetBadge(a);assert.match(a.style.transform,/translate.*scale/);
+ const b={src:'assets/aircraft-ribbon/a320.webp?v=2',style:{}};c.fitFleetBadge(b);assert.equal(b.style.transform,a.style.transform);
+ const unknown={src:'assets/aircraft-ribbon/future.webp',style:{}};c.fitFleetBadge(unknown);assert.equal(unknown.style.transform,'');
 });
 function cloudContext(accept){
  const nodes=new Map(),get=id=>{if(!nodes.has(id))nodes.set(id,{hidden:true});return nodes.get(id)};

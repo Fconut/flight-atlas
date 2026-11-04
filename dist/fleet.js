@@ -1,5 +1,4 @@
 'use strict';
-const fleetBadgeFits=new Map();
 let fleetRenderedKey=null;
 function aircraftBadge(name){
  const entry=resolveAircraft(name);
@@ -24,17 +23,6 @@ dismissOnBackdrop(fleetDialog);
 if(typeof renderRecords==='function')renderRecords();
 
 function fitFleetBadge(img){
- const key=img.src;if(fleetBadgeFits.has(key)){img.style.transform=fleetBadgeFits.get(key);return;}
- img.addEventListener('load',()=>{try{
-  if(fleetBadgeFits.has(key)){img.style.transform=fleetBadgeFits.get(key);return;}
-  const canvas=document.createElement('canvas');canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
-  const context=canvas.getContext('2d',{willReadFrequently:true});context.drawImage(img,0,0);
-  const pixels=context.getImageData(0,0,canvas.width,canvas.height).data;
-  let left=canvas.width,top=canvas.height,right=-1,bottom=-1;
-  for(let y=0;y<canvas.height;y++)for(let x=0;x<canvas.width;x++)if(pixels[(y*canvas.width+x)*4+3]>32){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}
-  if(right<left){fleetBadgeFits.set(key,'');return;}
-  const edge=Math.max(canvas.width,canvas.height),scale=.96*edge/Math.max(right-left+1,bottom-top+1);
-  img.style.transform='translate('+((canvas.width/2-(left+right+1)/2)/edge*scale*100)+'%, '+((canvas.height/2-(top+bottom+1)/2)/edge*scale*100)+'%) scale('+scale+')';
-  fleetBadgeFits.set(key,img.style.transform);
- }catch{/* Keep the original image if pixel inspection is unavailable. */}},{once:true});
+ const id=String(img.src||'').split('/').pop().split(/[?#]/)[0].replace(/\.webp$/i,'');
+ img.style.transform=fleetBadgeLayout[id]?.transform||'';
 }
