@@ -16,6 +16,16 @@ function parseFlightScreenshot(text){
  return rows.map(({_monthDay,...row})=>row);
 }
 function screenshotAirport(value){const clean=cleanScreenshotAirport(value),aliases={'深圳宝安':'SZX','深圳寶安':'SZX','上海浦东':'PVG','上海浦東':'PVG','上海虹桥':'SHA','上海虹橋':'SHA'};if(aliases[clean]&&editorAirports[aliases[clean]])return aliases[clean];const direct=resolveAirport(clean);if(direct)return direct;const matches=Object.keys(editorAirports).filter(code=>cleanScreenshotAirport(editorNames[code])===clean);return matches.length===1?matches[0]:clean;}
+function validateScreenshotFlight(row){
+ const value={...row,from:resolveAirport(screenshotAirport(row.from)),to:resolveAirport(screenshotAirport(row.to)),airline:normalizeAirlineCode(row.airline)},errors={};
+ if(!validDate(row.date))errors.date='请填写有效日期';
+ if(!value.airline)errors.airline='请填写航司代码';
+ if(!/^\d{1,4}$/.test(row.flight))errors.flight='请填写 1–4 位航班数字';
+ if(!value.from)errors.from=row.from?'未匹配到机场，请选择机场三字码':'请填写出发机场';
+ if(!value.to)errors.to=row.to?'未匹配到机场，请选择机场三字码':'请填写到达机场';
+ if(value.from&&value.to&&value.from===value.to)errors.to='到达机场不能与出发机场相同';
+ return {value,errors};
+}
 let screenshotLibrary;
 function loadScreenshotOCR(){if(window.Tesseract)return Promise.resolve(window.Tesseract);if(!screenshotLibrary)screenshotLibrary=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';script.onload=()=>resolve(window.Tesseract);script.onerror=()=>{script.remove();screenshotLibrary=null;reject(Error('识别组件加载失败，请检查网络后重试。'));};document.head.append(script);});return screenshotLibrary;}
 async function reviewScreenshot(file){
@@ -37,15 +47,17 @@ async function reviewScreenshot(file){
   message.textContent=rows.length?'请核对识别结果。缺失日期或机场须补齐；未显示的机型留空。取消勾选可跳过不完整行程。':'未找到航班，可核对下方识别文字，或换一张更清晰的截图。';
   for(const [i,row]of rows.entries()){
    row.from=screenshotAirport(row.from);row.to=screenshotAirport(row.to);
-   const section=document.createElement('fieldset');section.className='screenshot-row';const legend=document.createElement('legend'),selected=document.createElement('input');selected.type='checkbox';selected.checked=true;legend.append(selected,document.createTextNode(' 第 '+(i+1)+' 条航班'));section.append(legend);const inputs={};
-   for(const [key,label,type]of fields){const wrap=document.createElement('label');wrap.textContent=label;const input=document.createElement('input');input.type=type;input.value=row[key]||'';if(key==='from'||key==='to')input.setAttribute('list','airport-options');wrap.append(input);section.append(wrap);inputs[key]=input;}list.append(section);entries.push({selected,inputs});
+   const section=document.createElement('fieldset');section.className='screenshot-row';const legend=document.createElement('legend'),selected=document.createElement('input');selected.type='checkbox';selected.checked=true;legend.append(selected,document.createTextNode(' 第 '+(i+1)+' 条航班'));section.append(legend);const inputs={},errorNodes={};
+   for(const [key,label,type]of fields){const wrap=document.createElement('label');wrap.textContent=label;const input=document.createElement('input');input.type=type;input.value=row[key]||'';if(key==='from'||key==='to')input.setAttribute('list','airport-options');const note=document.createElement('small');note.className='screenshot-field-error';note.id='screenshot-error-'+i+'-'+key;input.setAttribute('aria-describedby',note.id);wrap.append(input,note);section.append(wrap);inputs[key]=input;errorNodes[key]=note;}list.append(section);const entry={selected,inputs,errorNodes};const validate=()=>{const row=Object.fromEntries(fields.map(([key])=>[key,inputs[key].value.trim()])),result=validateScreenshotFlight(row);for(const [key]of fields){const error=selected.checked?result.errors[key]||'':'';errorNodes[key].textContent=error;inputs[key].setAttribute('aria-invalid',String(!!error));}return result;};entry.validate=validate;for(const input of Object.values(inputs))input.addEventListener('input',validate);selected.addEventListener('change',validate);entries.push(entry);validate();
   }
   const details=document.createElement('details'),summary=document.createElement('summary'),raw=document.createElement('pre');summary.textContent='查看识别文字';raw.textContent=result.data.text;raw.style.cssText='white-space:pre-wrap;max-height:220px;overflow:auto';details.append(summary,raw);list.append(details);save.disabled=!rows.length;
   save.onclick=async()=>{
    if(scope!==null&&scope!==draftEpoch){message.textContent='账号或记录已切换，请关闭后重新上传。';save.disabled=true;return;}
-   const selected=entries.filter(e=>e.selected.checked).map(e=>Object.fromEntries(fields.map(([key])=>[key,e.inputs[key].value.trim()])));
-   if(!selected.length){message.textContent='请至少选择一条航班。';return;}
-   for(const row of selected){row.from=resolveAirport(screenshotAirport(row.from));row.to=resolveAirport(screenshotAirport(row.to));row.airline=normalizeAirlineCode(row.airline);if(!validDate(row.date)||!row.from||!row.to||row.from===row.to||!row.airline||!/^\d{1,4}$/.test(row.flight)){message.textContent='请补齐有效日期、航司、航班号和不同的起降机场。';return;}}
+   const chosen=entries.filter(e=>e.selected.checked);
+   if(!chosen.length){message.textContent='请至少选择一条航班。';return;}
+   const results=chosen.map(e=>e.validate()),bad=results.findIndex(r=>Object.keys(r.errors).length);
+   if(bad>=0){message.textContent='无法导入：请修改红字标出的字段，或取消勾选对应航班。';const key=Object.keys(results[bad].errors)[0];chosen[bad].inputs[key].focus();chosen[bad].inputs[key].scrollIntoView({block:'center',behavior:'smooth'});return;}
+   const selected=results.map(r=>r.value);
    save.disabled=true;
    const csv=d3.csvFormat(selected.map(r=>({Date:r.date,Airline:r.airline,Flight:r.flight,From:r.from,To:r.to,'Departure Time':r.departureTime,'Aircraft Type Name':r.aircraft})));
    await importFlightFile(new File([csv],file.name.replace(/\.[^.]+$/,'')+'-识别.csv',{type:'text/csv'}));dialog.close();
