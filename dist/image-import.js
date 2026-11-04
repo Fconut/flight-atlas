@@ -1,4 +1,5 @@
 'use strict';
+function cleanScreenshotAirport(value){return String(value||'').normalize('NFKC').replace(/^[\s,，.。+＋_\-\d]+/,'').replace(/\s*(?:T\s*\d+|航站楼).*$/i,'').replace(/\s+/g,'').replace(/(?:国际)?机场$/,'');}
 function parseFlightScreenshot(text){
  const lines=String(text).normalize('NFKC').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),rows=[];let pendingDate='',pendingYear='',active=null;
  for(const line of lines){
@@ -10,11 +11,11 @@ function parseFlightScreenshot(text){
   const flight=line.toUpperCase().match(/\b([A-Z][A-Z0-9]|[0-9][A-Z])\s*(\d{2,4})\b/);
   if(flight){active={_monthDay:pendingDate,date:pendingYear&&pendingDate?pendingYear+'-'+pendingDate:'',airline:flight[1],flight:flight[2],from:'',to:'',departureTime:'',aircraft:''};rows.push(active);pendingDate='';pendingYear='';}
   const time=line.match(/\b([0-2]?\d)\s*[:：]\s*([0-5]\d)/);
-  if(active&&time){const airport=line.slice(time.index+time[0].length).replace(/^\s*\+\s*\d+/,'').replace(/\s*T\s*\d+.*$/i,'').replace(/\s+/g,'').trim();if(!active.departureTime){active.departureTime=time[1].padStart(2,'0')+':'+time[2];active.from=airport;}else if(!active.to)active.to=airport;}
+  if(active&&time){const airport=cleanScreenshotAirport(line.slice(time.index+time[0].length));if(!active.departureTime){active.departureTime=time[1].padStart(2,'0')+':'+time[2];active.from=airport;}else if(!active.to)active.to=airport;}
  }
  return rows.map(({_monthDay,...row})=>row);
 }
-function screenshotAirport(value){const clean=String(value).replace(/\s+/g,'').replace(/机场$/,'');const direct=resolveAirport(clean);if(direct)return direct;const matches=Object.keys(editorAirports).filter(code=>String(editorNames[code]||'').replace(/机场$/,'')===clean);return matches.length===1?matches[0]:value;}
+function screenshotAirport(value){const clean=cleanScreenshotAirport(value),aliases={'深圳宝安':'SZX','深圳寶安':'SZX','上海浦东':'PVG','上海浦東':'PVG','上海虹桥':'SHA','上海虹橋':'SHA'};if(aliases[clean]&&editorAirports[aliases[clean]])return aliases[clean];const direct=resolveAirport(clean);if(direct)return direct;const matches=Object.keys(editorAirports).filter(code=>cleanScreenshotAirport(editorNames[code])===clean);return matches.length===1?matches[0]:clean;}
 let screenshotLibrary;
 function loadScreenshotOCR(){if(window.Tesseract)return Promise.resolve(window.Tesseract);if(!screenshotLibrary)screenshotLibrary=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';script.onload=()=>resolve(window.Tesseract);script.onerror=()=>{script.remove();screenshotLibrary=null;reject(Error('识别组件加载失败，请检查网络后重试。'));};document.head.append(script);});return screenshotLibrary;}
 async function reviewScreenshot(file){
@@ -44,7 +45,7 @@ async function reviewScreenshot(file){
    if(scope!==null&&scope!==draftEpoch){message.textContent='账号或记录已切换，请关闭后重新上传。';save.disabled=true;return;}
    const selected=entries.filter(e=>e.selected.checked).map(e=>Object.fromEntries(fields.map(([key])=>[key,e.inputs[key].value.trim()])));
    if(!selected.length){message.textContent='请至少选择一条航班。';return;}
-   for(const row of selected){row.from=resolveAirport(row.from);row.to=resolveAirport(row.to);row.airline=normalizeAirlineCode(row.airline);if(!validDate(row.date)||!row.from||!row.to||row.from===row.to||!row.airline||!/^\d{1,4}$/.test(row.flight)){message.textContent='请补齐有效日期、航司、航班号和不同的起降机场。';return;}}
+   for(const row of selected){row.from=resolveAirport(screenshotAirport(row.from));row.to=resolveAirport(screenshotAirport(row.to));row.airline=normalizeAirlineCode(row.airline);if(!validDate(row.date)||!row.from||!row.to||row.from===row.to||!row.airline||!/^\d{1,4}$/.test(row.flight)){message.textContent='请补齐有效日期、航司、航班号和不同的起降机场。';return;}}
    save.disabled=true;
    const csv=d3.csvFormat(selected.map(r=>({Date:r.date,Airline:r.airline,Flight:r.flight,From:r.from,To:r.to,'Departure Time':r.departureTime,'Aircraft Type Name':r.aircraft})));
    await importFlightFile(new File([csv],file.name.replace(/\.[^.]+$/,'')+'-识别.csv',{type:'text/csv'}));dialog.close();
