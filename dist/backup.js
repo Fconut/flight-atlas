@@ -19,7 +19,7 @@ async function applyBackup(snapshot,guard=()=>{}){
  if(key!==draftKey||epoch!==draftEpoch)throw Error('账号已切换，备份已保存到原账号，请切回查看。');
  resetDataFeedback();draftTouched=false;state.rows=null;state.sheets=[];await restoreLocalDraft(true);
  if(state.rows===null)await regenerate();
- for(const id of ['record-search','record-filter','record-year','record-aircraft','record-route'])$(id).value=id==='record-search'?'':'all';
+ for(const id of ['record-search','record-filter','record-year','record-aircraft','record-route','record-airline'])$(id).value=id==='record-search'?'':'all';
  if(typeof renderRecords==='function')renderRecords();
  if(typeof window!=='undefined')window.dispatchEvent(new Event('atlas:backup-restored'));
 }
