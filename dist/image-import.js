@@ -2,16 +2,17 @@
 function parseFlightScreenshot(text){
  const lines=String(text).normalize('NFKC').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),rows=[];let pendingDate='',pendingYear='',active=null;
  for(const line of lines){
-  const compact=line.replace(/\s+/g,''),full=compact.match(/\b(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})/),md=compact.match(/^(\d{1,2})[-/.月](\d{1,2})(?:日)?$/),year=compact.match(/^(20\d{2})年?$/);
+  const compact=line.replace(/\s+/g,'').replace(/[‐‑‒–—−]/g,'-'),full=compact.match(/\b(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})/),md=compact.match(/(?:^|[^\d])(\d{1,2})[-/.月](\d{1,2})(?:日)?(?!\d)/),year=compact.match(/(?:^|[^\d])(20\d{2})(?:年)?(?!\d)/);
   if(full){pendingYear=full[1];pendingDate=full[2].padStart(2,'0')+'-'+full[3].padStart(2,'0');}
   else if(md){pendingDate=md[1].padStart(2,'0')+'-'+md[2].padStart(2,'0');pendingYear='';}
   if(year)pendingYear=year[1];
+  if(year&&!pendingDate&&active&&!active.date&&!active.departureTime&&active._monthDay){active.date=pendingYear+'-'+active._monthDay;pendingYear='';}
   const flight=line.toUpperCase().match(/\b([A-Z][A-Z0-9]|[0-9][A-Z])\s*(\d{2,4})\b/);
-  if(flight){active={date:pendingYear&&pendingDate?pendingYear+'-'+pendingDate:'',airline:flight[1],flight:flight[2],from:'',to:'',departureTime:'',aircraft:''};rows.push(active);pendingDate='';pendingYear='';}
+  if(flight){active={_monthDay:pendingDate,date:pendingYear&&pendingDate?pendingYear+'-'+pendingDate:'',airline:flight[1],flight:flight[2],from:'',to:'',departureTime:'',aircraft:''};rows.push(active);pendingDate='';pendingYear='';}
   const time=line.match(/\b([0-2]?\d)\s*[:：]\s*([0-5]\d)/);
   if(active&&time){const airport=line.slice(time.index+time[0].length).replace(/^\s*\+\s*\d+/,'').replace(/\s*T\s*\d+.*$/i,'').replace(/\s+/g,'').trim();if(!active.departureTime){active.departureTime=time[1].padStart(2,'0')+':'+time[2];active.from=airport;}else if(!active.to)active.to=airport;}
  }
- return rows;
+ return rows.map(({_monthDay,...row})=>row);
 }
 function screenshotAirport(value){const clean=String(value).replace(/\s+/g,'').replace(/机场$/,'');const direct=resolveAirport(clean);if(direct)return direct;const matches=Object.keys(editorAirports).filter(code=>String(editorNames[code]||'').replace(/机场$/,'')===clean);return matches.length===1?matches[0]:value;}
 let screenshotLibrary;
