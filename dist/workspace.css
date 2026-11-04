@@ -118,7 +118,6 @@ input:focus-visible { outline: rgb(111, 152, 149) solid 2px; outline-offset: 3px
   .records-heading h2 { font-size: 18px; }
   .records-toolbar { padding: 8px; }
   .record-search input { font-size: 12px; padding: 10px; }
-  .record-filter { width: 114px; }
   .records-actions > button { font-size: 11px; min-height: 42px; }
   .footer { padding: 0px 18px 22px; font-size: 8px; gap: 6px; }
   .flight-fields input { font-size: 16px; }
@@ -146,7 +145,6 @@ input:focus-visible { outline: rgb(111, 152, 149) solid 2px; outline-offset: 3px
 }
 .import-result { font-size: 12px; color: rgb(68, 110, 112); line-height: 1.8; margin: 12px 0px; }
 .import-result:empty { display: none; }
-.records-toolbar { display: grid; grid-template-columns: minmax(190px, 1fr) 135px 125px 180px; }
 .record-filter { width: auto; min-width: 0px; }
 .record-pages { display: flex; align-items: center; gap: 5px; }
 .record-pages > span { padding: 0px 3px; color: rgb(138, 153, 158); }
@@ -154,20 +152,15 @@ input:focus-visible { outline: rgb(111, 152, 149) solid 2px; outline-offset: 3px
 .records-pagination > div { align-items: center; }
 .color-presets { gap: 10px; }
 .color-preset { min-height: 46px; }
-@media (max-width: 1000px) {
-  .records-toolbar { grid-template-columns: minmax(150px, 1fr) repeat(3, minmax(100px, 1fr)); }
-}
+
 @media (max-width: 720px) {
-  .records-toolbar { grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 8px; }
   .record-search { grid-column: 1 / -1; }
   .record-filter select { font-size: 11px; padding: 10px 5px; }
   .records-pagination { flex-wrap: wrap; gap: 12px; }
   .record-pages { gap: 4px; }
   .pager { width: 30px; }
 }
-@media (min-width: 1001px) {
-  .records-toolbar { grid-template-columns: minmax(190px, 1fr) 135px 180px 125px; }
-}
+
 .record-table { min-width: 820px; }
 .record-aircraft { max-width: 185px; overflow-wrap: anywhere; }
 .file-info:empty { display: none; }

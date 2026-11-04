@@ -9,7 +9,7 @@
 - 自选地图配色、已到访航点的文字标注
 - 机型收藏册：按信息有效的历史航班点亮机型徽章，未乘坐置灰；未匹配机型保留名称并显示“暂无徽章”
 - 最长与最短各两条不同航线，保留实际飞行方向
-- 高清 PNG 图片及 Excel 航班记录导出
+- 高清 PNG 图片导出，以及包含完整设置的 JSON 备份
 - IndexedDB 自动保存；游客与账号记录分开保存在当前浏览器；登录后可手动保存、恢复 Supabase 云端草稿
 
 ## 本地运行
@@ -34,7 +34,7 @@ python -m http.server 8000 --directory dist
 - `dist/persistence.js`：浏览器本地保存
 - `dist/account.js`、`cloud-backup-state.js`、`backup.js`：账号、云端与本地备份
 - `dist/fleet.js`、`fleet.css`、`aircraft-catalog.js`：机型收藏册、徽章资料与别名
-- `dist/workspace.js`、`workspace.css`：工作区布局
+- `dist/workspace.js`、`workspace.css`、`navigation-state.js`：工作区布局与标签页记忆
 - `dist/templates/portrait.html`：海报模板
 - `dist/data/`：机场、中文名称与世界地图
 - `dist/vendor/`：本地第三方库
@@ -49,7 +49,7 @@ python -m http.server 8000 --directory dist
 
 ## 数据保护
 
-在“我的账号 → 本地备份”中使用“导出备份文件”导出 JSON，包含航班、配色、标注和未来行程设置，不含登录凭据。Excel 用于航班表格交换，不作为完整备份。取消航班不纳入产品范围。
+在“我的账号 → 本地备份”中使用“导出备份文件”导出 JSON，包含航班、配色、标注和未来行程设置，不含登录凭据。CSV / Excel 用于导入航班，完整备份使用 JSON。取消航班不纳入产品范围。
 
 恢复 JSON 或云端记录前，先自动保留当前账号的一份本机副本；在“我的账号 → 本地备份”中点击“找回替换前副本”下载。每次替换更新这份副本，重要版本请另行下载。云端保存会先比较内容并确认替换；如果确认后另一台设备又更新了云端，本次保存会被拒绝，本机修改保留。核对最新数量与时间后，可重新保存本机或恢复云端；重要记录建议先另行导出本地备份。账号配置见 ACCOUNT_SETUP.md。
 
@@ -61,8 +61,14 @@ python -m http.server 8000 --directory dist
 
 ## 航班排序与起飞时间
 
-航班记录列表仍只显示日期；列表与收藏册航班详情的排序按日期、出发地当地起飞时间从新到旧；同一天未填写时间的记录放在有时间的记录之后。添加或编辑航班时可选填起飞时间。导入支持 `Departure Time`、`Scheduled Departure Time`、起飞时间、出发时间，以及 Flighty 的 `Gate Departure (Scheduled)`、`Take off (Scheduled)` 等列。优先读取明确的起飞时间和计划时间；为空时尝试实际时间，再读取日期单元格中的时分；Excel 导出包含 `Departure Time`。JSON 与云端备份自动保留时间。此前仅保存日期的记录需重新导入含时间的原文件或手动补填，系统不会猜测历史起飞时间。
+航班记录列表仍只显示日期；列表与收藏册航班详情的排序按日期、出发地当地起飞时间从新到旧；同一天未填写时间的记录放在有时间的记录之后。添加或编辑航班时可选填起飞时间。导入支持 `Departure Time`、`Scheduled Departure Time`、起飞时间、出发时间，以及 Flighty 的 `Gate Departure (Scheduled)`、`Take off (Scheduled)` 等列。优先读取明确的起飞时间和计划时间；为空时尝试实际时间，再读取日期单元格中的时分；JSON 与云端备份自动保留时间。此前仅保存日期的记录需重新导入含时间的原文件或手动补填，系统不会猜测历史起飞时间。
 
 ## 导入与编辑反馈
 
 航班记录保存与地图生成分别报告结果。导入或编辑后如有无效日期、未知机场等问题，记录会保留，提示“地图未生成”及原因，可在航班记录中继续修正。世界底图或海报模板加载失败不影响已加载机场数据库的航班编辑。
+
+## 航班记录筛选与检查
+
+航线按实际起飞方向筛选，往返分别计数；航线和航司选项按记录次数降序排列，可与状态、机型、年份共同筛选。航司代码旁显示本地 Logo，机型旁显示匹配徽章。刷新会恢复上次打开的主标签页。
+
+运行检查：`node --test tests/*.test.cjs`，详见 [测试说明](docs/testing.md)。GitHub 提交和 Pull Request 自动运行 Regression checks。
