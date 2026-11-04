@@ -32,7 +32,7 @@ test('invalid flights do not unlock collection badges or inflate missing-aircraf
 });
 test('late deletion completion cannot show feedback or undo in a replacement dataset',async()=>{
  const rows=[{_id:'one'},{_id:'two'}],feedback=[];let release,handler;
- const c=vm.createContext({state:{rows},row:rows[0],undoDeletion:null,remove:{addEventListener(event,callback){handler=callback}},regenerate:()=>new Promise(resolve=>release=resolve),recordFeedback:(...args)=>feedback.push(args)});
+ const c=vm.createContext({state:{rows},row:rows[0],date:{textContent:'2024-01-01'},sub:{textContent:'SHA → NRT'},confirm:()=>true,undoDeletion:null,remove:{addEventListener(event,callback){handler=callback}},regenerate:()=>new Promise(resolve=>release=resolve),recordFeedback:(...args)=>feedback.push(args)});
  vm.runInContext(section(read('dist/editor.js'),"remove.addEventListener('click',","actions.append(edit,remove)"),c);
  const pending=handler();assert.equal(rows.length,1);c.state.rows=[{_id:'other-account'}];release();await pending;assert.equal(feedback.length,0);
 });
