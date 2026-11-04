@@ -7,7 +7,7 @@ function fleetContext(rows=[]){
  c.localDate=()=>c.today;
  vm.runInContext(read('dist/aircraft-catalog.js'),c);
  const fleet=read('dist/fleet.js');
- vm.runInContext(section(fleet,'function aircraftBadge','const fleetPage')+section(fleet,'function fleetKey','function fleetDetail')+section(fleet,'function fleetMaker','const originalShowWorkspace'),c);
+ vm.runInContext(section(fleet,'function aircraftBadge','const fleetPage')+section(fleet,'function fleetKey','function fleetDetail')+section(fleet,'function fleetMaker','const updateVisibleFleet'),c);
  vm.runInContext('let fleetRenderedKey=null;',c);
  return {c,get};
 }
@@ -69,3 +69,4 @@ test('collection refreshes after the airport database becomes available',()=>{
  c.editorAirports={SHA:{},NRT:{}};c.editorReady=true;c.renderFleet();
  assert.match(get('fleet-count').textContent,/已解锁 1/);
 });
+
