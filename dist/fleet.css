@@ -48,3 +48,5 @@
 @media (prefers-reduced-motion: reduce) {
   .fleet-card { transition: none; }
 }
+
+.fleet-detail-summary{margin:0 0 16px;color:#71858b;font-size:13px;line-height:1.6}
