@@ -1,8 +1,8 @@
 'use strict';
 const AirportSearch=(()=>{
  const variants={'奧':'奥','陸':'陆','凱':'凯','維':'维','爾':'尔','蘭':'兰','樂':'乐','國':'国','際':'际','場':'场','機':'机','東':'东','橋':'桥','寶':'宝','灣':'湾','臺':'台','島':'岛','廣':'广','龍':'龙','門':'门','羅':'罗','馬':'马','倫':'伦','漢':'汉','長':'长','慶':'庆'};
- function clean(value){return String(value||'').normalize('NFKC').replace(/[奧陸凱維爾蘭樂國際場機東橋寶灣臺島廣龍門羅馬倫漢長慶]/g,c=>variants[c]).replace(/[“”‘’"'「」『』]/g,'').replace(/^[\s,，.。+＋_\-\d]+/,'').replace(/\s*(?:航站楼|TERMINAL\s*\w*|MAIN|T\s*\d+)\s*$/i,'').replace(/([\u3400-\u9fff])\s*[A-Z]$/i,'$1').trim();}
- function key(value){return clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/国际机场|国际|机场|international|airport|aerodrome/g,'').replace(/[\s·.,，。()（）'’\-_]/g,'');}
+ function clean(value){return String(value||'').normalize('NFKC').replace(/[\p{Cf}\uFFFD]/gu,'').replace(/^[\p{P}\p{S}\s]+|[\p{P}\p{S}\s]+$/gu,'').replace(/[奧陸凱維爾蘭樂國際場機東橋寶灣臺島廣龍門羅馬倫漢長慶]/g,c=>variants[c]).replace(/[“”‘’"'「」『』]/g,'').replace(/^[\s,，.。+＋_\-\d]+/,'').replace(/\s*(?:航站楼|TERMINAL\s*\w*|MAIN|T\s*\d+)\s*$/i,'').replace(/([\u3400-\u9fff])\s*[A-Z]$/i,'$1').trim();}
+ function key(value){return clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/国际机场|国际|机场|international|airport|aerodrome/g,'').replace(/[\p{P}\p{S}\s]/gu,'');}
  function distance(a,b,limit){if(Math.abs(a.length-b.length)>limit)return limit+1;let prev=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){let next=[i];for(let j=1;j<=b.length;j++)next[j]=Math.min(next[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));if(Math.min(...next)>limit)return limit+1;prev=next;}return prev[b.length];}
  function create(airports,names={},metadata={}){
   const entries=[],exact=new Map(),cities=new Map(),codes=new Map();
@@ -26,14 +26,15 @@ const AirportSearch=(()=>{
    if(q.length<2)return [];
    const hits=[];for(const e of entries){let best=Infinity,kind='partial';for(const t of [...e.terms,...e.cityTerms]){
     if(t.includes(q)){const score=30+(t.length-q.length)/100;if(score<best){best=score;kind='partial';}continue;}
-    if(q.length>=3&&t.length>=3){const max=q.length>=7?2:1,d=distance(q,t,max);if(d<=max&&40+d<best){best=40+d;kind='fuzzy';}}
+    if(q.includes(t)&&t.length>=2){const score=35+(q.length-t.length)/100;if(score<best){best=score;kind='partial';}}
+    if(q.length>=2&&t.length>=2){const max=q.length>=7?2:1,d=distance(q,t,max);if(d<=max&&40+d<best){best=40+d;kind='fuzzy';}}
    }if(Number.isFinite(best))hits.push({...e,score:best,kind});}
    return hits.sort((a,b)=>a.score-b.score||a.code.localeCompare(b.code)).slice(0,limit);
   }
   function resolve(value){const hits=query(value,2);return hits.length&&['code','exact'].includes(hits[0].kind)&&(!hits[1]||hits[1].score>hits[0].score)?hits[0].code:null;}
   return {query,resolve,entries};
  }
- function suggestions(input,container,getIndex,onSelect){function render(){container.replaceChildren();const index=getIndex();if(!index)return;const value=input.value.trim();if(index.query(value,1)[0]?.kind==='code')return;for(const item of index.query(value)){const button=document.createElement('button');button.type='button';button.className='airport-candidate';button.textContent=item.label+' '+item.code+(item.kind==='fuzzy'?' · 相近名称':item.kind==='city'?' · 城市候选':'');button.addEventListener('click',()=>{input.value=item.code;input.dispatchEvent(new Event('input',{bubbles:true}));onSelect?.(item);});container.append(button);}}input.addEventListener('input',render);input.addEventListener('focus',render);render();return render;}
+ function suggestions(input,container,getIndex,onSelect){function render(){container.replaceChildren();const index=getIndex();if(!index)return;const value=input.value.trim(),hits=index.query(value);if(hits[0]?.kind==='code')return;if(value&&!hits.length){const hint=document.createElement('span');hint.className='airport-search-empty';hint.textContent='暂无候选，可输入城市、机场名、IATA 或 ICAO 代码继续搜索';container.append(hint);}for(const item of hits){const button=document.createElement('button');button.type='button';button.className='airport-candidate';button.textContent=item.label+' '+item.code+(item.kind==='fuzzy'?' · 相近名称':item.kind==='city'?' · 城市候选':'');button.addEventListener('click',()=>{input.value=item.code;input.dispatchEvent(new Event('input',{bubbles:true}));onSelect?.(item);});container.append(button);}}input.addEventListener('input',render);input.addEventListener('focus',render);render();return render;}
  return {clean,key,create,suggestions};
 })();
 let airportSearchCache;
