@@ -22,7 +22,7 @@ function parseFlightScreenshot(text){
   const time=line.match(/\b([0-2]?\d)\s*[:：]\s*([0-5]\d)/);
   if(active&&time){const airport=cleanScreenshotAirport(line.slice(time.index+time[0].length));if(!active.departureTime){active.departureTime=time[1].padStart(2,'0')+':'+time[2];active.from=airport;active.rawFrom=line.slice(time.index+time[0].length).trim();}else if(!active.to){active.to=airport;active.rawTo=line.slice(time.index+time[0].length).trim();}}
  }
- return rows.map(({_monthDay,...row})=>row);
+ let lastDate='';return rows.map(({_monthDay,...row})=>{if(row.date)lastDate=row.date;else if(!_monthDay&&lastDate)row.date=lastDate;else if(_monthDay)lastDate='';return row;});
 }
 function screenshotAirport(value){return getAirportSearch().resolve(value)||cleanScreenshotAirport(value);}
 function screenshotAirportCandidates(value){return getAirportSearch().query(value).map(item=>item.code);}
