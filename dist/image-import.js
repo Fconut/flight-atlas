@@ -1,6 +1,15 @@
 'use strict';
-function cleanScreenshotAirport(value){return String(value||'').normalize('NFKC').replace(/[“”‘’"「」『』]/g,'').replace(/[奧陸凱維爾蘭黎樂]/g,c=>({'奧':'奥','陸':'陆','凱':'凯','維':'维','爾':'尔','蘭':'兰','黎':'黎','樂':'乐'}[c])).replace(/巴黎?戴高[乐樂]/g,'巴黎戴高乐').replace(/巴[黎藜]戴高[乐樂]/g,'巴黎戴高乐').replace(/^[\s,，.。+＋_\-\d]+/,'').replace(/\s*(?:T\s*\d+|航站楼).*$/i,'').replace(/([\u3400-\u9fff])[\s]*[A-Z]$/i,'$1').replace(/\s+/g,'').replace(/(?:MAIN|TERMINAL)$/i,'').replace(/(?:国际|國際)?机场$/,'').replace(/(?:国际|國際)$/,'');}
+function cleanScreenshotAirport(value){return AirportSearch.clean(value);}
+function parseScreenshotDetail(text){
+ const lines=String(text).normalize('NFKC').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),planIndex=lines.findIndex(l=>/计划/.test(l)&&/20\d{2}[-/.年]/.test(l));
+ if(planIndex<0)return null;
+ const top=lines.slice(0,planIndex+2).join('\n'),flight=top.toUpperCase().match(/(?:^|[^A-Z0-9])([A-Z][A-Z0-9]|[0-9][A-Z])\s*(\d{2,4})\b/),route=top.match(/([\u3400-\u9fff][\u3400-\u9fff \t·]{1,30}(?:[ \t]+[A-Z])?)\s*[-–—→]\s*([\u3400-\u9fff][\u3400-\u9fff \t·]{1,30}(?:[ \t]+[A-Z])?)/),date=lines[planIndex].match(/(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})/),time=lines[planIndex].match(/([0-2]\d)[:：]([0-5]\d)/);
+ if(!flight||!route||!date)return null;
+ const model=top.match(/(?:巴航|空客|波音|机型)\s*([A-Z][A-Z0-9 -]{1,15}(?:\([A-Z]+\))?)/i);
+ return {date:date[1]+'-'+date[2].padStart(2,'0')+'-'+date[3].padStart(2,'0'),airline:flight[1],flight:flight[2],from:cleanScreenshotAirport(route[1]),to:cleanScreenshotAirport(route[2]),rawFrom:route[1].trim(),rawTo:route[2].trim(),departureTime:time?time[1]+':'+time[2]:'',aircraft:model?model[1].trim():''};
+}
 function parseFlightScreenshot(text){
+ const detail=parseScreenshotDetail(text);if(detail)return [detail];
  const lines=String(text).normalize('NFKC').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),rows=[];let pendingDate='',pendingYear='',active=null;
  for(const line of lines){
   const compact=line.replace(/\s+/g,'').replace(/[‐‑‒–—−]/g,'-'),full=compact.match(/\b(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})/),md=compact.match(/(?:^|[^\d])(\d{1,2})[-/.月](\d{1,2})(?:日)?(?!\d)/),year=compact.match(/(?:^|[^\d])(20\d{2})(?:年)?(?!\d)/);
@@ -8,19 +17,15 @@ function parseFlightScreenshot(text){
   else if(md){pendingDate=md[1].padStart(2,'0')+'-'+md[2].padStart(2,'0');pendingYear='';}
   if(year)pendingYear=year[1];
   if(year&&!pendingDate&&active&&!active.date&&!active.departureTime&&active._monthDay){active.date=pendingYear+'-'+active._monthDay;pendingYear='';}
-  const flight=line.toUpperCase().match(/\b([A-Z][A-Z0-9]|[0-9][A-Z])\s*(\d{2,4})\b/);
+  const flight=line.toUpperCase().match(/(?:^|[^A-Z0-9])([A-Z][A-Z0-9]|[0-9][A-Z])\s*(\d{2,4})\b/);
   if(flight){active={_monthDay:pendingDate,date:pendingYear&&pendingDate?pendingYear+'-'+pendingDate:'',airline:flight[1],flight:flight[2],from:'',to:'',departureTime:'',aircraft:''};rows.push(active);pendingDate='';pendingYear='';}
   const time=line.match(/\b([0-2]?\d)\s*[:：]\s*([0-5]\d)/);
-  if(active&&time){const airport=cleanScreenshotAirport(line.slice(time.index+time[0].length));if(!active.departureTime){active.departureTime=time[1].padStart(2,'0')+':'+time[2];active.from=airport;}else if(!active.to)active.to=airport;}
+  if(active&&time){const airport=cleanScreenshotAirport(line.slice(time.index+time[0].length));if(!active.departureTime){active.departureTime=time[1].padStart(2,'0')+':'+time[2];active.from=airport;active.rawFrom=line.slice(time.index+time[0].length).trim();}else if(!active.to){active.to=airport;active.rawTo=line.slice(time.index+time[0].length).trim();}}
  }
  return rows.map(({_monthDay,...row})=>row);
 }
-function screenshotAirport(value){const clean=cleanScreenshotAirport(value),aliases={'雅典':'ATH','雅典埃莱夫塞里奥斯韦尼泽洛斯':'ATH','巴黎戴高乐':'CDG','巴黎戴高樂':'CDG','深圳宝安':'SZX','深圳寶安':'SZX','上海浦东':'PVG','上海浦東':'PVG','上海虹桥':'SHA','上海虹橋':'SHA'};if(aliases[clean]&&editorAirports[aliases[clean]])return aliases[clean];const direct=resolveAirport(clean);if(direct)return direct;const matches=Object.keys(editorAirports).filter(code=>cleanScreenshotAirport(editorNames[code])===clean);return matches.length===1?matches[0]:clean;}
-function screenshotAirportCandidates(value){
- const query=cleanScreenshotAirport(value).toLowerCase();if(query.length<2)return [];
- function near(a,b){if(a.length<3||b.length<3||Math.abs(a.length-b.length)>1)return false;let prev=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){const next=[i];for(let j=1;j<=b.length;j++)next[j]=Math.min(next[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));prev=next;}return prev[b.length]<=1;}
- return Object.keys(editorAirports).map(code=>{const names=[editorNames[code],editorAirports[code].city,editorAirports[code].name].filter(Boolean).map(v=>cleanScreenshotAirport(v).toLowerCase());const scores=names.map(n=>n===query?0:n.includes(query)?1:query.includes(n)&&n.length>=3?2:near(query,n)?3:99);return {code,score:Math.min(...scores)};}).filter(x=>x.score<99).sort((a,b)=>a.score-b.score||a.code.localeCompare(b.code)).slice(0,6).map(x=>x.code);
-}
+function screenshotAirport(value){return getAirportSearch().resolve(value)||cleanScreenshotAirport(value);}
+function screenshotAirportCandidates(value){return getAirportSearch().query(value).map(item=>item.code);}
 function validateScreenshotFlight(row){
  const value={...row,from:resolveAirport(screenshotAirport(row.from)),to:resolveAirport(screenshotAirport(row.to)),airline:normalizeAirlineCode(row.airline)},errors={};
  if(!validDate(row.date))errors.date='请填写有效日期';
@@ -53,7 +58,7 @@ async function reviewScreenshot(file){
   for(const [i,row]of rows.entries()){
    row.from=screenshotAirport(row.from);row.to=screenshotAirport(row.to);
    const section=document.createElement('fieldset');section.className='screenshot-row';const legend=document.createElement('legend'),selected=document.createElement('input');selected.type='checkbox';selected.checked=true;legend.append(selected,document.createTextNode(' 第 '+(i+1)+' 条航班'));section.append(legend);const inputs={},errorNodes={};
-   for(const [key,label,type]of fields){const wrap=document.createElement('label');wrap.textContent=label;const input=document.createElement('input');input.type=type;input.value=row[key]||'';if(key==='from'||key==='to')input.setAttribute('list','airport-options');const suggestions=document.createElement('span');suggestions.className='screenshot-airport-suggestions';if(key==='from'||key==='to'){const suggest=()=>{suggestions.replaceChildren();if(editorAirports[input.value.trim().toUpperCase()])return;const exact=screenshotAirport(input.value),candidates=[...new Set([...(editorAirports[exact]?[exact]:[]),...screenshotAirportCandidates(input.value)])];for(const code of candidates){const option=document.createElement('button');option.type='button';option.className='text-button';option.textContent=(editorNames[code]||editorAirports[code].city||code)+' '+code;option.addEventListener('click',()=>{input.value=code;input.dispatchEvent(new Event('input'));});suggestions.append(option);}};input.addEventListener('input',suggest);input.addEventListener('focus',suggest);suggest();}const note=document.createElement('small');note.className='screenshot-field-error';note.id='screenshot-error-'+i+'-'+key;input.setAttribute('aria-describedby',note.id);wrap.append(input,note,suggestions);section.append(wrap);inputs[key]=input;errorNodes[key]=note;}list.append(section);const entry={selected,inputs,errorNodes};const validate=()=>{const row=Object.fromEntries(fields.map(([key])=>[key,inputs[key].value.trim()])),result=validateScreenshotFlight(row);for(const [key]of fields){const error=selected.checked?result.errors[key]||'':'';errorNodes[key].textContent=error;inputs[key].setAttribute('aria-invalid',String(!!error));}return result;};entry.validate=validate;for(const input of Object.values(inputs))input.addEventListener('input',validate);selected.addEventListener('change',validate);entries.push(entry);validate();
+   for(const [key,label,type]of fields){const wrap=document.createElement('label');wrap.textContent=label;const input=document.createElement('input');input.type=type;input.value=row[key]||'';if(key==='from'||key==='to')input.setAttribute('list','airport-options');const suggestions=document.createElement('span');suggestions.className='airport-candidates';if(key==='from'||key==='to')AirportSearch.suggestions(input,suggestions,getAirportSearch);const note=document.createElement('small');note.className='screenshot-field-error';note.id='screenshot-error-'+i+'-'+key;input.setAttribute('aria-describedby',note.id);const original=document.createElement('small');original.className='screenshot-original';original.textContent=(key==='from'&&row.rawFrom?'原文：'+row.rawFrom:key==='to'&&row.rawTo?'原文：'+row.rawTo:'');wrap.append(input,original,note,suggestions);section.append(wrap);inputs[key]=input;errorNodes[key]=note;}list.append(section);const entry={selected,inputs,errorNodes};const validate=()=>{const row=Object.fromEntries(fields.map(([key])=>[key,inputs[key].value.trim()])),result=validateScreenshotFlight(row);for(const [key]of fields){const error=selected.checked?result.errors[key]||'':'';errorNodes[key].textContent=error;inputs[key].setAttribute('aria-invalid',String(!!error));}return result;};entry.validate=validate;for(const input of Object.values(inputs))input.addEventListener('input',validate);selected.addEventListener('change',validate);entries.push(entry);validate();
   }
   const details=document.createElement('details'),summary=document.createElement('summary'),raw=document.createElement('pre');summary.textContent='查看识别文字';raw.textContent=result.data.text;raw.style.cssText='white-space:pre-wrap;max-height:220px;overflow:auto';details.append(summary,raw);list.append(details);save.disabled=!rows.length;
   save.onclick=async()=>{

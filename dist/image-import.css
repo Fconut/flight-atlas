@@ -2,3 +2,5 @@
 .screenshot-field-error{color:#b42318;font-size:12px;line-height:1.5}.screenshot-field-error:empty{display:none}.screenshot-row input[aria-invalid="true"]{border-color:#b42318;background:#fff7f6}
 
 .screenshot-airport-suggestions{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}.screenshot-airport-suggestions:empty{display:none}.screenshot-airport-suggestions .text-button{border:1px solid #cddbd7;border-radius:6px;background:#eef5f2;color:#285b50;padding:6px 9px;font-size:12px;cursor:pointer;text-align:left}
+
+.airport-candidates{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.airport-candidates:empty{display:none}.airport-candidate{border:1px solid #cddbd7;border-radius:6px;background:#eef5f2;color:#285b50;padding:6px 9px;font-size:12px;cursor:pointer;text-align:left}.screenshot-original{font-size:11px;color:#7b8d92;overflow-wrap:anywhere}.screenshot-original:empty{display:none}
