@@ -9,3 +9,5 @@ test('candidate controls are visible initially and selecting one writes its code
 
 test('Unicode OCR punctuation and invisible characters cannot block exact names',()=>{for(const value of ['″迪拜国际','〝迪拜国际','＂迪拜国际','\u200b迪拜国际','“迪拜国际MAIN']){assert.equal(index.resolve(value),'DXB',value);assert.equal(index.query(value)[0].code,'DXB');}});
 test('extra OCR tokens and short misspellings return selectable candidates without auto matching',()=>{assert.ok(index.query('迪拜国际杂字').some(e=>e.code==='DXB'));assert.equal(index.resolve('迪拜国际杂字'),null);assert.ok(index.query('迪非').some(e=>e.code==='DXB'));assert.equal(index.resolve('迪非'),null);});
+
+test('repeated fuzzy searches reuse results and oversized input stays bounded',()=>{assert.equal(index.query('奥斯路'),index.query('奥斯路'));assert.equal(index.query('迪'.repeat(500)).length,0);});

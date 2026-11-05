@@ -12,10 +12,10 @@
 .screenshot-row{min-width:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:start;gap:16px 12px;border:1px solid #dee6dc;border-radius:12px;background:#fff;padding:16px 18px 20px;margin:0 0 20px}
 .screenshot-row>legend{padding:0 8px;margin-left:-8px}.screenshot-row>legend label{display:flex;flex-direction:row;align-items:center;gap:8px;font-size:12px;font-weight:500;color:#355750;background:#fff}
 .screenshot-row>legend input{width:15px;height:15px;padding:0;margin:0;accent-color:#315c51;cursor:pointer}
-.screenshot-row>label{display:flex;flex-direction:column;gap:7px;font-size:11px;color:#718681;min-width:0;grid-column:span 2}
-.screenshot-row>label[data-field=airline],.screenshot-row>label[data-field=flight]{grid-column:span 1}
-.screenshot-row>label[data-field=from],.screenshot-row>label[data-field=to]{grid-column:span 3}
-.screenshot-row>label[data-field=aircraft]{grid-column:span 6}
+.screenshot-row>.screenshot-field{display:flex;flex-direction:column;gap:7px;font-size:11px;color:#718681;min-width:0;grid-column:span 2}
+.screenshot-row>.screenshot-field[data-field=airline],.screenshot-row>.screenshot-field[data-field=flight]{grid-column:span 1}
+.screenshot-row>.screenshot-field[data-field=from],.screenshot-row>.screenshot-field[data-field=to]{grid-column:span 3}
+.screenshot-row>.screenshot-field[data-field=aircraft]{grid-column:span 6}
 .screenshot-row input{min-width:0;width:100%;box-sizing:border-box;padding:10px 11px;border:1px solid #dbe3da;border-radius:7px;background:#fbfcfa;color:#294951;font:inherit;font-size:13px;line-height:1.5}
 .screenshot-row input:focus{outline:2px solid #b7cbbd;outline-offset:1px;background:#fff}
 .screenshot-field-error{color:#b44b3c;font-size:11px;line-height:1.5}.screenshot-field-error:empty{display:none}
@@ -30,6 +30,4 @@
 .screenshot-actions button{width:auto;min-height:40px;border:1px solid #dce3d9;background:#fff;color:#617b70;padding:9px 18px;border-radius:7px;font-size:12px;cursor:pointer}
 .screenshot-actions button.primary{background:#254c43;border-color:#254c43;color:#fff;min-width:130px}.screenshot-actions button:disabled{opacity:.45;cursor:default}
 @media(max-width:799px){.screenshot-dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 24px);border-radius:14px}.screenshot-dialog>.dialog-heading{padding:18px 18px 14px}.screenshot-body{grid-template-columns:1fr;gap:18px;padding:18px}.screenshot-source{padding:12px}.screenshot-preview{max-height:220px}.screenshot-actions{padding:13px 18px}.screenshot-row{padding:14px 12px 16px;gap:13px 10px}.screenshot-dialog .dialog-heading h2{font-size:19px}}
-@media(max-width:450px){.screenshot-row{grid-template-columns:repeat(2,minmax(0,1fr))}.screenshot-row>label,.screenshot-row>label[data-field=airline],.screenshot-row>label[data-field=flight],.screenshot-row>label[data-field=from],.screenshot-row>label[data-field=to]{grid-column:span 1}.screenshot-row>label[data-field=date],.screenshot-row>label[data-field=aircraft]{grid-column:span 2}.screenshot-actions{gap:8px}.screenshot-actions button{padding:9px 12px}.screenshot-actions button.primary{min-width:115px}.screenshot-selection-count{max-width:90px;line-height:1.6}}
-
-.screenshot-row>label[data-field=date]{order:1}.screenshot-row>label[data-field=airline]{order:2}.screenshot-row>label[data-field=flight]{order:3}.screenshot-row>label[data-field=departureTime]{order:4}.screenshot-row>label[data-field=from]{order:5}.screenshot-row>label[data-field=to]{order:6}.screenshot-row>label[data-field=aircraft]{order:7}
+@media(max-width:450px){.screenshot-row{grid-template-columns:repeat(2,minmax(0,1fr))}.screenshot-row>.screenshot-field,.screenshot-row>.screenshot-field[data-field=airline],.screenshot-row>.screenshot-field[data-field=flight],.screenshot-row>.screenshot-field[data-field=from],.screenshot-row>.screenshot-field[data-field=to]{grid-column:span 1}.screenshot-row>.screenshot-field[data-field=date],.screenshot-row>.screenshot-field[data-field=aircraft]{grid-column:span 2}.screenshot-actions{gap:8px}.screenshot-actions button{padding:9px 12px}.screenshot-actions button.primary{min-width:115px}.screenshot-selection-count{max-width:90px;line-height:1.6}}

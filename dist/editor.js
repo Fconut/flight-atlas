@@ -14,13 +14,13 @@ document.querySelector('main').insertAdjacentHTML('beforeend',`
  <form id="flight-form"><div class="dialog-heading"><div><p class="eyebrow">ONE MORE JOURNEY</p><h2 id="flight-dialog-title">添加一班航班</h2></div><button type="button" class="dialog-close" id="flight-close" aria-label="关闭">×</button></div>
  <div id="history-wrap" class="history-wrap" hidden><label for="route-history">从已有航线快捷填入</label><select id="route-history"><option value="">选择你记录过的出发和到达机场</option></select></div>
  <div class="flight-fields"><label>航班日期 <span class="required-mark">*</span><input id="flight-date" type="date" required></label><label>起飞时间（出发地当地，可选）<input id="flight-time" type="time"></label><label>航司代码（IATA，两位）<input id="flight-airline" type="text" maxlength="3" pattern="[A-Za-z0-9]{2}" title="请输入 IATA 两位代码，例如 MU、CZ、CA、A3 或 9C" placeholder="如 MU、CZ、CA、9C" list="known-airlines" autocomplete="off"></label>
- <label class="airport-field">出发机场 <span class="required-mark">*</span><input id="flight-from" type="text" list="airport-options" placeholder="输入城市、机场名或三字码" autocomplete="off" required><span class="airport-selection" id="from-selection"></span></label>
- <label class="airport-field">到达机场 <span class="required-mark">*</span><input id="flight-to" type="text" list="airport-options" placeholder="输入城市、机场名或三字码" autocomplete="off" required><span class="airport-selection" id="to-selection"></span></label>
+ <label class="airport-field">出发机场 <span class="required-mark">*</span><input id="flight-from" type="text" placeholder="输入城市、机场名或三字码" autocomplete="off" required><span class="airport-selection" id="from-selection"></span></label>
+ <label class="airport-field">到达机场 <span class="required-mark">*</span><input id="flight-to" type="text" placeholder="输入城市、机场名或三字码" autocomplete="off" required><span class="airport-selection" id="to-selection"></span></label>
  <label>航班号<input id="flight-number" type="text" maxlength="24" placeholder="如 9192" autocomplete="off"></label><label>机型（可选）<input id="flight-aircraft" list="aircraft-options" type="text" maxlength="100" placeholder="如 Airbus A350-900" autocomplete="off"></label></div>
  <div class="flight-options"><button type="button" class="text-button" id="swap-airports">⇄ 交换出发与到达</button></div>
  <div class="database-note" id="airport-database-note">正在加载机场数据库…</div><div class="form-message" id="flight-message" role="alert"></div>
  <div class="dialog-actions"><button type="button" class="secondary-button" id="flight-cancel">取消</button><button type="submit" class="primary" id="flight-save">保存并更新地图</button></div>
- </form><datalist id="airport-options"></datalist><datalist id="known-airlines"></datalist>
+ </form><datalist id="known-airlines"></datalist>
 </dialog>`);
 
 let editorAirports={},editorNames={},editorReady=false,editingId=null,recordPage=0,lastDataset=null,undoDeletion=null,editorSaving=false;
@@ -71,7 +71,7 @@ for(const id of ['record-year','record-aircraft','record-route','record-airline'
 $('record-search').addEventListener('input',()=>{recordPage=0;renderRecords();});$('record-filter').addEventListener('change',()=>{recordPage=0;renderRecords();});$('record-prev').addEventListener('click',()=>{recordPage--;renderRecords();});$('record-next').addEventListener('click',()=>{recordPage++;renderRecords();});
 $('flight-airline').addEventListener('input',()=>{const input=$('flight-airline');input.value=normalizeAirlineCode(input.value);input.setCustomValidity('');});
 window.addEventListener('atlas:rows',renderRecords);
-Promise.all([airportDataReady,fetch('data/airport-zh.json?v=2').then(checkResponse).then(r=>r.json()).catch(()=>({}))]).then(([airports,names])=>{editorAirports=airports;editorNames=names;const fragment=document.createDocumentFragment();for(const [code,a] of Object.entries(airports).sort((a,b)=>a[0].localeCompare(b[0]))){const option=document.createElement('option');option.value=code;option.label=[names[code],a.city,a.name,code].filter(Boolean).join(' · ');fragment.append(option);}$('airport-options').append(fragment);editorReady=true;$('manual-start').disabled=false;$('add-record').disabled=false;$('airport-database-note').hidden=true;renderRecords();window.dispatchEvent(new CustomEvent('atlas:airports-ready'));}).catch(err=>{$('airport-database-note').hidden=false;$('airport-database-note').textContent='机场查询加载失败，请刷新页面后重试。';recordFeedback(err.message);});
+Promise.all([airportDataReady,fetch('data/airport-zh.json?v=2').then(checkResponse).then(r=>r.json()).catch(()=>({}))]).then(([airports,names])=>{editorAirports=airports;editorNames=names;editorReady=true;$('manual-start').disabled=false;$('add-record').disabled=false;$('airport-database-note').hidden=true;renderRecords();window.dispatchEvent(new CustomEvent('atlas:airports-ready'));}).catch(err=>{$('airport-database-note').hidden=false;$('airport-database-note').textContent='机场查询加载失败，请刷新页面后重试。';recordFeedback(err.message);});
 renderRecords();
 
 

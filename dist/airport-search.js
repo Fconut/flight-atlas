@@ -8,8 +8,8 @@ const AirportSearch=(()=>{
   const entries=[],exact=new Map(),cities=new Map(),codes=new Map();
   const add=(map,k,entry)=>{if(!k)return;if(!map.has(k))map.set(k,new Set());map.get(k).add(entry);};
   for(const [code,a]of Object.entries(airports)){const m=metadata[code]||{},city=m.cityZh||'',label=m.aliases?.[0]||names[code]||a.name||code;const entry={code,icao:m.icao||'',label,city:city||a.city||'',country:a.country||'',terms:[],cityTerms:[]};
-   for(const value of [a.name,names[code],...(m.aliases||[])]){const term=key(value);if(term){entry.terms.push(term);add(exact,term,entry);}}
-   for(const value of [city,a.city]){const term=key(value);if(term){entry.cityTerms.push(term);add(cities,term,entry);}}
+   for(const value of [a.name,names[code],...(m.aliases||[])]){const term=key(value);if(term){if(!entry.terms.includes(term))entry.terms.push(term);add(exact,term,entry);}}
+   for(const value of [city,a.city]){const term=key(value);if(term){if(!entry.cityTerms.includes(term))entry.cityTerms.push(term);add(cities,term,entry);}}
    // Old Chinese labels may be city abbreviations. Treat them as cities if shared.
    codes.set(code.toUpperCase(),entry);if(m.icao)codes.set(m.icao.toUpperCase(),entry);entries.push(entry);
   }
@@ -17,7 +17,7 @@ const AirportSearch=(()=>{
   for(const [english,zh]of translatedCities)for(const e of cityMembers.get(english)||[])add(cities,key(zh),e);
   // A city-only label must not silently win over other airports serving the city.
   for(const entry of entries){const label=key(names[entry.code]);if(entry.cityTerms.includes(label))add(cities,label,entry);}
-  function query(value,limit=6){
+  function search(value,limit){
    const text=clean(value),q=key(value),code=codes.get(text.toUpperCase());if(code)return [{...code,kind:'code',score:0}];if(!q)return [];
    const citySet=cities.get(q),nameSet=exact.get(q);
    if(citySet?.size>1){const all=new Set([...(citySet||[]),...(nameSet||[])]);return [...all].sort((a,b)=>a.code.localeCompare(b.code)).slice(0,limit).map(e=>({...e,kind:'city',score:20}));}
@@ -30,6 +30,14 @@ const AirportSearch=(()=>{
     if(q.length>=2&&t.length>=2){const max=q.length>=7?2:1,d=distance(q,t,max);if(d<=max&&40+d<best){best=40+d;kind='fuzzy';}}
    }if(Number.isFinite(best))hits.push({...e,score:best,kind});}
    return hits.sort((a,b)=>a.score-b.score||a.code.localeCompare(b.code)).slice(0,limit);
+  }
+  const queryCache=new Map();
+  function query(value,limit=6){
+   const text=String(value||'').trim(),count=Math.max(1,Math.min(20,Number(limit)||6)),cacheKey=text+'|'+count;
+   if(queryCache.has(cacheKey))return queryCache.get(cacheKey);
+   const hits=text.length>256?[]:search(text,count);
+   if(queryCache.size>=100)queryCache.delete(queryCache.keys().next().value);
+   queryCache.set(cacheKey,hits);return hits;
   }
   function resolve(value){const hits=query(value,2);return hits.length&&['code','exact'].includes(hits[0].kind)&&(!hits[1]||hits[1].score>hits[0].score)?hits[0].code:null;}
   return {query,resolve,entries};

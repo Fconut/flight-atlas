@@ -15,8 +15,10 @@ Normalize Unicode, common traditional character variants, quotes, next-day OCR p
 An index is cached by airport/name object reference. Rebuild only when those data sources change. Candidate UI uses textContent, not HTML.
 
 ## Screenshot contracts
-List screenshots associate date/year, flight number and successive time/airport lines. A missing date remains empty, rather than inheriting an earlier flight's date.
+List screenshots associate date/year, flight number and successive time/airport lines. An undated card inherits the preceding complete date in the same screenshot. A first cropped card stays incomplete; an explicit month/day without a year blocks inheritance until a complete date is available.
 Detail screenshots with a planned date and horizontal route form one flight from the header. Scheduled departure is used, not an arrival status timestamp; duplicate footer flight numbers are ignored. Aircraft text is retained as shown rather than guessed.
 
 ## Validation
 `tests/airport-search.test.cjs` exercises the real airport snapshot, aliases, ICAO codes, ambiguous cities, typo candidates, cached index and clickable candidate controls. `tests/image-import.test.cjs` covers representative list and detail OCR text plus missing-field feedback. These are text/logic tests; they do not assert that every screenshot pixel is read correctly by Tesseract.
+
+Query results are bounded to 100 cached searches per index. OCR workers are owned by one dialog and released idempotently on success, failure or cancellation. Field captions label only their own input; candidate buttons are sibling controls.
