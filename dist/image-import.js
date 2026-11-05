@@ -1,5 +1,5 @@
 'use strict';
-function cleanScreenshotAirport(value){return String(value||'').normalize('NFKC').replace(/[奧陸凱維爾蘭]/g,c=>({'奧':'奥','陸':'陆','凱':'凯','維':'维','爾':'尔','蘭':'兰'}[c])).replace(/^[\s,，.。+＋_\-\d]+/,'').replace(/\s*(?:T\s*\d+|航站楼).*$/i,'').replace(/([\u3400-\u9fff])[\s]*[A-Z]$/i,'$1').replace(/\s+/g,'').replace(/(?:国际)?机场$/,'');}
+function cleanScreenshotAirport(value){return String(value||'').normalize('NFKC').replace(/[“”‘’"「」『』]/g,'').replace(/[奧陸凱維爾蘭黎樂]/g,c=>({'奧':'奥','陸':'陆','凱':'凯','維':'维','爾':'尔','蘭':'兰','黎':'黎','樂':'乐'}[c])).replace(/巴黎?戴高[乐樂]/g,'巴黎戴高乐').replace(/巴[黎藜]戴高[乐樂]/g,'巴黎戴高乐').replace(/^[\s,，.。+＋_\-\d]+/,'').replace(/\s*(?:T\s*\d+|航站楼).*$/i,'').replace(/([\u3400-\u9fff])[\s]*[A-Z]$/i,'$1').replace(/\s+/g,'').replace(/(?:MAIN|TERMINAL)$/i,'').replace(/(?:国际|國際)?机场$/,'').replace(/(?:国际|國際)$/,'');}
 function parseFlightScreenshot(text){
  const lines=String(text).normalize('NFKC').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),rows=[];let pendingDate='',pendingYear='',active=null;
  for(const line of lines){
@@ -15,7 +15,7 @@ function parseFlightScreenshot(text){
  }
  return rows.map(({_monthDay,...row})=>row);
 }
-function screenshotAirport(value){const clean=cleanScreenshotAirport(value),aliases={'深圳宝安':'SZX','深圳寶安':'SZX','上海浦东':'PVG','上海浦東':'PVG','上海虹桥':'SHA','上海虹橋':'SHA'};if(aliases[clean]&&editorAirports[aliases[clean]])return aliases[clean];const direct=resolveAirport(clean);if(direct)return direct;const matches=Object.keys(editorAirports).filter(code=>cleanScreenshotAirport(editorNames[code])===clean);return matches.length===1?matches[0]:clean;}
+function screenshotAirport(value){const clean=cleanScreenshotAirport(value),aliases={'雅典':'ATH','雅典埃莱夫塞里奥斯韦尼泽洛斯':'ATH','巴黎戴高乐':'CDG','巴黎戴高樂':'CDG','深圳宝安':'SZX','深圳寶安':'SZX','上海浦东':'PVG','上海浦東':'PVG','上海虹桥':'SHA','上海虹橋':'SHA'};if(aliases[clean]&&editorAirports[aliases[clean]])return aliases[clean];const direct=resolveAirport(clean);if(direct)return direct;const matches=Object.keys(editorAirports).filter(code=>cleanScreenshotAirport(editorNames[code])===clean);return matches.length===1?matches[0]:clean;}
 function screenshotAirportCandidates(value){
  const query=cleanScreenshotAirport(value).toLowerCase();if(query.length<2)return [];
  function near(a,b){if(a.length<3||b.length<3||Math.abs(a.length-b.length)>1)return false;let prev=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){const next=[i];for(let j=1;j<=b.length;j++)next[j]=Math.min(next[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));prev=next;}return prev[b.length]<=1;}
