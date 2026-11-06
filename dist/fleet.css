@@ -46,18 +46,26 @@
   .fleet-card { transition: none; }
 }
 
-.fleet-detail-dialog{box-sizing:border-box;width:min(620px,calc(100vw - 32px));padding:0;border:1px solid #dfe6dc;border-radius:18px;background:#fbfcf9;max-height:calc(100dvh - 40px);overflow:auto;scrollbar-gutter:stable}
-.fleet-detail-dialog .dialog-heading{position:sticky;top:0;z-index:2;margin:0;padding:24px 26px 18px;background:#fbfcf9}
-.fleet-detail-dialog .dialog-heading h2{font-size:24px;line-height:1.3;letter-spacing:.5px;font-weight:500}
-.fleet-detail-dialog .dialog-close{display:grid;place-items:center;width:32px;height:32px;padding:0;border:1px solid #e1e8df;border-radius:50%;background:#f1f5ee;font-size:23px;flex-shrink:0}
-.fleet-detail-dialog .dialog-close:hover{background:#e7eee1;color:#35594e}
-.fleet-detail-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:0 26px 16px;padding:17px 0;border-top:1px solid #dfe7dc;border-bottom:1px solid #dfe7dc}
-.fleet-detail-summary>div{display:flex;align-items:baseline;gap:7px;padding:0 18px;border-left:1px solid #e2e9de}.fleet-detail-summary>div:first-child{padding-left:0;border:0}
-.fleet-detail-summary strong{font-size:26px;font-weight:500;line-height:1.2;color:#34584d;font-variant-numeric:tabular-nums}
-.fleet-detail-summary span{font-size:11px;color:#83958a;white-space:nowrap}
+.fleet-detail-dialog{box-sizing:border-box;width:min(680px,calc(100vw - 32px));max-height:calc(100dvh - 40px);padding:0;border:1px solid #e1e7df;border-radius:18px;background:#fff;overflow:auto;scrollbar-gutter:stable}
+.fleet-detail-dialog .dialog-heading{position:sticky;top:0;z-index:2;background:#fff;margin:0;padding:24px 26px 20px}
+.fleet-logbook-eyebrow{margin:0 0 8px;font-size:10px;letter-spacing:1.7px;color:#aa8c57}
+.fleet-detail-dialog .dialog-heading h2{font-size:25px;font-weight:600;line-height:1.3;margin:0;color:#24464e}
+.fleet-detail-dialog .dialog-close{width:38px;height:38px;display:grid;place-items:center;flex-shrink:0;border:0;border-radius:50%;background:#f0f4ee;color:#62807b;font-size:29px;padding:0}
+.fleet-detail-dialog .dialog-close:hover{background:#e5ede2}
+.fleet-detail-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:18px 0;margin:0 26px 24px;border:1px solid #e0e8db;border-radius:12px;background:#f1f5ee}
+.fleet-detail-summary>div{display:flex;flex-direction:column;align-items:center;gap:8px;border-left:1px solid #dae4d5}.fleet-detail-summary>div:first-child{border:0}
+.fleet-detail-summary strong{font-size:28px;font-weight:600;line-height:1.2;color:#2a5355;font-variant-numeric:tabular-nums}
+.fleet-detail-summary span{font-size:11px;color:#81998c;white-space:nowrap}
+.fleet-records-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:0 26px 4px}
+.fleet-records-heading h3{font-size:14px;font-weight:600;color:#3d6266;margin:0}.fleet-records-heading>span{font-size:11px;color:#92a398}
 #fleet-detail{padding:0 26px 18px}
-.fleet-leg{display:grid;grid-template-columns:88px minmax(0,1fr);grid-template-rows:auto auto;gap:6px 18px;align-items:start;padding:17px 0;border-bottom:1px solid #e6ebe2}
-.fleet-leg:last-child{border-bottom:0}.fleet-leg strong{grid-column:2;grid-row:1;font-size:14px;line-height:1.6;font-weight:500;color:#294d50;overflow-wrap:anywhere}
-.fleet-leg span{grid-column:2;grid-row:2;font-size:11px;line-height:1.6;color:#8a9b90;letter-spacing:.25px}
-.fleet-leg-date{grid-column:1;grid-row:1 / 3;padding-top:3px;font-size:11px;line-height:1.7;color:#8a9c90;white-space:nowrap;font-variant-numeric:tabular-nums}
-@media(max-width:480px){.fleet-detail-dialog{width:calc(100vw - 24px);border-radius:14px;max-height:calc(100dvh - 24px)}.fleet-detail-dialog .dialog-heading{padding:20px 18px 16px}.fleet-detail-dialog .dialog-heading h2{font-size:21px}.fleet-detail-summary{margin:0 18px 8px;padding:15px 0}.fleet-detail-summary>div{padding:0 10px;gap:5px;flex-wrap:wrap}.fleet-detail-summary strong{font-size:23px}.fleet-detail-summary span{font-size:10px}#fleet-detail{padding:0 18px 14px}.fleet-leg{grid-template-columns:73px minmax(0,1fr);column-gap:12px;padding:15px 0}.fleet-leg strong{font-size:13px}.fleet-leg span,.fleet-leg-date{font-size:10px}}
+.fleet-leg{padding:20px 0;border-bottom:1px solid #e3eade}.fleet-leg:last-child{border-bottom:0}
+.fleet-leg-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.fleet-leg-date{font-size:11px;color:#8b9e93;font-variant-numeric:tabular-nums;white-space:pre-wrap}
+.fleet-leg-airline{display:flex;align-items:center;justify-content:flex-end;gap:7px;flex-shrink:0;color:#4b6d72;font-size:12px;font-weight:600}
+.fleet-leg-airline img{display:block;width:56px;height:24px;object-fit:contain}
+.fleet-leg-route{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);gap:12px;align-items:center}
+.fleet-leg-airport{min-width:0}.fleet-leg-airport.to{text-align:right}.fleet-leg-airport strong{display:block;font-size:16px;font-weight:500;line-height:1.5;color:#2c5158;overflow-wrap:anywhere}
+.fleet-leg-airport>span{display:block;margin-top:5px;font-size:11px;letter-spacing:1px;color:#91a69b}
+.fleet-leg-arrow{text-align:center;color:#a1b4a5;font-size:24px}
+@media(max-width:480px){.fleet-detail-dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 24px);border-radius:14px}.fleet-detail-dialog .dialog-heading{padding:20px 18px 17px}.fleet-detail-dialog .dialog-heading h2{font-size:22px}.fleet-detail-summary{margin:0 18px 22px;padding:16px 0}.fleet-detail-summary strong{font-size:26px}.fleet-detail-summary span{font-size:10px}.fleet-records-heading{padding:0 18px 2px}#fleet-detail{padding:0 18px 14px}.fleet-leg{padding:18px 0}.fleet-leg-route{grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);gap:8px}.fleet-leg-airport strong{font-size:14px}.fleet-leg-date{font-size:10px}.fleet-leg-airline{font-size:11px}.fleet-leg-airline img{width:44px;height:20px}}
