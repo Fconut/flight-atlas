@@ -1,0 +1,448 @@
+{
+  "checkedAt": "2026-11-14",
+  "scope": "Expanded search for all 31 previous text fallbacks; candidate discovery only, runtime assets unchanged",
+  "summary": {
+    "searched": 31,
+    "candidates": 17,
+    "highResolution": 10,
+    "smallFavicon": 7,
+    "newAirlinePermissionsEstablished": 0
+  },
+  "entries": [
+    {
+      "code": "7C",
+      "name": "济州航空",
+      "officialWebsite": "https://www.jejuair.net",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://static.jejuair.net/hpgg/resources/images/icon/favicon.ico",
+        "referencePage": "https://www.jejuair.net/",
+        "width": 32,
+        "height": 32,
+        "vector": false,
+        "sha256": "521d02b7d7ff957d7d4927975688397c63c6d13ecd9fdd41e1125ee2ab4eeb39",
+        "quality": "small-favicon",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "9C",
+      "name": "春秋航空",
+      "officialWebsite": "https://www.ch.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://media.springairlines.com/cache/style/site5/img/favicon.ico",
+        "referencePage": "https://www.ch.com/",
+        "width": 16,
+        "height": 16,
+        "vector": false,
+        "sha256": "c8433f6d346f121fa53da02c83b7b50cf1af2212acebc4c0ad18a2693075663d",
+        "quality": "small-favicon",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "AE",
+      "name": "华信航空",
+      "officialWebsite": "https://www.mandarin-airlines.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.mandarin-airlines.com/favicon2.ico",
+        "referencePage": "https://www.mandarin-airlines.com/",
+        "width": 32,
+        "height": 32,
+        "vector": false,
+        "sha256": "b1dbc963468a618fea078ee4a0e596be1ab26d3f99ef1e6262588329647e093d",
+        "quality": "small-favicon",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "AK",
+      "name": "亚洲航空",
+      "officialWebsite": "https://www.airasia.com",
+      "officialResponse": 200,
+      "reviewResult": "not-adopted",
+      "notes": "官网当前 favicon 为 MOVE/M 标志，不能直接视为亚洲航空承运航司标志"
+    },
+    {
+      "code": "AS",
+      "name": "阿拉斯加航空",
+      "officialWebsite": "https://www.alaskaair.com",
+      "officialResponse": 406,
+      "reviewResult": "not-adopted",
+      "notes": "官方品牌下载许可限真实时事及新闻报道；本产品用途未获覆盖"
+    },
+    {
+      "code": "B6",
+      "name": "捷蓝航空",
+      "officialWebsite": "https://www.jetblue.com",
+      "officialResponse": 500,
+      "reviewResult": "not-adopted",
+      "notes": "本次官网请求返回 500，未获得可确认的不含名称图形"
+    },
+    {
+      "code": "EK",
+      "name": "阿联酋航空",
+      "officialWebsite": "https://www.emirates.com",
+      "officialResponse": 403,
+      "reviewResult": "not-adopted",
+      "notes": "已检查的图形仍为阿拉伯文航司名称"
+    },
+    {
+      "code": "EU",
+      "name": "成都航空",
+      "officialWebsite": "https://www.cdal.com.cn",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.cdal.com.cn/stdair/airline/eu/images/favicon.png",
+        "referencePage": "https://www.cdal.com.cn/stdair/homepage",
+        "width": 128,
+        "height": 128,
+        "vector": false,
+        "sha256": "db06bc18d146f24bd7d60838a42b4cd1ffc5e3006cad71ce3ddd2a9e222942bf",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "EY",
+      "name": "阿提哈德航空",
+      "officialWebsite": "https://www.etihad.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.etihad.com/content/dam/eag/etihadairways/etihadcom/Global/fav-icon/favicon.png?v=6",
+        "referencePage": "https://www.etihad.com/zh-cn/",
+        "width": 96,
+        "height": 96,
+        "vector": false,
+        "sha256": "0a5b052aa8b6a74f187cbf0b7e12e5b6a5084cfc7a3db2890330bb2eeaa48977",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "FM",
+      "name": "上海航空",
+      "officialWebsite": "https://www.shanghai-air.com",
+      "officialResponse": "fetch failed",
+      "reviewResult": "not-adopted",
+      "notes": "第三方商业图库有独立图形，但免费使用限非商业并要求署名，未采用"
+    },
+    {
+      "code": "FZ",
+      "name": "迪拜航空",
+      "officialWebsite": "https://www.flydubai.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.flydubai.com/favicon-32x32.png",
+        "referencePage": "https://www.flydubai.com/en-cn/",
+        "width": 32,
+        "height": 32,
+        "vector": false,
+        "sha256": "75de56d9cbc7daf4fec9a14cc9122c4a4c7961e6248037b512e774dfa26f426a",
+        "quality": "small-favicon",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "GF",
+      "name": "海湾航空",
+      "officialWebsite": "https://www.gulfair.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.gulfair.com/apple-touch-icon.png",
+        "referencePage": "https://www.gulfair.com/",
+        "width": 180,
+        "height": 180,
+        "vector": false,
+        "sha256": "f6c7d13345174e62c96c48b32a67ad8de0266064c4af5739553a5e9b91d09a05",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "GJ",
+      "name": "长龙航空",
+      "officialWebsite": "https://www.loongair.cn",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.loongair.cn/static/favicon.ico",
+        "referencePage": "https://www.loongair.cn/",
+        "width": 32,
+        "height": 32,
+        "vector": false,
+        "sha256": "1a0e7722b3e51a3c30e66d9399e85b7b12c13c5fa02dddfa10490e5e33496f37",
+        "quality": "small-favicon",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "GS",
+      "name": "天津航空",
+      "officialWebsite": "https://www.tianjin-air.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.tianjin-air.com/dotCms/images/logo/Favicon.ico?language_id=1",
+        "referencePage": "https://www.tianjin-air.com/",
+        "width": 64,
+        "height": 64,
+        "vector": false,
+        "sha256": "f1e016103e10f25726f28fd3ae0bfeaddaae3e4ae8525cd53c8f380da5a94308",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "GY",
+      "name": "多彩贵州航空",
+      "officialWebsite": "https://www.colorfulair.cn",
+      "officialResponse": "fetch failed",
+      "reviewResult": "not-adopted",
+      "notes": "本次未获得可验证的官网独立图形，未使用相似名称企业的图标"
+    },
+    {
+      "code": "HX",
+      "name": "香港航空",
+      "officialWebsite": "https://www.hongkongairlines.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.hongkongairlines.com/portal/hka_logo.png",
+        "referencePage": "https://www.hongkongairlines.com/portal/en_HK/homepage",
+        "width": 300,
+        "height": 300,
+        "vector": false,
+        "sha256": "dc364fcc4da47e96a6e119d029ff84bb90090e4d9813c77297a214da797b9114",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "JD",
+      "name": "首都航空",
+      "officialWebsite": "https://www.jdair.net",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.jdair.net/favicon.ico",
+        "referencePage": "https://www.jdair.net/",
+        "width": 16,
+        "height": 16,
+        "vector": false,
+        "sha256": "95799269dd8e226298ddc11003ca37f3c899b6c3a90672550aad87b2359abdcc",
+        "quality": "small-favicon",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "KL",
+      "name": "荷兰皇家航空",
+      "officialWebsite": "https://www.klm.com",
+      "officialResponse": 200,
+      "reviewResult": "not-adopted",
+      "notes": "官网图标仍含 KLM；未裁切皇冠，未确认独立皇冠使用条件"
+    },
+    {
+      "code": "KN",
+      "name": "中国联合航空",
+      "officialWebsite": "https://www.flycua.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.flycua.com/favicon.ico",
+        "referencePage": "https://www.flycua.com/",
+        "width": 32,
+        "height": 32,
+        "vector": false,
+        "sha256": "86ce19aec3eb84453cee73965f91c9512a1d5a12f9a53cec5a7b41f474648119",
+        "quality": "small-favicon",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "MM",
+      "name": "乐桃航空",
+      "officialWebsite": "https://www.flypeach.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www2.fly-peach.cn/application/files/1017/8003/3608/251219_peach_app_icon.png",
+        "referencePage": "https://www2.fly-peach.cn/cn",
+        "width": 800,
+        "height": 800,
+        "vector": false,
+        "sha256": "40f5754c02512ff978efec4ca12142a0f67d7581464c1abfaa039bf647c46126",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "NH",
+      "name": "全日空",
+      "officialWebsite": "https://www.ana.co.jp",
+      "officialResponse": 200,
+      "reviewResult": "not-adopted",
+      "notes": "官网图标仍含 ANA"
+    },
+    {
+      "code": "NU",
+      "name": "日本越洋航空",
+      "officialWebsite": "https://jta-okinawa.com",
+      "officialResponse": 200,
+      "reviewResult": "not-adopted",
+      "notes": "官网图标仍含 JAL 或 JTA；未用集团名称图标冒充无名称版本"
+    },
+    {
+      "code": "OA",
+      "name": "奥林匹克航空",
+      "officialWebsite": "https://www.olympicair.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.olympicair.com/Media/OlympicAir/android-icon-192x192.png",
+        "referencePage": "https://www.olympicair.com/",
+        "width": 192,
+        "height": 192,
+        "vector": false,
+        "sha256": "c606a0849b7bd385adfd99901684e21104afb277cff6097ac90428e4d260ea7d",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "QF",
+      "name": "澳洲航空",
+      "officialWebsite": "https://www.qantas.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/qantas/icon-mono.svg",
+        "referencePage": "https://www.qantas.com/en-au/about-us/logos",
+        "width": 128,
+        "height": 128,
+        "vector": true,
+        "sha256": "7f1e65507af3b2571c0ce077cb8a37c901e0e7b33b84c562dc4f8733dbbe299a",
+        "quality": "high-resolution",
+        "license": "Repository MIT; airline-specific authorization not established",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "QW",
+      "name": "青岛航空",
+      "officialWebsite": "https://www.qdairlines.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.qdairlines.com/favicon.ico",
+        "referencePage": "https://www.qdairlines.com/",
+        "width": 64,
+        "height": 64,
+        "vector": false,
+        "sha256": "482d8b35929512b4268768964aed93c08f88e0461bf3e09df48212d685872cb4",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "SK",
+      "name": "北欧航空",
+      "officialWebsite": "https://www.flysas.com",
+      "officialResponse": 403,
+      "reviewResult": "not-adopted",
+      "notes": "仍以 SAS 字标为主，未得到不含名称的合适图形"
+    },
+    {
+      "code": "SM",
+      "name": "开罗航空",
+      "officialWebsite": "https://www.aircairo.com",
+      "officialResponse": 403,
+      "reviewResult": "not-adopted",
+      "notes": "第三方商业图库有独立图形，但免费使用范围有限，未采用"
+    },
+    {
+      "code": "TP",
+      "name": "葡萄牙航空",
+      "officialWebsite": "https://www.flytap.com",
+      "officialResponse": 200,
+      "reviewResult": "not-adopted",
+      "notes": "官网 SVG、PNG、ICO 均仍含 TAP 字标"
+    },
+    {
+      "code": "VJ",
+      "name": "越捷航空",
+      "officialWebsite": "https://www.vietjetair.com",
+      "officialResponse": 200,
+      "reviewResult": "candidate-found",
+      "notes": "Visible symbol has no complete airline name; retained for review, not deployed",
+      "candidate": {
+        "source": "https://www.vietjetair.com.cn/logo192.png",
+        "referencePage": "https://www.vietjetair.com.cn/",
+        "width": 192,
+        "height": 192,
+        "vector": false,
+        "sha256": "d698b71c2edd039f6101e04e4e3acfd99c28c061a9f0ecfe85d5919474860c05",
+        "quality": "high-resolution",
+        "license": "Official website asset; no public reuse license identified",
+        "airlineAuthorization": "not established"
+      }
+    },
+    {
+      "code": "WF",
+      "name": "维德罗航空",
+      "officialWebsite": "https://www.wideroe.no",
+      "officialResponse": 403,
+      "reviewResult": "not-adopted",
+      "notes": "官方品牌手册提供组合标志并要求保持元素；未裁切或借用 Wideroe Zero 子品牌图标"
+    },
+    {
+      "code": "ZE",
+      "name": "易斯达航空",
+      "officialWebsite": "https://www.eastarjet.com",
+      "officialResponse": 403,
+      "reviewResult": "not-adopted",
+      "notes": "官网返回 403，其他公开 CI 资料仍以 EASTAR JET 字标为主"
+    }
+  ]
+}

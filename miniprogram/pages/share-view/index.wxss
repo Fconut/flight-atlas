@@ -1,0 +1,2 @@
+@import "../share-compose/index.wxss";
+.make-mine{margin-top:24rpx;width:100%}

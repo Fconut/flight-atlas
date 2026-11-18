@@ -1,0 +1,285 @@
+{
+  "version": 3,
+  "rewards": [
+    {
+      "id": "palette:deep-sea-002",
+      "type": "palette",
+      "itemId": "deep-sea-002"
+    },
+    {
+      "id": "palette:sea-salt-003",
+      "type": "palette",
+      "itemId": "sea-salt-003"
+    },
+    {
+      "id": "palette:dunes-002",
+      "type": "palette",
+      "itemId": "dunes-002"
+    },
+    {
+      "id": "palette:forest-002",
+      "type": "palette",
+      "itemId": "forest-002"
+    },
+    {
+      "id": "palette:dusk-002",
+      "type": "palette",
+      "itemId": "dusk-002"
+    },
+    {
+      "id": "palette:paper-005",
+      "type": "palette",
+      "itemId": "paper-005"
+    },
+    {
+      "id": "palette:mineral-001",
+      "type": "palette",
+      "itemId": "mineral-001"
+    },
+    {
+      "id": "palette:city-002",
+      "type": "palette",
+      "itemId": "city-002"
+    },
+    {
+      "id": "palette:polar-002",
+      "type": "palette",
+      "itemId": "polar-002"
+    },
+    {
+      "id": "palette:wine-005",
+      "type": "palette",
+      "itemId": "wine-005"
+    },
+    {
+      "id": "palette:city-001",
+      "type": "palette",
+      "itemId": "city-001"
+    },
+    {
+      "id": "palette:mineral-003",
+      "type": "palette",
+      "itemId": "mineral-003"
+    },
+    {
+      "id": "palette:paper-002",
+      "type": "palette",
+      "itemId": "paper-002"
+    },
+    {
+      "id": "palette:deep-sea-005",
+      "type": "palette",
+      "itemId": "deep-sea-005"
+    },
+    {
+      "id": "palette:sea-salt-002",
+      "type": "palette",
+      "itemId": "sea-salt-002"
+    },
+    {
+      "id": "palette:polar-001",
+      "type": "palette",
+      "itemId": "polar-001"
+    },
+    {
+      "id": "palette:dunes-005",
+      "type": "palette",
+      "itemId": "dunes-005"
+    },
+    {
+      "id": "palette:forest-006",
+      "type": "palette",
+      "itemId": "forest-006"
+    },
+    {
+      "id": "palette:wine-001",
+      "type": "palette",
+      "itemId": "wine-001"
+    },
+    {
+      "id": "palette:dusk-004",
+      "type": "palette",
+      "itemId": "dusk-004"
+    },
+    {
+      "id": "palette:paper-004",
+      "type": "palette",
+      "itemId": "paper-004"
+    },
+    {
+      "id": "palette:polar-006",
+      "type": "palette",
+      "itemId": "polar-006"
+    },
+    {
+      "id": "palette:sea-salt-006",
+      "type": "palette",
+      "itemId": "sea-salt-006"
+    },
+    {
+      "id": "palette:mineral-005",
+      "type": "palette",
+      "itemId": "mineral-005"
+    },
+    {
+      "id": "palette:city-005",
+      "type": "palette",
+      "itemId": "city-005"
+    },
+    {
+      "id": "palette:dusk-001",
+      "type": "palette",
+      "itemId": "dusk-001"
+    },
+    {
+      "id": "palette:dunes-001",
+      "type": "palette",
+      "itemId": "dunes-001"
+    },
+    {
+      "id": "palette:deep-sea-004",
+      "type": "palette",
+      "itemId": "deep-sea-004"
+    },
+    {
+      "id": "palette:wine-006",
+      "type": "palette",
+      "itemId": "wine-006"
+    },
+    {
+      "id": "palette:forest-005",
+      "type": "palette",
+      "itemId": "forest-005"
+    },
+    {
+      "id": "palette:paper-003",
+      "type": "palette",
+      "itemId": "paper-003"
+    },
+    {
+      "id": "palette:mineral-002",
+      "type": "palette",
+      "itemId": "mineral-002"
+    },
+    {
+      "id": "palette:sea-salt-004",
+      "type": "palette",
+      "itemId": "sea-salt-004"
+    },
+    {
+      "id": "palette:polar-004",
+      "type": "palette",
+      "itemId": "polar-004"
+    },
+    {
+      "id": "palette:dunes-004",
+      "type": "palette",
+      "itemId": "dunes-004"
+    },
+    {
+      "id": "palette:wine-003",
+      "type": "palette",
+      "itemId": "wine-003"
+    },
+    {
+      "id": "palette:city-003",
+      "type": "palette",
+      "itemId": "city-003"
+    },
+    {
+      "id": "palette:deep-sea-007",
+      "type": "palette",
+      "itemId": "deep-sea-007"
+    },
+    {
+      "id": "palette:forest-007",
+      "type": "palette",
+      "itemId": "forest-007"
+    },
+    {
+      "id": "palette:dusk-006",
+      "type": "palette",
+      "itemId": "dusk-006"
+    },
+    {
+      "id": "palette:paper-006",
+      "type": "palette",
+      "itemId": "paper-006"
+    },
+    {
+      "id": "palette:dusk-005",
+      "type": "palette",
+      "itemId": "dusk-005"
+    },
+    {
+      "id": "palette:sea-salt-005",
+      "type": "palette",
+      "itemId": "sea-salt-005"
+    },
+    {
+      "id": "palette:wine-004",
+      "type": "palette",
+      "itemId": "wine-004"
+    },
+    {
+      "id": "palette:city-004",
+      "type": "palette",
+      "itemId": "city-004"
+    },
+    {
+      "id": "palette:forest-003",
+      "type": "palette",
+      "itemId": "forest-003"
+    },
+    {
+      "id": "palette:dunes-003",
+      "type": "palette",
+      "itemId": "dunes-003"
+    },
+    {
+      "id": "palette:deep-sea-006",
+      "type": "palette",
+      "itemId": "deep-sea-006"
+    },
+    {
+      "id": "palette:mineral-004",
+      "type": "palette",
+      "itemId": "mineral-004"
+    },
+    {
+      "id": "palette:polar-005",
+      "type": "palette",
+      "itemId": "polar-005"
+    },
+    {
+      "id": "palette:wine-002",
+      "type": "palette",
+      "itemId": "wine-002"
+    },
+    {
+      "id": "palette:polar-003",
+      "type": "palette",
+      "itemId": "polar-003"
+    },
+    {
+      "id": "palette:dusk-003",
+      "type": "palette",
+      "itemId": "dusk-003"
+    },
+    {
+      "id": "palette:forest-004",
+      "type": "palette",
+      "itemId": "forest-004"
+    },
+    {
+      "id": "palette:deep-sea-003",
+      "type": "palette",
+      "itemId": "deep-sea-003"
+    },
+    {
+      "id": "palette:mineral-006",
+      "type": "palette",
+      "itemId": "mineral-006"
+    }
+  ]
+}

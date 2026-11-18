@@ -1,0 +1,1 @@
+<image class="preview" src="{{src}}" mode="aspectFit" bindload="ready" binderror="failed"/>

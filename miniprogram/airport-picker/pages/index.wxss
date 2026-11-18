@@ -1,0 +1,26 @@
+page {
+  background: #f4f5f3;
+  color: #213c46;
+}
+.page {
+  padding: 30rpx;
+}
+input {
+  padding: 24rpx;
+  background: white;
+  border-radius: 10rpx;
+}
+.hint {
+  font-size: 22rpx;
+  color: #71858a;
+  margin: 20rpx 0;
+}
+.airport {
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #dfe5e1;
+  font-size: 28rpx;
+}
+.airport text {
+  font-size: 22rpx;
+  color: #71858a;
+}

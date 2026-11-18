@@ -1,0 +1,207 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fleet/index",
+    "pages/records/index",
+    "pages/flight-edit/index",
+    "pages/data-check/index",
+    "pages/share-compose/index",
+    "pages/share-view/index",
+    "pages/badge-share/index",
+    "pages/collection-share/index",
+    "pages/share-result/index",
+    "pages/ai-import/index",
+    "pages/import-review/index",
+    "pages/flight-replay/index",
+    "pages/flight-replay/landscape",
+    "pages/collection/index",
+    "pages/collection/palettes",
+    "pages/checkin/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "Flight Atlas"
+  },
+  "subPackages": [
+    {
+      "root": "airport-picker",
+      "name": "airport-picker",
+      "pages": [
+        "pages/index",
+        "pages/image-import"
+      ]
+    },
+    {
+      "root": "file-tools",
+      "name": "file-tools",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "badges0",
+      "name": "badges0",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "badges1",
+      "name": "badges1",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "badges2",
+      "name": "badges2",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "badges3",
+      "name": "badges3",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "badges4",
+      "name": "badges4",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette0",
+      "name": "palette0",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette1",
+      "name": "palette1",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette2",
+      "name": "palette2",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette3",
+      "name": "palette3",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette4",
+      "name": "palette4",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette5",
+      "name": "palette5",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette6",
+      "name": "palette6",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette7",
+      "name": "palette7",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette8",
+      "name": "palette8",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "palette9",
+      "name": "palette9",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "stamps0",
+      "name": "stamps0",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "stamps1",
+      "name": "stamps1",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "stamps2",
+      "name": "stamps2",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "root": "stamps3",
+      "name": "stamps3",
+      "pages": [
+        "pages/index"
+      ]
+    }
+  ],
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#71858a",
+    "selectedColor": "#315c61",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "足迹",
+        "iconPath": "assets/tabs/map.png",
+        "selectedIconPath": "assets/tabs/map-selected.png"
+      },
+      {
+        "pagePath": "pages/fleet/index",
+        "text": "徽章",
+        "iconPath": "assets/tabs/fleet.png",
+        "selectedIconPath": "assets/tabs/fleet-selected.png"
+      },
+      {
+        "pagePath": "pages/records/index",
+        "text": "航班",
+        "iconPath": "assets/tabs/records.png",
+        "selectedIconPath": "assets/tabs/records-selected.png"
+      },
+      {
+        "pagePath": "pages/collection/index",
+        "text": "收藏",
+        "iconPath": "assets/tabs/collection.png",
+        "selectedIconPath": "assets/tabs/collection-selected.png"
+      }
+    ]
+  }
+}

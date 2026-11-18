@@ -1,0 +1,14 @@
+<view class="page {{landscape?'landscape':''}}">
+  <view wx:if="{{!landscape}}" class="orientation-bar"><button bindtap="orientation" disabled="{{!ready}}">横屏播放 ↔</button></view>
+  <view class="heading"><view class="eyebrow">YOUR FLIGHTS IN MOTION</view><view class="title">沿着航线，回看旅程。</view></view>
+  <canvas type="2d" id="replay" class="map" bindtouchstart="dragStart" bindtouchmove="dragMove" bindtouchend="dragEnd" bindtouchcancel="dragCancel" style="height:{{mapHeight||240}}px;{{mapWidth?'width:'+mapWidth+'px;':''}}"/>
+  <view wx:if="{{ready&&!landscape}}" class="playback">
+    <view class="count">{{ended?'回放已结束':'第 '+(index+1)+' 班'}}<text>{{index}} / {{total}} 已回放</text></view>
+    <view wx:if="{{!ended}}" class="date">{{date}} {{time}}<text>{{flight}}</text></view>
+    <view wx:if="{{!ended}}" class="route"><view>{{fromName}}<text>{{from}}</text></view><text class="arrow">→</text><view class="arrival">{{toName}}<text>{{to}}</text></view></view>
+    <slider value="{{progress}}" bindchange="seek" step="0.1" min="0" max="100" activeColor="#315c61" backgroundColor="#dfe7e1" block-size="18"/>
+    <view class="controls"><button wx:if="{{!ended}}" bindtap="restart">重播</button><button class="primary" bindtap="toggle">{{playing?'暂停':ended?'重新播放':'播放'}}</button><button bindtap="speed">{{speed}}× 倍速</button></view>
+  </view>
+  <view wx:if="{{message}}" class="note">{{message}}</view>
+</view>
+<canvas type="2d" id="replay-base" class="buffer"/>

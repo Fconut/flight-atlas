@@ -1,0 +1,13 @@
+page {
+  background: #f4f5f3;
+  color: #213c46;
+}
+.page {
+  padding: 40rpx;
+  line-height: 1.8;
+}
+button {
+  margin-top: 28rpx;
+  background: #183d46;
+  color: #f5e8c9;
+}

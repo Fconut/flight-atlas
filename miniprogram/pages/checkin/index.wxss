@@ -1,0 +1,278 @@
+page {
+  background: #f4f5f3;
+  color: #213e48;
+}
+button::after {
+  border: 0;
+}
+.checkin-page {
+  padding: 32rpx 26rpx calc(40rpx + env(safe-area-inset-bottom));
+}
+.eyebrow {
+  font-size: 18rpx;
+  letter-spacing: 3rpx;
+  color: #7c928a;
+}
+.title {
+  font-size: 38rpx;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-top: 12rpx;
+}
+.page-heading {
+  margin: 0 4rpx 28rpx;
+}
+.checkin-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20rpx;
+  padding: 28rpx 30rpx;
+  background: #e7eee7;
+  border: 1rpx solid #dce6dd;
+  border-radius: 20rpx;
+}
+.summary-label {
+  font-size: 23rpx;
+  color: #52716c;
+}
+.progress {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+  margin-top: 8rpx;
+}
+.days {
+  font-size: 88rpx;
+  line-height: 1;
+  color: #315c61;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.day-unit {
+  font-size: 24rpx;
+  color: #52716c;
+}
+.sign {
+  font-size: 28rpx;
+  font-weight: 500;
+  border-radius: 12rpx;
+  line-height: 84rpx;
+  padding: 0 26rpx;
+  background: #315c61;
+  color: #fff;
+  margin: 28rpx 0 0;
+}
+.summary-action {
+  flex-shrink: 0;
+  min-width: 224rpx;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sign[disabled] {
+  background: #e6ebe5;
+  color: #657d73;
+}
+.summary-action.signed[disabled] {
+  color: #315c61;
+  background: #f5f8f2;
+  border: 1rpx solid #d4dfd3;
+}
+.calendar-heading {
+  font-size: 29rpx;
+  font-weight: 600;
+  margin: 32rpx 4rpx 20rpx;
+}
+.reward-calendar {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12rpx;
+}
+.calendar-day {
+  position: relative;
+  min-width: 0;
+  height: 196rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #e4e9e3;
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 14rpx 8rpx 10rpx;
+  background: #f8faf6;
+}
+.day-number {
+  font-size: 29rpx;
+  color: #8b9b94;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+.has-reward {
+  background: #fff;
+  border-color: #c8d6cc;
+}
+.has-reward .day-number {
+  color: #315c61;
+  font-weight: 600;
+}
+.calendar-map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50rpx;
+  flex-shrink: 0;
+  border-radius: 5rpx;
+  margin-top: 12rpx;
+}
+.calendar-map image,
+.dialog-map image {
+  position: absolute;
+  width: 500%;
+  height: 2000%;
+  max-width: none;
+}
+.calendar-name {
+  font-size: 20rpx;
+  color: #52716c;
+  line-height: 1.35;
+  margin-top: 8rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+.day-mark {
+  width: 16rpx;
+  height: 2rpx;
+  border-radius: 2rpx;
+  background: #d8e1d7;
+  margin-top: 48rpx;
+}
+.calendar-day.claimable {
+  background: #e4eee5;
+  border: 2rpx solid #315c61;
+  box-shadow: 0 3rpx 8rpx #315c6112;
+}
+.claimable .day-number {
+  color: #213e48;
+}
+.claimable .calendar-map {
+  margin-top: 9rpx;
+}
+.claimable .calendar-name {
+  margin-top: 6rpx;
+  color: #213e48;
+}
+.calendar-claim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rpx;
+  align-self: stretch;
+  margin-top: auto;
+  background: #315c61;
+  color: #fff;
+  border-radius: 5rpx;
+  font-size: 21rpx;
+  font-weight: 500;
+  line-height: 34rpx;
+}
+.calendar-claim text {
+  font-size: 25rpx;
+  line-height: 1;
+}
+.reward-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: #122a3266;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30rpx;
+}
+.reward-dialog {
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background: #fcfdfb;
+  border-radius: 24rpx;
+  padding: 28rpx;
+}
+.dialog-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #52716c;
+  font-size: 26rpx;
+  margin-bottom: 24rpx;
+}
+.dialog-heading button {
+  margin: 0;
+  padding: 0;
+  width: 60rpx;
+  line-height: 60rpx;
+  border-radius: 50%;
+  background: #edf2ec;
+  color: #52716c;
+  font-size: 36rpx;
+}
+.dialog-map {
+  position: relative;
+  overflow: hidden;
+  padding-top: 53.3333%;
+  border-radius: 10rpx;
+}
+.dialog-name {
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-top: 24rpx;
+}
+.dialog-description {
+  font-size: 25rpx;
+  color: #71858a;
+  line-height: 1.7;
+  margin-top: 12rpx;
+}
+.claim-success {
+  text-align: center;
+}
+.success-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14rpx;
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  background: #e5eee7;
+  color: #315c61;
+  font-size: 36rpx;
+}
+.success-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-bottom: 24rpx;
+}
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  margin-top: 20rpx;
+  padding: 18rpx 20rpx;
+  border-radius: 10rpx;
+  background: #f5ebe6;
+  color: #985a45;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
+.error button {
+  flex-shrink: 0;
+  background: transparent;
+  color: #985a45;
+  font-size: 24rpx;
+  margin: 0;
+  padding: 0 10rpx;
+}
+
+.calendar-map.calendar-stamp{width:76rpx;height:76rpx;background:#f6f3e9}.calendar-stamp+.calendar-name{font-size:18rpx;margin-top:3rpx}.stamp-reward-art{height:340rpx;max-height:35vh;background:#f6f3e9;border-radius:12rpx;padding:12rpx}.calendar-day.has-reward .calendar-stamp{margin-top:6rpx}.calendar-day.claimable .calendar-stamp{height:62rpx;width:62rpx}

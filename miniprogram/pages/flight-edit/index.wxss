@@ -1,0 +1,46 @@
+@import "../index/index.wxss";
+.editor-page {
+  padding: 24rpx 24rpx calc(190rpx + env(safe-area-inset-bottom));
+}
+.editor-intro {
+  padding: 0 8rpx 24rpx;
+  font-size: 24rpx;
+  color: #71858a;
+  line-height: 1.7;
+}
+.editor-page .flight-form-body {
+  background: #fff;
+  border-radius: 18rpx;
+  padding: 28rpx 24rpx 12rpx;
+}
+.editor-page .form-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  min-height: 80rpx;
+  padding: 0 18rpx;
+  margin: 0;
+  border: 1rpx solid #dfe5e1;
+  border-radius: 8rpx;
+  background: #f9fbf8;
+  color: #213c46;
+  font-size: 25rpx;
+}
+.editor-save-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background: #fff;
+  padding: 20rpx 28rpx calc(20rpx + env(safe-area-inset-bottom));
+  border-top: 1rpx solid #e4eae5;
+}
+
+.manual-route{position:relative;margin-bottom:28rpx;background:#f4f7f2;border:1rpx solid #dce5dc;border-radius:16rpx}
+
+.inline-route-divider{height:1rpx;background:#dce5dc;position:relative;margin:0 24rpx}.inline-route-divider button{position:absolute;right:0;top:-28rpx;width:56rpx;height:56rpx;line-height:54rpx;padding:0;font-size:30rpx;border-radius:50%;background:#fff;color:#315c61;z-index:1}
+
+.inline-suggestions{margin-top:12rpx;background:#fff;border:1rpx solid #cdded3;border-radius:12rpx;overflow:hidden}.inline-suggestion{padding:18rpx;font-size:25rpx;color:#315c61;border-bottom:1rpx solid #edf2ec;overflow-wrap:anywhere}.inline-suggestion text{display:block;font-size:21rpx;color:#86998f;margin-top:6rpx}
+
+.editor-save-bar .form-footer-buttons{display:flex;align-items:stretch;gap:16rpx}.editor-save-bar .form-footer-buttons>button{box-sizing:border-box;height:84rpx;min-height:84rpx;line-height:82rpx;padding:0 20rpx;border-radius:12rpx;font-size:28rpx;margin:0;display:flex;align-items:center;justify-content:center}

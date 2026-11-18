@@ -1,0 +1,86 @@
+{
+  "appid": "wx31f3f3739a7a1743",
+  "compileType": "miniprogram",
+  "projectname": "flight-atlas-mini",
+  "cloudfunctionRoot": "../cloudfunctions/",
+  "packOptions": {
+    "include": [
+      {
+        "value": "airport-picker/components/airport-input",
+        "type": "folder"
+      },
+      {
+        "type": "folder",
+        "value": "components/airline-identity"
+      },
+      {
+        "type": "folder",
+        "value": "pages/collection"
+      },
+      {
+        "type": "folder",
+        "value": "assets/collection"
+      },
+      {
+        "type": "folder",
+        "value": "palette0"
+      },
+      {
+        "type": "folder",
+        "value": "palette1"
+      },
+      {
+        "type": "folder",
+        "value": "palette2"
+      },
+      {
+        "type": "folder",
+        "value": "palette3"
+      },
+      {
+        "type": "folder",
+        "value": "palette4"
+      },
+      {
+        "type": "folder",
+        "value": "palette5"
+      },
+      {
+        "type": "folder",
+        "value": "palette6"
+      },
+      {
+        "type": "folder",
+        "value": "palette7"
+      },
+      {
+        "type": "folder",
+        "value": "palette8"
+      },
+      {
+        "type": "folder",
+        "value": "palette9"
+      },
+      {
+        "type": "folder",
+        "value": "pages/checkin"
+      },
+      {
+        "type": "folder",
+        "value": "stamps0"
+      },
+      {
+        "type": "folder",
+        "value": "stamps1"
+      },
+      {
+        "type": "folder",
+        "value": "stamps2"
+      },
+      {
+        "type": "folder",
+        "value": "stamps3"
+      }
+    ]
+  }
+}

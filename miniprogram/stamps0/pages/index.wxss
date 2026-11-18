@@ -1,0 +1,8 @@
+@import '../../pages/collection/palettes.wxss';
+.stamp-thumb{position:relative;width:100%;padding-top:100%;overflow:hidden;background:#f6f3e9}.stamp-thumb image{position:absolute;width:500%;height:2000%;max-width:none}.stamp-cover{background:#eee8d9;color:#78613d}.stamp-book-art{position:absolute;left:22rpx;right:14rpx;bottom:42rpx}.stamp-book-art .stamp-thumb{background:transparent}.stamp-detail-art{height:420rpx;max-height:38vh;background:#f6f3e9;border-radius:12rpx;padding:12rpx}.stamp-locked .stamp-thumb{filter:grayscale(1);opacity:.6}
+
+.stamp-detail-art{position:relative}
+
+.stamp-card-art{height:290rpx;background:#f6f3e9;padding:12rpx}.stamp-locked .stamp-card-art{filter:grayscale(1);opacity:.6}
+
+.stamp-book-art{width:112rpx;left:50%;right:auto;transform:translateX(-50%);bottom:38rpx}

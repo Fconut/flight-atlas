@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "rewards": [
+    {
+      "id": "stamp:stamp-001",
+      "type": "stamp",
+      "itemId": "stamp-001",
+      "day": 2
+    },
+    {
+      "id": "stamp:stamp-011",
+      "type": "stamp",
+      "itemId": "stamp-011",
+      "day": 9
+    },
+    {
+      "id": "stamp:stamp-021",
+      "type": "stamp",
+      "itemId": "stamp-021",
+      "day": 16
+    },
+    {
+      "id": "stamp:stamp-031",
+      "type": "stamp",
+      "itemId": "stamp-031",
+      "day": 23
+    },
+    {
+      "id": "stamp:stamp-041",
+      "type": "stamp",
+      "itemId": "stamp-041",
+      "day": 30
+    },
+    {
+      "id": "stamp:stamp-051",
+      "type": "stamp",
+      "itemId": "stamp-051",
+      "day": 37
+    },
+    {
+      "id": "stamp:stamp-061",
+      "type": "stamp",
+      "itemId": "stamp-061",
+      "day": 44
+    },
+    {
+      "id": "stamp:stamp-071",
+      "type": "stamp",
+      "itemId": "stamp-071",
+      "day": 51
+    },
+    {
+      "id": "stamp:stamp-081",
+      "type": "stamp",
+      "itemId": "stamp-081",
+      "day": 58
+    },
+    {
+      "id": "stamp:stamp-091",
+      "type": "stamp",
+      "itemId": "stamp-091",
+      "day": 65
+    },
+    {
+      "id": "stamp:stamp-007",
+      "type": "stamp",
+      "itemId": "stamp-007",
+      "day": 72
+    },
+    {
+      "id": "stamp:stamp-017",
+      "type": "stamp",
+      "itemId": "stamp-017",
+      "day": 79
+    },
+    {
+      "id": "stamp:stamp-027",
+      "type": "stamp",
+      "itemId": "stamp-027",
+      "day": 86
+    },
+    {
+      "id": "stamp:stamp-037",
+      "type": "stamp",
+      "itemId": "stamp-037",
+      "day": 93
+    },
+    {
+      "id": "stamp:stamp-047",
+      "type": "stamp",
+      "itemId": "stamp-047",
+      "day": 100
+    },
+    {
+      "id": "stamp:stamp-057",
+      "type": "stamp",
+      "itemId": "stamp-057",
+      "day": 107
+    },
+    {
+      "id": "stamp:stamp-067",
+      "type": "stamp",
+      "itemId": "stamp-067",
+      "day": 114
+    },
+    {
+      "id": "stamp:stamp-077",
+      "type": "stamp",
+      "itemId": "stamp-077",
+      "day": 121
+    },
+    {
+      "id": "stamp:stamp-087",
+      "type": "stamp",
+      "itemId": "stamp-087",
+      "day": 128
+    },
+    {
+      "id": "stamp:stamp-097",
+      "type": "stamp",
+      "itemId": "stamp-097",
+      "day": 135
+    },
+    {
+      "id": "stamp:stamp-003",
+      "type": "stamp",
+      "itemId": "stamp-003",
+      "day": 142
+    },
+    {
+      "id": "stamp:stamp-013",
+      "type": "stamp",
+      "itemId": "stamp-013",
+      "day": 149
+    },
+    {
+      "id": "stamp:stamp-023",
+      "type": "stamp",
+      "itemId": "stamp-023",
+      "day": 156
+    },
+    {
+      "id": "stamp:stamp-033",
+      "type": "stamp",
+      "itemId": "stamp-033",
+      "day": 163
+    },
+    {
+      "id": "stamp:stamp-043",
+      "type": "stamp",
+      "itemId": "stamp-043",
+      "day": 170
+    },
+    {
+      "id": "stamp:stamp-053",
+      "type": "stamp",
+      "itemId": "stamp-053",
+      "day": 177
+    },
+    {
+      "id": "stamp:stamp-063",
+      "type": "stamp",
+      "itemId": "stamp-063",
+      "day": 184
+    },
+    {
+      "id": "stamp:stamp-073",
+      "type": "stamp",
+      "itemId": "stamp-073",
+      "day": 191
+    },
+    {
+      "id": "stamp:stamp-083",
+      "type": "stamp",
+      "itemId": "stamp-083",
+      "day": 198
+    },
+    {
+      "id": "stamp:stamp-093",
+      "type": "stamp",
+      "itemId": "stamp-093",
+      "day": 205
+    },
+    {
+      "id": "stamp:stamp-009",
+      "type": "stamp",
+      "itemId": "stamp-009",
+      "day": 212
+    },
+    {
+      "id": "stamp:stamp-019",
+      "type": "stamp",
+      "itemId": "stamp-019",
+      "day": 219
+    },
+    {
+      "id": "stamp:stamp-029",
+      "type": "stamp",
+      "itemId": "stamp-029",
+      "day": 226
+    },
+    {
+      "id": "stamp:stamp-039",
+      "type": "stamp",
+      "itemId": "stamp-039",
+      "day": 233
+    },
+    {
+      "id": "stamp:stamp-049",
+      "type": "stamp",
+      "itemId": "stamp-049",
+      "day": 240
+    },
+    {
+      "id": "stamp:stamp-059",
+      "type": "stamp",
+      "itemId": "stamp-059",
+      "day": 247
+    },
+    {
+      "id": "stamp:stamp-069",
+      "type": "stamp",
+      "itemId": "stamp-069",
+      "day": 254
+    },
+    {
+      "id": "stamp:stamp-079",
+      "type": "stamp",
+      "itemId": "stamp-079",
+      "day": 261
+    },
+    {
+      "id": "stamp:stamp-089",
+      "type": "stamp",
+      "itemId": "stamp-089",
+      "day": 268
+    },
+    {
+      "id": "stamp:stamp-099",
+      "type": "stamp",
+      "itemId": "stamp-099",
+      "day": 275
+    },
+    {
+      "id": "stamp:stamp-005",
+      "type": "stamp",
+      "itemId": "stamp-005",
+      "day": 282
+    },
+    {
+      "id": "stamp:stamp-015",
+      "type": "stamp",
+      "itemId": "stamp-015",
+      "day": 289
+    },
+    {
+      "id": "stamp:stamp-025",
+      "type": "stamp",
+      "itemId": "stamp-025",
+      "day": 296
+    },
+    {
+      "id": "stamp:stamp-035",
+      "type": "stamp",
+      "itemId": "stamp-035",
+      "day": 303
+    },
+    {
+      "id": "stamp:stamp-045",
+      "type": "stamp",
+      "itemId": "stamp-045",
+      "day": 310
+    },
+    {
+      "id": "stamp:stamp-055",
+      "type": "stamp",
+      "itemId": "stamp-055",
+      "day": 317
+    },
+    {
+      "id": "stamp:stamp-065",
+      "type": "stamp",
+      "itemId": "stamp-065",
+      "day": 324
+    },
+    {
+      "id": "stamp:stamp-075",
+      "type": "stamp",
+      "itemId": "stamp-075",
+      "day": 331
+    },
+    {
+      "id": "stamp:stamp-085",
+      "type": "stamp",
+      "itemId": "stamp-085",
+      "day": 338
+    },
+    {
+      "id": "stamp:stamp-095",
+      "type": "stamp",
+      "itemId": "stamp-095",
+      "day": 345
+    },
+    {
+      "id": "stamp:stamp-010",
+      "type": "stamp",
+      "itemId": "stamp-010",
+      "day": 352
+    },
+    {
+      "id": "stamp:stamp-020",
+      "type": "stamp",
+      "itemId": "stamp-020",
+      "day": 359
+    },
+    {
+      "id": "stamp:stamp-030",
+      "type": "stamp",
+      "itemId": "stamp-030",
+      "day": 366
+    },
+    {
+      "id": "stamp:stamp-040",
+      "type": "stamp",
+      "itemId": "stamp-040",
+      "day": 373
+    },
+    {
+      "id": "stamp:stamp-050",
+      "type": "stamp",
+      "itemId": "stamp-050",
+      "day": 380
+    },
+    {
+      "id": "stamp:stamp-060",
+      "type": "stamp",
+      "itemId": "stamp-060",
+      "day": 387
+    },
+    {
+      "id": "stamp:stamp-070",
+      "type": "stamp",
+      "itemId": "stamp-070",
+      "day": 394
+    },
+    {
+      "id": "stamp:stamp-080",
+      "type": "stamp",
+      "itemId": "stamp-080",
+      "day": 401
+    },
+    {
+      "id": "stamp:stamp-090",
+      "type": "stamp",
+      "itemId": "stamp-090",
+      "day": 408
+    },
+    {
+      "id": "stamp:stamp-100",
+      "type": "stamp",
+      "itemId": "stamp-100",
+      "day": 415
+    }
+  ]
+}

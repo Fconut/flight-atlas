@@ -1,0 +1,1397 @@
+{
+  "date": "2026-11-14",
+  "policy": "Assign code and background independently per airline after considering the combined impression. UI adaptations, not official hex specifications. No logo assets shipped.",
+  "entries": [
+    {
+      "code": "3U",
+      "name": "四川航空",
+      "palette": {
+        "primary": "#c8202c",
+        "secondary": "#c8202c"
+      },
+      "previous": {
+        "primary": "#c8202c",
+        "secondary": "#c8202c"
+      },
+      "source": "https://www.scalgroup.com/Upload/Report/20240821_bSgnPM_913687.pdf",
+      "basis": "primary-source-review",
+      "decision": "红色识别配同色浅底；依据当前红色应用，不沿用旧蓝色图形。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "5J",
+      "name": "宿务太平洋航空",
+      "palette": {
+        "primary": "#127bc1",
+        "secondary": "#e3bf42"
+      },
+      "previous": {
+        "primary": "#127bc1",
+        "secondary": "#51a74c"
+      },
+      "source": "https://www.bonseydesign.com/work/cebu-pacific-air",
+      "basis": "primary-source-review",
+      "decision": "蓝色代码配浅黄底，呼应黄蓝品牌应用，而非只取鸟翼的小块绿色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "7C",
+      "name": "济州航空",
+      "palette": {
+        "primary": "#db531d",
+        "secondary": "#f25620"
+      },
+      "previous": {
+        "primary": "#f25620",
+        "secondary": "#f25620"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JJA.png",
+      "basis": "retained-representative-color",
+      "decision": "橙色代码与同色浅底，保留橙色识别，不从国旗借色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "9C",
+      "name": "春秋航空",
+      "palette": {
+        "primary": "#007f3b",
+        "secondary": "#007f3b"
+      },
+      "previous": {
+        "primary": "#007f3b",
+        "secondary": "#007f3b"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CQH.png",
+      "basis": "retained-representative-color",
+      "decision": "绿色代码与浅绿底，单色品牌用明暗层级，不硬凑其他颜色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "A3",
+      "name": "爱琴海航空",
+      "palette": {
+        "primary": "#1d2b73",
+        "secondary": "#9faec6"
+      },
+      "previous": {
+        "primary": "#1d2b73",
+        "secondary": "#1d2b73"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AEE.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配浅钢蓝底，取深蓝字标与淡蓝鸟翼的关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "AA",
+      "name": "美国航空",
+      "palette": {
+        "primary": "#0078b8",
+        "secondary": "#9da6ad"
+      },
+      "previous": {
+        "primary": "#0078b8",
+        "secondary": "#c8102e"
+      },
+      "source": "https://news.aa.com/news/news-details/2013/American-Airlines-Debuts-New-Modern-Look/default.aspx",
+      "basis": "primary-source-review",
+      "decision": "蓝色代码配浅银灰底，保留蓝色识别并呼应银色机身传统。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "AC",
+      "name": "加拿大航空",
+      "palette": {
+        "primary": "#c92f33",
+        "secondary": "#27333a"
+      },
+      "previous": {
+        "primary": "#27333a",
+        "secondary": "#d82f2e"
+      },
+      "source": "https://www.aircanada.com/ca/en/aco/home/about/media/facts-about-air-canada.html",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅炭灰底，呼应红枫叶与黑白整体，不让红色铺满卡片。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "AE",
+      "name": "华信航空",
+      "palette": {
+        "primary": "#9b803e",
+        "secondary": "#273c64"
+      },
+      "previous": {
+        "primary": "#273c64",
+        "secondary": "#b69b63"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/MDA.png",
+      "basis": "existing-visual-reference-ui-inference",
+      "decision": "金色代码配浅蓝底，取金色图形与蓝色文字的组合。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "AF",
+      "name": "法国航空",
+      "palette": {
+        "primary": "#d51f35",
+        "secondary": "#102653"
+      },
+      "previous": {
+        "primary": "#102653",
+        "secondary": "#e51b30"
+      },
+      "source": "https://corporate.airfrance.com/en/press-releases/air-france-launches-new-advertising-campaign-further-showcase-its-move-upmarket",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅深蓝底，保留红色强调，同时让大面积底色回到蓝白基调。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "AK",
+      "name": "亚洲航空",
+      "palette": {
+        "primary": "#df3630",
+        "secondary": "#e94335"
+      },
+      "previous": {
+        "primary": "#e94335",
+        "secondary": "#e94335"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AXM.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅红底，保留承运航司的红色识别，不借用 MOVE 平台图标色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "AS",
+      "name": "阿拉斯加航空",
+      "palette": {
+        "primary": "#07436b",
+        "secondary": "#5b9d56"
+      },
+      "previous": {
+        "primary": "#07436b",
+        "secondary": "#5b9d56"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ASA.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配浅绿底，保留蓝绿组合，不为区别其他蓝色航司而随机改色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "AT",
+      "name": "摩洛哥皇家航空",
+      "palette": {
+        "primary": "#cb3029",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#ee3024",
+        "secondary": "#ee3024"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/RAM.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配白底，保留红色冠形及文字识别，不直接套国旗绿色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "AY",
+      "name": "芬兰航空",
+      "palette": {
+        "primary": "#0b1560",
+        "secondary": "#d1d5dc"
+      },
+      "previous": {
+        "primary": "#0b1560",
+        "secondary": "#0b1560"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/FIN.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配浅银白底，保留克制的蓝白视觉。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "B6",
+      "name": "捷蓝航空",
+      "palette": {
+        "primary": "#003978",
+        "secondary": "#5f95c4"
+      },
+      "previous": {
+        "primary": "#003978",
+        "secondary": "#003978"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JBU.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配浅蓝底，通过同色系深浅体现蓝色品牌。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "BA",
+      "name": "英国航空",
+      "palette": {
+        "primary": "#c53046",
+        "secondary": "#084981"
+      },
+      "previous": {
+        "primary": "#084981",
+        "secondary": "#c83e4c"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/BAW.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅蓝底，取红色 speedmark 与深蓝字标的组合。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "BR",
+      "name": "长荣航空",
+      "palette": {
+        "primary": "#168346",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#169b4c",
+        "secondary": "#d4423c"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/EVA.png",
+      "basis": "retained-representative-color",
+      "decision": "绿色代码配白底，保留绿色主体，不把标志中小块橙红强行扩为底色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "CA",
+      "name": "中国国际航空",
+      "palette": {
+        "primary": "#d91d2a",
+        "secondary": "#c4c8cd"
+      },
+      "previous": {
+        "primary": "#ed1c24",
+        "secondary": "#ed1c24"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CCA.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅灰底，取红凤与黑色字标／白色机身的关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "CI",
+      "name": "中华航空",
+      "palette": {
+        "primary": "#b75b80",
+        "secondary": "#253d70"
+      },
+      "previous": {
+        "primary": "#253d70",
+        "secondary": "#c77999"
+      },
+      "source": "https://www.china-airlines.com/kr/en/about-china-airlines/media/news/20180719",
+      "basis": "primary-source-review",
+      "decision": "梅花粉代码配浅蓝底，保留梅花识别及蓝色企业视觉。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "CX",
+      "name": "国泰航空",
+      "palette": {
+        "primary": "#036669",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#036669",
+        "secondary": "#036669"
+      },
+      "source": "https://www.cathaypacific.com/cx/en_GB/inspiration/cathay-stories/cathay-pacific-livery.html",
+      "basis": "primary-source-review",
+      "decision": "玉绿色代码配白底，呼应绿尾与白色刷翅，保持清爽。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "CZ",
+      "name": "中国南方航空",
+      "palette": {
+        "primary": "#c92c3c",
+        "secondary": "#1579ad"
+      },
+      "previous": {
+        "primary": "#1579ad",
+        "secondary": "#d52b3b"
+      },
+      "source": "https://www.csairgroup.cn/cn/gywm3/qywh92/viyy47/index.html",
+      "basis": "primary-source-review",
+      "decision": "木棉红代码配浅蓝底，蓝色尾翼作为大面积基调。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "DL",
+      "name": "达美航空",
+      "palette": {
+        "primary": "#c8102e",
+        "secondary": "#14345d"
+      },
+      "previous": {
+        "primary": "#14345d",
+        "secondary": "#c8102e"
+      },
+      "source": "https://news.delta.com/delta-air-lines-logos-and-brand-guidelines",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅蓝底，参考红色 Widget 与 Delta Blue 的背景关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "EI",
+      "name": "爱尔兰航空",
+      "palette": {
+        "primary": "#006d68",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#72a83b",
+        "secondary": "#72a83b"
+      },
+      "source": "https://mediacentre.aerlingus.com/news/17012019/aer-lingus-unveils-brand-refresh",
+      "basis": "primary-source-review",
+      "decision": "青绿色代码配白底，依据新版青绿尾翼与白色机身，放弃旧鲜绿色印象。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "EK",
+      "name": "阿联酋航空",
+      "palette": {
+        "primary": "#c72c37",
+        "secondary": "#b3955d"
+      },
+      "previous": {
+        "primary": "#e23546",
+        "secondary": "#e23546"
+      },
+      "source": "https://www.emirates.com/media-centre/emirates-launches-limited-edition-signature-pantone-gold-range-of-collectables-in-a-creative-tie-up-with-copenhagen-design/",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅沙金底，保留红金体系，不取国旗其他颜色拼凑底色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "ET",
+      "name": "埃塞俄比亚航空",
+      "palette": {
+        "primary": "#b92c37",
+        "secondary": "#367c46"
+      },
+      "previous": {
+        "primary": "#367c46",
+        "secondary": "#c52528"
+      },
+      "source": "https://www.ethiopianairlines.com/et/ethiopian-airlines-brand-audit-questionnaire",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅绿底，保留红色字标与绿色品牌应用；不在有限区域复刻三色旗。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "EU",
+      "name": "成都航空",
+      "palette": {
+        "primary": "#c73035",
+        "secondary": "#c4a247"
+      },
+      "previous": {
+        "primary": "#244469",
+        "secondary": "#b9963d"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/UEA.png",
+      "basis": "existing-visual-reference-ui-inference",
+      "decision": "红色代码配浅金底，参考红色名称与金色太阳神鸟，纠正先前无依据的蓝金分配。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "EY",
+      "name": "阿提哈德航空",
+      "palette": {
+        "primary": "#434547",
+        "secondary": "#b79e78"
+      },
+      "previous": {
+        "primary": "#434547",
+        "secondary": "#a58b59"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ETD.png",
+      "basis": "existing-visual-reference-ui-inference",
+      "decision": "深灰代码配浅香槟底，体现文字、机身与金色元素的整体关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "FM",
+      "name": "上海航空",
+      "palette": {
+        "primary": "#da1739",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#e70733",
+        "secondary": "#e70733"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CSH.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配白底，保留红鹤与白色机身的简洁组合。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "FZ",
+      "name": "迪拜航空",
+      "palette": {
+        "primary": "#006496",
+        "secondary": "#f28b28"
+      },
+      "previous": {
+        "primary": "#006496",
+        "secondary": "#f28b28"
+      },
+      "source": "https://news.flydubai.com/flydubai-ensures-a-new-era-in-middle-east-aviation-history-is-ready-for-take-off",
+      "basis": "primary-source-review",
+      "decision": "蓝色代码配浅橙底，保留官方蓝橙组合的明快对比；不机械套用红字蓝底。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "GA",
+      "name": "印尼鹰航",
+      "palette": {
+        "primary": "#003c71",
+        "secondary": "#2696a4"
+      },
+      "previous": {
+        "primary": "#003c71",
+        "secondary": "#2696a4"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/GIA.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配浅青底，参考蓝青羽翼的渐变关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "GF",
+      "name": "海湾航空",
+      "palette": {
+        "primary": "#8f7949",
+        "secondary": "#233a50"
+      },
+      "previous": {
+        "primary": "#233a50",
+        "secondary": "#9b8554"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/GFA.png",
+      "basis": "existing-visual-reference-ui-inference",
+      "decision": "金色代码配浅蓝底，取金鹰与深色字标／尾翼关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "GJ",
+      "name": "长龙航空",
+      "palette": {
+        "primary": "#c9202a",
+        "secondary": "#c4c8cd"
+      },
+      "previous": {
+        "primary": "#e30012",
+        "secondary": "#e30012"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CDC.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅灰底，取红龙与黑色文字，不扩张小色块。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "GS",
+      "name": "天津航空",
+      "palette": {
+        "primary": "#d12c34",
+        "secondary": "#d6aa43"
+      },
+      "previous": {
+        "primary": "#f02835",
+        "secondary": "#f02835"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/GCR.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅金底，参考红金图形；依据本航司视觉，不按集团统一推断。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "GY",
+      "name": "多彩贵州航空",
+      "palette": {
+        "primary": "#2477a6",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#e10011",
+        "secondary": "#e10011"
+      },
+      "source": "https://raw.githubusercontent.com/imgmongelli/airlines-logos-dataset/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CGZ.png",
+      "basis": "corrected-identity-reference",
+      "decision": "蓝色代码配白底；原参考图实际属桂林航空，已排除。多彩图形不硬取一色铺底。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "GT",
+      "name": "桂林航空",
+      "palette": {
+        "primary": "#d62934",
+        "secondary": "#d5ae43"
+      },
+      "previous": null,
+      "source": "https://www.iata.org/en/about/members/airline-list/air-guilin/537/",
+      "basis": "corrected-identity-reference",
+      "decision": "红色代码配浅金底，依据正确的桂林航空图形；与 GY 独立处理。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "HO",
+      "name": "吉祥航空",
+      "palette": {
+        "primary": "#64263d",
+        "secondary": "#bb9754"
+      },
+      "previous": {
+        "primary": "#c39103",
+        "secondary": "#c39103"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/DKH.png",
+      "basis": "retained-representative-color",
+      "decision": "枣红代码配浅金底，取枣红名称与金色图形的完整组合。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "HU",
+      "name": "海南航空",
+      "palette": {
+        "primary": "#d8202d",
+        "secondary": "#d6aa43"
+      },
+      "previous": {
+        "primary": "#ed1b22",
+        "secondary": "#e7b13d"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CHH.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅金底，保留红金应用的温暖感。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "HX",
+      "name": "香港航空",
+      "palette": {
+        "primary": "#d62b33",
+        "secondary": "#c5c8ca"
+      },
+      "previous": {
+        "primary": "#ea030a",
+        "secondary": "#ea030a"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CRK.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅灰底，取红色花形与深色名称的关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "IB",
+      "name": "西班牙国家航空",
+      "palette": {
+        "primary": "#c91f31",
+        "secondary": "#e5b637"
+      },
+      "previous": {
+        "primary": "#db052d",
+        "secondary": "#db052d"
+      },
+      "source": "https://grupo.iberia.com/assets/iberia__site/files/iag_code_of_conduct-may2022.pdf",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅金黄底，参考红黄视觉，不将黄块扩大成高饱和背景。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "JD",
+      "name": "首都航空",
+      "palette": {
+        "primary": "#d92431",
+        "secondary": "#d5ad4b"
+      },
+      "previous": {
+        "primary": "#eb1524",
+        "secondary": "#cfaa4e"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CBJ.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅金底，保留资料中本航司的红金关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "JL",
+      "name": "日本航空",
+      "palette": {
+        "primary": "#d92831",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#e40d1b",
+        "secondary": "#e40d1b"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JAL.png",
+      "basis": "retained-representative-color",
+      "decision": "鹤丸红代码配白底，呼应红鹤与白色机身，不额外增加粉色区域。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "KE",
+      "name": "大韩航空",
+      "palette": {
+        "primary": "#123a6c",
+        "secondary": "#86b8d5"
+      },
+      "previous": {
+        "primary": "#0a51a7",
+        "secondary": "#a9c9df"
+      },
+      "source": "https://www.lippincott.com/work/korean-air/",
+      "basis": "primary-source-review",
+      "decision": "深蓝代码配浅金属蓝底，参考 2025 新版，不沿用旧红蓝太极配色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "KL",
+      "name": "荷兰皇家航空",
+      "palette": {
+        "primary": "#0089bd",
+        "secondary": "#91cbe3"
+      },
+      "previous": {
+        "primary": "#00a1e4",
+        "secondary": "#00a1e4"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/KLM.png",
+      "basis": "retained-representative-color",
+      "decision": "蓝色代码配浅天蓝底，保留标志与机身的蓝色印象。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "KN",
+      "name": "中国联合航空",
+      "palette": {
+        "primary": "#ca2334",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#f10b1e",
+        "secondary": "#f10b1e"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CUA.png",
+      "basis": "retained-representative-color",
+      "decision": "暂保留旧红色识别并配白底；近期网站图标不足以证明完整品牌主辅关系，待补证。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "KQ",
+      "name": "肯尼亚航空",
+      "palette": {
+        "primary": "#cf2435",
+        "secondary": "#bec3c8"
+      },
+      "previous": {
+        "primary": "#ed1c24",
+        "secondary": "#ed1c24"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/KQA.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅灰底，保留红色名称及图形，避免从国旗任意加入绿色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "LA",
+      "name": "南美航空",
+      "palette": {
+        "primary": "#c33c67",
+        "secondary": "#2a0088"
+      },
+      "previous": {
+        "primary": "#2a0088",
+        "secondary": "#d13e6e"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/LAN.png",
+      "basis": "retained-representative-color",
+      "decision": "玫红代码配浅深蓝底，取玫红飘带与蓝色文字的关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "LH",
+      "name": "汉莎航空",
+      "palette": {
+        "primary": "#10264e",
+        "secondary": "#d4ae54"
+      },
+      "previous": {
+        "primary": "#10264e",
+        "secondary": "#e5ab32"
+      },
+      "source": "https://www.lufthansagroup.com/media/newsroom/group/2018/q1/499496.pdf",
+      "basis": "primary-source-review",
+      "decision": "深蓝代码配浅金底，蓝色保证识别、金色保留熟悉的蓝黄关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "LJ",
+      "name": "真航空",
+      "palette": {
+        "primary": "#593354",
+        "secondary": "#bed35a"
+      },
+      "previous": {
+        "primary": "#239cc2",
+        "secondary": "#239cc2"
+      },
+      "source": "https://files.jinair.com/documents/%EA%B5%AD%EB%82%B4%EC%97%AC%EA%B0%9D%EC%9A%B4%EC%86%A1%EC%95%BD%EA%B4%80.pdf",
+      "basis": "primary-source-review",
+      "decision": "紫色代码配浅黄绿底，参考官方材料中的紫／蓝图形及黄绿大色面，纠正旧青蓝单色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "LO",
+      "name": "波兰航空",
+      "palette": {
+        "primary": "#053378",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#053378",
+        "secondary": "#053378"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/LOT.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配白底，保留蓝白字标与机身关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "LX",
+      "name": "瑞士国际航空",
+      "palette": {
+        "primary": "#d51f2a",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#e60409",
+        "secondary": "#e60409"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/SWR.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配白底，呼应红底白十字与简洁文字，不增加其他色相。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "MF",
+      "name": "厦门航空",
+      "palette": {
+        "primary": "#176aab",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#4b9bc6",
+        "secondary": "#4b9bc6"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CXA.png",
+      "basis": "retained-representative-color",
+      "decision": "蓝色代码配白底，保留蓝色字标与白鹭、白色机身的简洁关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "MH",
+      "name": "马来西亚航空",
+      "palette": {
+        "primary": "#c92e43",
+        "secondary": "#002b5c"
+      },
+      "previous": {
+        "primary": "#002b5c",
+        "secondary": "#ce3e53"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/MAS.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅蓝底，取红色风筝部分与蓝色文字的关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "MM",
+      "name": "乐桃航空",
+      "palette": {
+        "primary": "#b82f82",
+        "secondary": "#e8ba9d"
+      },
+      "previous": {
+        "primary": "#c541c2",
+        "secondary": "#c541c2"
+      },
+      "source": "https://www2.fly-peach.cn/application/files/1017/8003/3608/251219_peach_app_icon.png",
+      "basis": "official-visual-ui-inference",
+      "decision": "粉紫代码配浅桃色底，参考近期官网粉桃色图标；作为界面取舍，待补完整品牌手册。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "MS",
+      "name": "埃及航空",
+      "palette": {
+        "primary": "#00275f",
+        "secondary": "#7296bd"
+      },
+      "previous": {
+        "primary": "#00275f",
+        "secondary": "#00275f"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/MSR.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配浅蓝底，取蓝色鹰形的深浅关系，不凭国家印象加金色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "MU",
+      "name": "中国东方航空",
+      "palette": {
+        "primary": "#cb1e25",
+        "secondary": "#1c4585"
+      },
+      "previous": {
+        "primary": "#1c4585",
+        "secondary": "#cb1e25"
+      },
+      "source": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2022-08-31/155618_20220831_1_ZNP4VG94.pdf",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅蓝底，红色强调与蓝色整体共存，不再固定蓝字红底。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "NH",
+      "name": "全日空",
+      "palette": {
+        "primary": "#0a3190",
+        "secondary": "#3b91d0"
+      },
+      "previous": {
+        "primary": "#0a3190",
+        "secondary": "#3b91d0"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ANA.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配浅天蓝底，呼应深蓝文字与蓝色机身／图形。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "NU",
+      "name": "日本越洋航空",
+      "palette": {
+        "primary": "#d92732",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#e60020",
+        "secondary": "#e60020"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JTA.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配白底，依据日本越洋自身的红鹤应用，不添加集团以外颜色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "NZ",
+      "name": "新西兰航空",
+      "palette": {
+        "primary": "#222a2e",
+        "secondary": "#b9bec2"
+      },
+      "previous": {
+        "primary": "#222a2e",
+        "secondary": "#222a2e"
+      },
+      "source": "https://www.airnewzealandnewsroom.com/press-release-2023-air-nz-saying-ma-te-wa-to-the-last-of-air-new-zealands-teal-livery",
+      "basis": "primary-source-review",
+      "decision": "炭黑代码配浅银灰底，保留黑白识别，不继续使用旧青绿印象。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "OA",
+      "name": "奥林匹克航空",
+      "palette": {
+        "primary": "#0f1248",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#0f1248",
+        "secondary": "#0f1248"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/OAL.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配白底，保留深蓝名称识别，不把多色环做成彩虹底色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "OS",
+      "name": "奥地利航空",
+      "palette": {
+        "primary": "#d52735",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#e81b23",
+        "secondary": "#e81b23"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AUA.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配白底，保留红色箭头及字标的清晰关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "OZ",
+      "name": "韩亚航空",
+      "palette": {
+        "primary": "#762f43",
+        "secondary": "#b3aca6"
+      },
+      "previous": {
+        "primary": "#f1001f",
+        "secondary": "#bd9356"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AAR.png",
+      "basis": "retained-representative-color",
+      "decision": "深酒红代码配浅暖灰底，避免把图形的小块鲜红、金色直接铺开；属于界面取舍。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "PR",
+      "name": "菲律宾航空",
+      "palette": {
+        "primary": "#c9343c",
+        "secondary": "#163d72"
+      },
+      "previous": {
+        "primary": "#163d72",
+        "secondary": "#d94140"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/PAL.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅蓝底，保留红蓝尾翼关系，不再复制全套旗色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "QF",
+      "name": "澳洲航空",
+      "palette": {
+        "primary": "#cd1f2b",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#d90b0b",
+        "secondary": "#d90b0b"
+      },
+      "source": "https://www.qantas.com/en-au/about-us/logos",
+      "basis": "primary-source-review",
+      "decision": "红色代码配白底，呼应红白袋鼠与白色机身，避免整行粉红化。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "QR",
+      "name": "卡塔尔航空",
+      "palette": {
+        "primary": "#651340",
+        "secondary": "#bbc0c5"
+      },
+      "previous": {
+        "primary": "#5a0033",
+        "secondary": "#5a0033"
+      },
+      "source": "https://www.qatarairways.com/content/dam/tradepartners/pdf-files/Brand-Elements_Section-1.pdf",
+      "basis": "primary-source-review",
+      "decision": "酒红代码配浅银灰底，依据官方酒红与灰色组合。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "QW",
+      "name": "青岛航空",
+      "palette": {
+        "primary": "#c9253b",
+        "secondary": "#c4a45c"
+      },
+      "previous": {
+        "primary": "#d01835",
+        "secondary": "#bd9d48"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/QDA.png",
+      "basis": "retained-representative-color",
+      "decision": "花形红代码配浅金底，保留红花与金色花蕊，不强行套其他蓝色航司。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "SC",
+      "name": "山东航空",
+      "palette": {
+        "primary": "#bf641e",
+        "secondary": "#143f70"
+      },
+      "previous": {
+        "primary": "#143f70",
+        "secondary": "#c94b4b"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CDG.png",
+      "basis": "retained-representative-color",
+      "decision": "橙色代码配浅蓝底，参考橙色中文名称与蓝色图形，纠正先前泛用红色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "SK",
+      "name": "北欧航空",
+      "palette": {
+        "primary": "#153d7a",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#000099",
+        "secondary": "#000099"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/SAS.png",
+      "basis": "retained-representative-color",
+      "decision": "深蓝代码配白底，保留蓝白关系，不按北欧印象另选颜色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "SM",
+      "name": "开罗航空",
+      "palette": {
+        "primary": "#3d1063",
+        "secondary": "#e58b38"
+      },
+      "previous": {
+        "primary": "#3d1063",
+        "secondary": "#e58b38"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/MSC.png",
+      "basis": "existing-visual-reference-ui-inference",
+      "decision": "紫色代码配浅橙底，保留紫橙组合，取舍不变。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "SQ",
+      "name": "新加坡航空",
+      "palette": {
+        "primary": "#9e7b27",
+        "secondary": "#25375f"
+      },
+      "previous": {
+        "primary": "#25375f",
+        "secondary": "#c39a42"
+      },
+      "source": "https://www.singaporeair.com/content/dam/sia/web-assets/pdfs/about-us/information-for-investors/annual-report/annualreport2324.pdf",
+      "basis": "primary-source-review",
+      "decision": "金色代码配浅蓝底，取金色飞鸟与深蓝尾翼；金色降低明度以保证可读。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "SV",
+      "name": "沙特航空",
+      "palette": {
+        "primary": "#176a46",
+        "secondary": "#b89b75"
+      },
+      "previous": {
+        "primary": "#176a46",
+        "secondary": "#2589b7"
+      },
+      "source": "https://my.gov.sa/en/news/10076",
+      "basis": "primary-source-review",
+      "decision": "绿色代码配浅沙色底，取绿色识别与品牌沙色，不把蓝色固定当背景。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "TG",
+      "name": "泰国国际航空",
+      "palette": {
+        "primary": "#49235e",
+        "secondary": "#c7a14c"
+      },
+      "previous": {
+        "primary": "#49235e",
+        "secondary": "#49235e"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/THA.png",
+      "basis": "retained-representative-color",
+      "decision": "紫色代码配浅金底，取紫色字标与金色花形的整体关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "TK",
+      "name": "土耳其航空",
+      "palette": {
+        "primary": "#c92a35",
+        "secondary": "#c3c7cb"
+      },
+      "previous": {
+        "primary": "#d0262c",
+        "secondary": "#d0262c"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/THY.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅灰底，参考红色圆形与黑色名称。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "TP",
+      "name": "葡萄牙航空",
+      "palette": {
+        "primary": "#c93340",
+        "secondary": "#72a52c"
+      },
+      "previous": {
+        "primary": "#72a52c",
+        "secondary": "#cf3941"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/TAP.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅绿底，保留绿为大面积印象、红作识别的组合。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "TW",
+      "name": "德威航空",
+      "palette": {
+        "primary": "#c92e35",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#d13b3b",
+        "secondary": "#d13b3b"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/TWB.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配白底；标志中很小的绿色符号不扩张为整行底色，后续品牌变更另核。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "UA",
+      "name": "美国联合航空",
+      "palette": {
+        "primary": "#005daa",
+        "secondary": "#7ab2dc"
+      },
+      "previous": {
+        "primary": "#005daa",
+        "secondary": "#005daa"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/UAL.png",
+      "basis": "retained-representative-color",
+      "decision": "蓝色代码配浅蓝底，保留蓝色体系的深浅层次。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "UO",
+      "name": "香港快运",
+      "palette": {
+        "primary": "#70229a",
+        "secondary": "#20a5b5"
+      },
+      "previous": {
+        "primary": "#70229a",
+        "secondary": "#20a5b5"
+      },
+      "source": "https://www.hkexpress.com/About-Us/Media-Centre/Gotta-Go-with-HK-Express",
+      "basis": "primary-source-review",
+      "decision": "紫色代码配浅青底，依据新版紫白青关系，取舍不变。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "VJ",
+      "name": "越捷航空",
+      "palette": {
+        "primary": "#d42d31",
+        "secondary": "#e2b73b"
+      },
+      "previous": {
+        "primary": "#ef4037",
+        "secondary": "#ef4037"
+      },
+      "source": "https://ir.vietjetair.com/File_Upload/financial-information/key-highlight-presentation/2024/EN_Vietjet_Key%20Highlight_Q4.2024_004.pdf",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅黄底，保留本航司反复使用的红黄组合。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "WF",
+      "name": "维德罗航空",
+      "palette": {
+        "primary": "#075337",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#00482d",
+        "secondary": "#00482d"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/WIF.png",
+      "basis": "retained-representative-color",
+      "decision": "绿色代码配白底，保留绿白识别，不裁切或复刻鸟形图案。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "WN",
+      "name": "西南航空",
+      "palette": {
+        "primary": "#c33442",
+        "secondary": "#2c45b6"
+      },
+      "previous": {
+        "primary": "#2c45b6",
+        "secondary": "#e3ae36"
+      },
+      "source": "https://history.southwest.com/our-stories/our-heart-livery/",
+      "basis": "primary-source-review",
+      "decision": "红色代码配浅蓝底，保留红色爱心及蓝色机身的大面积关系，未叠加第三条黄线。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "WS",
+      "name": "西捷航空",
+      "palette": {
+        "primary": "#008080",
+        "secondary": "#17485e"
+      },
+      "previous": {
+        "primary": "#008f8f",
+        "secondary": "#008f8f"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/WJA.png",
+      "basis": "retained-representative-color",
+      "decision": "青绿色代码配浅深蓝底，取青绿图形与深蓝字标的整体关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "WY",
+      "name": "阿曼航空",
+      "palette": {
+        "primary": "#947a40",
+        "secondary": "#176371"
+      },
+      "previous": {
+        "primary": "#176371",
+        "secondary": "#b29f6d"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/OMA.png",
+      "basis": "existing-visual-reference-ui-inference",
+      "decision": "金色代码配浅蓝绿底，取金色图形与蓝绿品牌场景的关系。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "ZE",
+      "name": "易斯达航空",
+      "palette": {
+        "primary": "#c92b36",
+        "secondary": "#ffffff"
+      },
+      "previous": {
+        "primary": "#d20d18",
+        "secondary": "#d20d18"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ESR.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配白底，保留红字识别；未以第三方旧标志推导新品牌标准。",
+      "reviewed": true,
+      "officialRankClaim": false
+    },
+    {
+      "code": "ZH",
+      "name": "深圳航空",
+      "palette": {
+        "primary": "#cc0327",
+        "secondary": "#c3c7cb"
+      },
+      "previous": {
+        "primary": "#cc0327",
+        "secondary": "#cc0327"
+      },
+      "source": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CSZ.png",
+      "basis": "retained-representative-color",
+      "decision": "红色代码配浅灰底，参考红色图形与黑色名称，不按集团统一套色。",
+      "reviewed": true,
+      "officialRankClaim": false
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Component({options:{virtualHost:true},properties:{src:String},methods:{ready(){this.triggerEvent('ready')},failed(){this.triggerEvent('failed')}}});

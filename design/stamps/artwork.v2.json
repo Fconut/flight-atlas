@@ -1,0 +1,707 @@
+{
+  "version": 2,
+  "reference": "Original approved 10 × 10 contact sheet, reconstructed by cell; not pixel-identical crops",
+  "referenceFile": "exec-4c91e050-69d6-4806-8dd4-984b044e6e20.png",
+  "items": [
+    {
+      "id": "stamp-001",
+      "file": "design/stamps/masters/stamp-001.png",
+      "sha256": "bc4864575131277083a8dbe69fa560c8705911507fd30e4af6d27114598e9d46",
+      "referenceRow": 1,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-002",
+      "file": "design/stamps/masters/stamp-002.png",
+      "sha256": "6cb000546246d8ed9966f6ea21446e0993d38076a64d1a7e27450f66f5c890a4",
+      "referenceRow": 1,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-003",
+      "file": "design/stamps/masters/stamp-003.png",
+      "sha256": "e9f0951fc6d2f6ea5a35ea98e5dd57847ae2f8ad384b55dc6d056220df8ce7e1",
+      "referenceRow": 1,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-004",
+      "file": "design/stamps/masters/stamp-004.png",
+      "sha256": "c2fc124831276c31fa13d09d9235ef91e60216d7e3880bd312eb4d2714514036",
+      "referenceRow": 1,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-005",
+      "file": "design/stamps/masters/stamp-005.png",
+      "sha256": "d12854d20904122cb894d1c12241e039543dedcc6d322f6adf8649facf496d13",
+      "referenceRow": 1,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-006",
+      "file": "design/stamps/masters/stamp-006.png",
+      "sha256": "0d5f13d571a5b2e42ca2fc45fb5b61b0ce568bf24638a08afabfa4ae385a2635",
+      "referenceRow": 1,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-007",
+      "file": "design/stamps/masters/stamp-007.png",
+      "sha256": "5aa83aba1a4484becd06cbdc110cc241861a74d852f4f6639981139016268959",
+      "referenceRow": 1,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-008",
+      "file": "design/stamps/masters/stamp-008.png",
+      "sha256": "fe8e1bf18433a8fb5e35545badef02a7382d4b7561da4636d60dca1a535ee151",
+      "referenceRow": 1,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-009",
+      "file": "design/stamps/masters/stamp-009.png",
+      "sha256": "6bf54f2a582dc32297fb88ef3e6bcf26ef4702e55e30a9d239ff51740aad63d3",
+      "referenceRow": 1,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-010",
+      "file": "design/stamps/masters/stamp-010.png",
+      "sha256": "4668a6b80bade4d8f02824ba34456474dc7e219f4caba393a4db12387d0c7799",
+      "referenceRow": 1,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-011",
+      "file": "design/stamps/masters/stamp-011.png",
+      "sha256": "f27653424b74f7f053d809e65c00ab6bbfc06f792d59d823d3cd452dc2ba2192",
+      "referenceRow": 2,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-012",
+      "file": "design/stamps/masters/stamp-012.png",
+      "sha256": "d8c9461a96dd6a2bfcb0fc9bf40dc7ee39a65e60cd296e58eec637ccdd078fa2",
+      "referenceRow": 2,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-013",
+      "file": "design/stamps/masters/stamp-013.png",
+      "sha256": "cc550b9f92d352de53f20ba791a97c13c526096534b883c37d91bb135f04f0d7",
+      "referenceRow": 2,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-014",
+      "file": "design/stamps/masters/stamp-014.png",
+      "sha256": "873f1e05eb090c9a0918e991705fa238d7f24a6ff2e3f6483f13c4bf0390cbcd",
+      "referenceRow": 2,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-015",
+      "file": "design/stamps/masters/stamp-015.png",
+      "sha256": "56f2233cf21c98650c53e0f7a0c773190b320222104d707c1c64f2553b3c396e",
+      "referenceRow": 2,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-016",
+      "file": "design/stamps/masters/stamp-016.png",
+      "sha256": "8e69292c696086ba8509543b2c54bb97efd746f95d4d131ff39216f3aac822bf",
+      "referenceRow": 2,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-017",
+      "file": "design/stamps/masters/stamp-017.png",
+      "sha256": "68c09c7715d43d33f395b7a4a3737019dd4cb78d55fb6c4cd7064eac91414189",
+      "referenceRow": 2,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-018",
+      "file": "design/stamps/masters/stamp-018.png",
+      "sha256": "fb50d353e302d06859aebea377a18652fcec231983446110924ef52db9cdb70d",
+      "referenceRow": 2,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-019",
+      "file": "design/stamps/masters/stamp-019.png",
+      "sha256": "3129c575e4565e40683f06f63ea0272027aa78a00580dbdefbc2c990153193cb",
+      "referenceRow": 2,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-020",
+      "file": "design/stamps/masters/stamp-020.png",
+      "sha256": "f7f947f108846c6d2dad99a5d49536c82ee6adf63b71531900351d9c510e994c",
+      "referenceRow": 2,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-021",
+      "file": "design/stamps/masters/stamp-021.png",
+      "sha256": "3b2986325b48a9e2eea0f8a366e39b69c55e7031528b6de87e13353e4425217e",
+      "referenceRow": 3,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-022",
+      "file": "design/stamps/masters/stamp-022.png",
+      "sha256": "7941cd0a9e4752dfb989c1ca040b0e0cfd86ec95a7b8c132944dcd16ad42cba8",
+      "referenceRow": 3,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-023",
+      "file": "design/stamps/masters/stamp-023.png",
+      "sha256": "4db56c181feaefeddea6e6f33dc0b488a144bd80d4406a9d2d2da852095ba8fa",
+      "referenceRow": 3,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-024",
+      "file": "design/stamps/masters/stamp-024.png",
+      "sha256": "52b8f1530d8dee3290c7dfec8c2bf769e77ba3c11786bdeeadee242423d23fd4",
+      "referenceRow": 3,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-025",
+      "file": "design/stamps/masters/stamp-025.png",
+      "sha256": "388f24021f1d787a5b03c270cf7b3900724b63a28d67bb56e618a03e3f49ea74",
+      "referenceRow": 3,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-026",
+      "file": "design/stamps/masters/stamp-026.png",
+      "sha256": "b59a12edd231bd53d53b57a1c41999e688dc4319ca11de93760560b5f8dc4ccc",
+      "referenceRow": 3,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-027",
+      "file": "design/stamps/masters/stamp-027.png",
+      "sha256": "4d12ec02145b3bf99257f887fe61b061b9c7919cc2756fc45b4dba536bc773db",
+      "referenceRow": 3,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-028",
+      "file": "design/stamps/masters/stamp-028.png",
+      "sha256": "95b67f0e2fd00d986d841b484060d25107bd69362080cf2a5b3ed609a47109d5",
+      "referenceRow": 3,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-029",
+      "file": "design/stamps/masters/stamp-029.png",
+      "sha256": "194f8ecc1d49d01081bf20bd99647ea7d721ed73308f7b66ebbb88cd7549a579",
+      "referenceRow": 3,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-030",
+      "file": "design/stamps/masters/stamp-030.png",
+      "sha256": "a26b3eb2797387d33642492a0bd01894ede9a7fa6e166b2a7ed625c27e12a57f",
+      "referenceRow": 3,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-031",
+      "file": "design/stamps/masters/stamp-031.png",
+      "sha256": "c3cd1ae937ce17815949b499f143ea327415a75655258c3ac35a6ac73ee735fc",
+      "referenceRow": 4,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-032",
+      "file": "design/stamps/masters/stamp-032.png",
+      "sha256": "d288dc5c2d30b227c5f2ab0778b88df0cbc6b7979c1f2e89f87547b8b9c3dbff",
+      "referenceRow": 4,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-033",
+      "file": "design/stamps/masters/stamp-033.png",
+      "sha256": "bad700ff00c1910aa399d74b81f256c874fbf70ee0a1c8f18dbeb2c61071f958",
+      "referenceRow": 4,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-034",
+      "file": "design/stamps/masters/stamp-034.png",
+      "sha256": "d56f0df669d665056d54c96e5826868db3df3bd953e384b1b74a2f55bbe74b19",
+      "referenceRow": 4,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-035",
+      "file": "design/stamps/masters/stamp-035.png",
+      "sha256": "bca9bface088b66b916835c0e270ea52a6900af9bb31bf2eaf4d5df80d1c0acd",
+      "referenceRow": 4,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-036",
+      "file": "design/stamps/masters/stamp-036.png",
+      "sha256": "d03d0e130b78d4b47785bb9791dbd86b287aefcf4e6cdbee98a9a24c8b4cb946",
+      "referenceRow": 4,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-037",
+      "file": "design/stamps/masters/stamp-037.png",
+      "sha256": "6f3a4679a5c805a5e83a195c0f0f457c13fb1233feca4ff9e951c7134dda1fb4",
+      "referenceRow": 4,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-038",
+      "file": "design/stamps/masters/stamp-038.png",
+      "sha256": "063fb48d9197dc5469d28d626b35047077a6402b4615c5e6a8c1637d24902808",
+      "referenceRow": 4,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-039",
+      "file": "design/stamps/masters/stamp-039.png",
+      "sha256": "c7a52e9d2237d92846eeaafc97a9fbbc95148ad69754003007d2f7be857dfa56",
+      "referenceRow": 4,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-040",
+      "file": "design/stamps/masters/stamp-040.png",
+      "sha256": "98d05e425913ce95457acd66e3a23c6397d70862125eecbbba21f3e996d94ef4",
+      "referenceRow": 4,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-041",
+      "file": "design/stamps/masters/stamp-041.png",
+      "sha256": "6949b1e180b49a0358805be7ae8255afb92c07e3cb451107c0f12d2d1406801c",
+      "referenceRow": 5,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-042",
+      "file": "design/stamps/masters/stamp-042.png",
+      "sha256": "d594a7dd0d25b1de99beaf07d637e9c6d524c9a4a09519814fd89c387b9a2cf6",
+      "referenceRow": 5,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-043",
+      "file": "design/stamps/masters/stamp-043.png",
+      "sha256": "cdeb7cd2ab878be61845faeb5ee8199970cf28757df751497939c57f4bd05942",
+      "referenceRow": 5,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-044",
+      "file": "design/stamps/masters/stamp-044.png",
+      "sha256": "48acc64417c67708fe3af2466df2b36ddf306ed438d427619eadcc6d06d772df",
+      "referenceRow": 5,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-045",
+      "file": "design/stamps/masters/stamp-045.png",
+      "sha256": "cf61ea7d1f9c875168fb06d202debfcf7cc3442754b152186a9a55adc0ffe7bc",
+      "referenceRow": 5,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-046",
+      "file": "design/stamps/masters/stamp-046.png",
+      "sha256": "3bdc798ce262aa34bfebf1bf96668ce25dc577aa652c8fafab9cd9788de9d425",
+      "referenceRow": 5,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-047",
+      "file": "design/stamps/masters/stamp-047.png",
+      "sha256": "093cb40fe345792331445231a5df9124727be5786ee5e0185b373ddbb0f2e1d8",
+      "referenceRow": 5,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-048",
+      "file": "design/stamps/masters/stamp-048.png",
+      "sha256": "5bec9ec8f27346076256c2e93b5094aa95d04d6018880e527f7e21d63517d2aa",
+      "referenceRow": 5,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-049",
+      "file": "design/stamps/masters/stamp-049.png",
+      "sha256": "b9cf503b879e1217e4e1e50cf2e92b5881fcc39303c8584db37fea9ad7920306",
+      "referenceRow": 5,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-050",
+      "file": "design/stamps/masters/stamp-050.png",
+      "sha256": "dadd6d8f7eb8235372f271d6336a2b4b5b19fe17a8eaab9be87c52b61020dbbb",
+      "referenceRow": 5,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-051",
+      "file": "design/stamps/masters/stamp-051.png",
+      "sha256": "c70d73cd15a7bb86429b39f8f42399039cddab347f2f85e42682da181699507e",
+      "referenceRow": 6,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-052",
+      "file": "design/stamps/masters/stamp-052.png",
+      "sha256": "473d56171d9370abe4bdf78614bde6fe0a3d61511d2513fb1331542bb7d7c947",
+      "referenceRow": 6,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-053",
+      "file": "design/stamps/masters/stamp-053.png",
+      "sha256": "7fbfce7c318ff828c48d31e4ebfb9ba6f54541935f2ec1c14cf347b8038cd8ad",
+      "referenceRow": 6,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-054",
+      "file": "design/stamps/masters/stamp-054.png",
+      "sha256": "4819e4c02ffd8a244bbccfcb678fcc04eeb877337ca1e9222c0c1519b27c4427",
+      "referenceRow": 6,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-055",
+      "file": "design/stamps/masters/stamp-055.png",
+      "sha256": "19b4839f4659341f48a1791092265443456cbfe7b07a71b4fc208c002ce5fb30",
+      "referenceRow": 6,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-056",
+      "file": "design/stamps/masters/stamp-056.png",
+      "sha256": "8d50c0ed0502f261d119fe61ff47b7018c87c00a703eee1ef02c485993b08e6d",
+      "referenceRow": 6,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-057",
+      "file": "design/stamps/masters/stamp-057.png",
+      "sha256": "71eb79e68df658bf57cce623d8a5d7849e70fc44075671193f9c7937e2cc6409",
+      "referenceRow": 6,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-058",
+      "file": "design/stamps/masters/stamp-058.png",
+      "sha256": "92b585ab9864b3aacf79986bcb90847ec572f477fa89bbd2e0fa14d2cf846e19",
+      "referenceRow": 6,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-059",
+      "file": "design/stamps/masters/stamp-059.png",
+      "sha256": "97f32509f22cc6db433229a3f70deecd05b17ea5d84fff09057e9fbbdeda63bf",
+      "referenceRow": 6,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-060",
+      "file": "design/stamps/masters/stamp-060.png",
+      "sha256": "915b00c9ec1da7db67c143ff2021254ab94ebb83d610424f910b4e195b05934c",
+      "referenceRow": 6,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-061",
+      "file": "design/stamps/masters/stamp-061.png",
+      "sha256": "f3f23a9dfe192d39a42f740179934bccdfc359359e1ac52124aa4c5e31464d06",
+      "referenceRow": 7,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-062",
+      "file": "design/stamps/masters/stamp-062.png",
+      "sha256": "1ca88744782d46d7596d1cab250e731451ebeee9bfb18b0a1c66425b8edc888c",
+      "referenceRow": 7,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-063",
+      "file": "design/stamps/masters/stamp-063.png",
+      "sha256": "d2e3c1767d8337bf60da031ace8310618add2e43ef1582e92dc5a4b58b023f5f",
+      "referenceRow": 7,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-064",
+      "file": "design/stamps/masters/stamp-064.png",
+      "sha256": "9735e8ec460922578c04fb5bc51d0163a3aed609dac5defd6a9964c157d80214",
+      "referenceRow": 7,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-065",
+      "file": "design/stamps/masters/stamp-065.png",
+      "sha256": "dc7156098332286c545017bbf41b17eedd6554226d8a3073eba09d936e029d60",
+      "referenceRow": 7,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-066",
+      "file": "design/stamps/masters/stamp-066.png",
+      "sha256": "89973e21b2a24fcd5be4cfac67ec9aec4c64ce0dfa7b52d13d962c64dfe3a0f4",
+      "referenceRow": 7,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-067",
+      "file": "design/stamps/masters/stamp-067.png",
+      "sha256": "056a277b8f162871087e1b453bf48a827f02ad24b1ab0e17db4cf62d592fb8be",
+      "referenceRow": 7,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-068",
+      "file": "design/stamps/masters/stamp-068.png",
+      "sha256": "604575108495d23fe6a6eea62f7e607dbc72ef0dc0392da91513d738594a9180",
+      "referenceRow": 7,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-069",
+      "file": "design/stamps/masters/stamp-069.png",
+      "sha256": "c1bf8a0e5ea0cdb926f83c91d8f1e12fa6514cbf568df3138c1f959e35cbd434",
+      "referenceRow": 7,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-070",
+      "file": "design/stamps/masters/stamp-070.png",
+      "sha256": "e54542011cd8c973d002dbe72b7df088f0c319c70a0aa47371990968115c93bc",
+      "referenceRow": 7,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-071",
+      "file": "design/stamps/masters/stamp-071.png",
+      "sha256": "3c1091d94ef9a6384d1b48f3a9d003e38c7afd5ae13d1052c5f88b2592e29e15",
+      "referenceRow": 8,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-072",
+      "file": "design/stamps/masters/stamp-072.png",
+      "sha256": "064bb2873e28324e8b3292e225630bf54142080d3f25a212c672503488a0f589",
+      "referenceRow": 8,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-073",
+      "file": "design/stamps/masters/stamp-073.png",
+      "sha256": "b4be8ddc3de3041f5609fbdf5531deb8b9f1f85b2f965441cf93e30096a12ca4",
+      "referenceRow": 8,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-074",
+      "file": "design/stamps/masters/stamp-074.png",
+      "sha256": "89a3c589820ebf8d6b866b41b52461360b9e9f1d78a5ce7f85bb9f2ae05f820d",
+      "referenceRow": 8,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-075",
+      "file": "design/stamps/masters/stamp-075.png",
+      "sha256": "95156dc91bc7867ae7e1ae076f1b30992763e704a6f30e462d20eb82d1c8855e",
+      "referenceRow": 8,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-076",
+      "file": "design/stamps/masters/stamp-076.png",
+      "sha256": "a023a0791fdad6462b0e3d798ccc5b18bb77ad63c4ec04705877440f97adee44",
+      "referenceRow": 8,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-077",
+      "file": "design/stamps/masters/stamp-077.png",
+      "sha256": "66d1bc5fdc798f5a907e02905d707f50eaab7fa04a8ec6f8ebf1faaea0e53bfc",
+      "referenceRow": 8,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-078",
+      "file": "design/stamps/masters/stamp-078.png",
+      "sha256": "9b357a2d1b3e3ea542f9dd4c1fdbdeb79d126b225e35e3e0615a22eb753055aa",
+      "referenceRow": 8,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-079",
+      "file": "design/stamps/masters/stamp-079.png",
+      "sha256": "6db21f4e6e756674d3cb236e8f5c7d7474889bd2c5a1d1a43d102ec765249e54",
+      "referenceRow": 8,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-080",
+      "file": "design/stamps/masters/stamp-080.png",
+      "sha256": "d91e316fd09c7a0fb3d11ff56ef6b737e6af1b6ce14e13361afdfa9ddcc9baf8",
+      "referenceRow": 8,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-081",
+      "file": "design/stamps/masters/stamp-081.png",
+      "sha256": "bc609a8f618e06ea822e37617e6185323e58b28eb6f7b509049ec494126723a6",
+      "referenceRow": 9,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-082",
+      "file": "design/stamps/masters/stamp-082.png",
+      "sha256": "24c483714c59fc622b9d178e5646d26433f9927a04f3a1005414ec78739ae113",
+      "referenceRow": 9,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-083",
+      "file": "design/stamps/masters/stamp-083.png",
+      "sha256": "ef692c28e75e77de1acdae588bb69ba35bdefefd7f39f392b48979498c6ffbe8",
+      "referenceRow": 9,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-084",
+      "file": "design/stamps/masters/stamp-084.png",
+      "sha256": "99ac3261ce0b06ddf1b260872ca944b42097f369da3ae0b6bae9e679d364f0ef",
+      "referenceRow": 9,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-085",
+      "file": "design/stamps/masters/stamp-085.png",
+      "sha256": "987c1ccc6454c826076fd5c223894f3c4b03e9d87ddc33c4ce387dc19c3d2bfd",
+      "referenceRow": 9,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-086",
+      "file": "design/stamps/masters/stamp-086.png",
+      "sha256": "1d444755d4cec33ec73a66c5a7ed455993f0f24a3ce3c94f4d1a4e78b2d1d4bc",
+      "referenceRow": 9,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-087",
+      "file": "design/stamps/masters/stamp-087.png",
+      "sha256": "5e8b5ccc7160038ba229befd6019e0cc4d5ca44027f50f0410187e2342eeb1ad",
+      "referenceRow": 9,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-088",
+      "file": "design/stamps/masters/stamp-088.png",
+      "sha256": "a297b5f923fe780eeabc5d80f332218511f07a63f4782d5099538b1af6e84b7f",
+      "referenceRow": 9,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-089",
+      "file": "design/stamps/masters/stamp-089.png",
+      "sha256": "385009e842f77704ad65843c26be5543ac8fe3f6f259df49114cf56b3542e5ea",
+      "referenceRow": 9,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-090",
+      "file": "design/stamps/masters/stamp-090.png",
+      "sha256": "b1a31753d57a8d9364e8f79420573f0eba8b571ce8aafb0b40c3723565b971cf",
+      "referenceRow": 9,
+      "referenceColumn": 10
+    },
+    {
+      "id": "stamp-091",
+      "file": "design/stamps/masters/stamp-091.png",
+      "sha256": "99374511faa45b382223395658e1df6b7637b1368a460d72ac633082599a706d",
+      "referenceRow": 10,
+      "referenceColumn": 1
+    },
+    {
+      "id": "stamp-092",
+      "file": "design/stamps/masters/stamp-092.png",
+      "sha256": "702e103e12c1b89afc55964023b912002e258502fcc98f42f4f67cde488d576e",
+      "referenceRow": 10,
+      "referenceColumn": 2
+    },
+    {
+      "id": "stamp-093",
+      "file": "design/stamps/masters/stamp-093.png",
+      "sha256": "9333cfed06015f5b0ad91ee5a4a457f07436ba37b955e9cb824383d76289f0e0",
+      "referenceRow": 10,
+      "referenceColumn": 3
+    },
+    {
+      "id": "stamp-094",
+      "file": "design/stamps/masters/stamp-094.png",
+      "sha256": "6a33539947e90d06c875625b0a17b3b84021ffedaf718cfdd5048bd305df4fa9",
+      "referenceRow": 10,
+      "referenceColumn": 4
+    },
+    {
+      "id": "stamp-095",
+      "file": "design/stamps/masters/stamp-095.png",
+      "sha256": "4a6c19c68c8ff89f2c7f37d6b6bb5e128050ae3dff5c8e55f3034c9ffdbb6d6a",
+      "referenceRow": 10,
+      "referenceColumn": 5
+    },
+    {
+      "id": "stamp-096",
+      "file": "design/stamps/masters/stamp-096.png",
+      "sha256": "8f32d7e604ff6921482946e781d21257201aa67846705c1b9fb2f8f2ee660761",
+      "referenceRow": 10,
+      "referenceColumn": 6
+    },
+    {
+      "id": "stamp-097",
+      "file": "design/stamps/masters/stamp-097.png",
+      "sha256": "49172083cf0a58eb9977b120d086d267553cff5e08717dd4ac35a8282b929399",
+      "referenceRow": 10,
+      "referenceColumn": 7
+    },
+    {
+      "id": "stamp-098",
+      "file": "design/stamps/masters/stamp-098.png",
+      "sha256": "ace99b84ea8d5e2b48c7f469bdaa89c6a73ea7189a2ce1e8b6c714e928f7dca8",
+      "referenceRow": 10,
+      "referenceColumn": 8
+    },
+    {
+      "id": "stamp-099",
+      "file": "design/stamps/masters/stamp-099.png",
+      "sha256": "e424b86fc1e942e1804f93b901213be888420e3bb879e36e70101ec57dc1667b",
+      "referenceRow": 10,
+      "referenceColumn": 9
+    },
+    {
+      "id": "stamp-100",
+      "file": "design/stamps/masters/stamp-100.png",
+      "sha256": "ecdc88258d4ba82ddee2ad128d38f69f2f672d7f11b888c785a8d386cf01df9c",
+      "referenceRow": 10,
+      "referenceColumn": 10
+    }
+  ]
+}

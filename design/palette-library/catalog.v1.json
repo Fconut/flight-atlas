@@ -1,0 +1,2749 @@
+{
+  "schemaVersion": 1,
+  "catalogRevision": 3,
+  "status": "design-review",
+  "series": [
+    {
+      "id": "deep-sea",
+      "name": "深海航迹"
+    },
+    {
+      "id": "polar",
+      "name": "极地来信"
+    },
+    {
+      "id": "mineral",
+      "name": "月下矿藏"
+    },
+    {
+      "id": "forest",
+      "name": "林间风声"
+    },
+    {
+      "id": "dusk",
+      "name": "暮色云层"
+    },
+    {
+      "id": "wine",
+      "name": "晚霞酒馆"
+    },
+    {
+      "id": "paper",
+      "name": "晴日纸笺"
+    },
+    {
+      "id": "sea-salt",
+      "name": "海盐微风"
+    },
+    {
+      "id": "dunes",
+      "name": "沙丘远方"
+    },
+    {
+      "id": "city",
+      "name": "雾城漫游"
+    }
+  ],
+  "entries": [
+    {
+      "id": "deep-sea-001",
+      "revision": 1,
+      "name": "深海鎏金",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#101c2a",
+        "route": "#e8bf79"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 0,
+      "releaseCohort": "starter-free",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "深海蓝铺底，暖金航线像夜色中浮起的微光。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-002",
+      "revision": 1,
+      "name": "深蓝月白",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#14273a",
+        "route": "#dce8ec"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 1,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "深蓝海面上，月白航线留下清冷的航迹。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-003",
+      "revision": 1,
+      "name": "蓝湾珊瑚",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#18354a",
+        "route": "#efa38d"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 2,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "珊瑚色航线掠过蓝湾，给深海添一抹暖意。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-004",
+      "revision": 1,
+      "name": "远洋青光",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#102f3a",
+        "route": "#7dd6cd"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 3,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "青色微光穿过暗蓝海面，像远洋归来的信号。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-005",
+      "revision": 1,
+      "name": "海沟流银",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#11212e",
+        "route": "#aabed3"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 4,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "冷银航线落在深蓝背景上，沉静如海沟。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-006",
+      "revision": 1,
+      "name": "深海杏光",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#1a3041",
+        "route": "#efc3a0"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 5,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "杏色航线映亮深海蓝，像海平线最后的余晖。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-007",
+      "revision": 1,
+      "name": "鲸落暮蓝",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#1b2941",
+        "route": "#aabce9"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 6,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暮蓝底色托起淡紫航线，仿佛鲸影游过夜海。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-008",
+      "revision": 1,
+      "name": "海岸琥珀",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#17313d",
+        "route": "#dcae69"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 7,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "琥珀航线划过蓝绿海岸，温暖而克制。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-009",
+      "revision": 1,
+      "name": "海底星砂",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#112936",
+        "route": "#d7d4ad"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 8,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "淡金星砂散落深海，航线带着柔和的光。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "deep-sea-010",
+      "revision": 1,
+      "name": "夜航白帆",
+      "seriesId": "deep-sea",
+      "colors": {
+        "background": "#0c2330",
+        "route": "#f0e8d9"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 9,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "白帆般的暖白航线，驶入深蓝夜色。",
+      "previewAsset": {
+        "package": "palette0",
+        "path": "/palette0/maps/deep-sea-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-001",
+      "revision": 1,
+      "name": "极夜冰川",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#0d233c",
+        "route": "#77c9ed"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 10,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "冰蓝航线划过极夜，像冰川映出的清光。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-002",
+      "revision": 1,
+      "name": "北境薄荷",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#102938",
+        "route": "#9edac6"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 11,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "薄荷色航线浮在寒蓝背景上，带来北境的清凉。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-003",
+      "revision": 1,
+      "name": "冰湖晨金",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#173047",
+        "route": "#e5ce91"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 12,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "冰湖蓝映着浅金航线，像极地初升的晨光。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-004",
+      "revision": 1,
+      "name": "雪原星蓝",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#14243c",
+        "route": "#b2ccef"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 13,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "淡蓝航线落在冷靛夜色里，像雪原上的星光。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-005",
+      "revision": 1,
+      "name": "极地珊瑚",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#173242",
+        "route": "#e9a7aa"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 14,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "珊瑚色为极地蓝添暖，像冰面映出的霞光。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-006",
+      "revision": 1,
+      "name": "冻海青玉",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#0c2e38",
+        "route": "#69d4d0"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 15,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "青玉航线穿过深青冻海，清透而安静。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-007",
+      "revision": 1,
+      "name": "冰岛柔紫",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#202d43",
+        "route": "#c5b5e7"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 16,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "淡紫航线映在冰蓝暮色中，如冰岛低垂的云。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-008",
+      "revision": 1,
+      "name": "寒夜白光",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#112335",
+        "route": "#e8eef3"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 17,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "银白航线照亮寒蓝底色，像雪地里的一束光。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-009",
+      "revision": 1,
+      "name": "浮冰杏月",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#213447",
+        "route": "#e7c6ae"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 18,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "杏色航线落在灰蓝浮冰上，柔和如月。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "polar-010",
+      "revision": 1,
+      "name": "蓝时雪影",
+      "seriesId": "polar",
+      "colors": {
+        "background": "#172942",
+        "route": "#94b7d3"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 19,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "雾蓝航线融入蓝调夜色，留下轻盈的雪影。",
+      "previewAsset": {
+        "package": "palette1",
+        "path": "/palette1/maps/polar-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-001",
+      "revision": 1,
+      "name": "月下曜石",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#181b20",
+        "route": "#cbd5e1"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 20,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "曜石黑衬着银白航线，像月光拂过石面。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-002",
+      "revision": 1,
+      "name": "石墨暖金",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#23272c",
+        "route": "#e2c18b"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 21,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暖金航线点亮石墨灰，克制中透着温度。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-003",
+      "revision": 1,
+      "name": "玄岩青玉",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#172322",
+        "route": "#9dcab5"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 22,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "深绿玄岩托起青玉航线，温润如矿石。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-004",
+      "revision": 1,
+      "name": "铁灰珊瑚",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#2b2d31",
+        "route": "#e9a08f"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 23,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "珊瑚航线跃出铁灰底色，像岩层中的一抹暖光。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-005",
+      "revision": 1,
+      "name": "黑曜粉晶",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#231f2a",
+        "route": "#deb2c9"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 24,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "粉晶色航线映着黑紫岩面，柔软而沉静。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-006",
+      "revision": 1,
+      "name": "铅灰冰蓝",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#252e34",
+        "route": "#a5d6e7"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 25,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "冰蓝航线划过铅灰底色，清冷如金属微光。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-007",
+      "revision": 1,
+      "name": "墨石杏白",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#272722",
+        "route": "#e5d5b8"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 26,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "杏白航线落在暖墨石上，像石面凝住的晨光。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-008",
+      "revision": 1,
+      "name": "钨银月光",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#20212a",
+        "route": "#c0bdd8"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 27,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "淡紫银线铺在钨灰夜色中，泛着月光般的冷意。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-009",
+      "revision": 1,
+      "name": "岩层黄铜",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#2c2b29",
+        "route": "#d6b26c"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 28,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "黄铜色航线穿过深灰岩层，带着旧金属的温度。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "mineral-010",
+      "revision": 1,
+      "name": "黑沙薄荷",
+      "seriesId": "mineral",
+      "colors": {
+        "background": "#172a2a",
+        "route": "#b0ded4"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 29,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "薄荷航线掠过青黑沙面，清凉而轻盈。",
+      "previewAsset": {
+        "package": "palette2",
+        "path": "/palette2/maps/mineral-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-001",
+      "revision": 1,
+      "name": "松林微光",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#122e2b",
+        "route": "#e0b778"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 30,
+      "releaseCohort": "starter-free",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "松绿底色间浮起暖金航线，像林隙透下的微光。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-002",
+      "revision": 1,
+      "name": "雨林流银",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#17382f",
+        "route": "#d5e3d6"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 31,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "银白航线映在雨林深绿上，如雨后叶面的水光。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-003",
+      "revision": 1,
+      "name": "杉木晨露",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#1d3a35",
+        "route": "#91d4cd"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 32,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "青色航线穿过杉绿背景，像枝叶上的晨露。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-004",
+      "revision": 1,
+      "name": "苔原杏光",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#273a2c",
+        "route": "#e8c6a2"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 33,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "苔绿底色托起杏色航线，柔和如林间晨光。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-005",
+      "revision": 1,
+      "name": "蕨影玫瑰",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#20372f",
+        "route": "#dfabb6"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 34,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "淡玫瑰航线掠过绿蕨，给林影添一丝温柔。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-006",
+      "revision": 1,
+      "name": "溪谷月白",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#163435",
+        "route": "#e1e9dc"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 35,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "月白航线映在深青溪谷，清净而明亮。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-007",
+      "revision": 1,
+      "name": "竹影暖金",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#2b3c2d",
+        "route": "#d6c485"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 36,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "浅金航线穿过竹绿底色，像竹叶筛下的日光。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-008",
+      "revision": 1,
+      "name": "森林冰蓝",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#143531",
+        "route": "#a4cced"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 37,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "冰蓝航线落进森林绿，像林中藏着一片天空。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-009",
+      "revision": 1,
+      "name": "青苔铜光",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#26382c",
+        "route": "#d6a688"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 38,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暖铜航线映着青苔绿，如雨后湿润的树皮。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "forest-010",
+      "revision": 1,
+      "name": "雪松薄雾",
+      "seriesId": "forest",
+      "colors": {
+        "background": "#233d3c",
+        "route": "#b8d5d2"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 39,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "灰青航线与雪松绿相融，像林间未散的薄雾。",
+      "previewAsset": {
+        "package": "palette3",
+        "path": "/palette3/maps/forest-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-001",
+      "revision": 1,
+      "name": "暮色玫瑰",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#261d35",
+        "route": "#ed9eae"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 40,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "柔粉航线浮在暮紫背景上，像夜色里的一枝玫瑰。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-002",
+      "revision": 1,
+      "name": "紫夜晨金",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#2d243d",
+        "route": "#e4c38c"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 41,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "浅金航线穿过紫夜，像暮色尽头的晨光。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-003",
+      "revision": 1,
+      "name": "薰衣草月白",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#30283e",
+        "route": "#e3ddeb"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 42,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "月白航线落在薰衣草紫上，安静而柔软。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-004",
+      "revision": 1,
+      "name": "暮云青玉",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#292a42",
+        "route": "#9ed5ce"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 43,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "青玉航线照亮蓝紫暮云，带来一丝清凉。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-005",
+      "revision": 1,
+      "name": "鸢尾冰蓝",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#25253c",
+        "route": "#a9d0ed"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 44,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "冰蓝航线映着鸢尾紫，清冷如傍晚的天空。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-006",
+      "revision": 1,
+      "name": "霞光杏影",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#3b2b40",
+        "route": "#edbd9d"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 45,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "杏色航线铺在紫红霞光中，温暖如落日。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-007",
+      "revision": 1,
+      "name": "紫藤流银",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#302d40",
+        "route": "#c7d0dc"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 46,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "银灰航线穿过紫藤暮色，留下淡淡的光。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-008",
+      "revision": 1,
+      "name": "暮山淡粉",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#38283a",
+        "route": "#e0b6cf"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 47,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "浅粉航线落在暮山紫上，像山间将散的晚霞。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-009",
+      "revision": 1,
+      "name": "烟紫星砂",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#353045",
+        "route": "#d7d3ae"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 48,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "浅金航线映着烟紫背景，仿佛夜空里的星砂。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dusk-010",
+      "revision": 1,
+      "name": "晚风薄荷",
+      "seriesId": "dusk",
+      "colors": {
+        "background": "#252f40",
+        "route": "#b6dbc7"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 49,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "薄荷色航线掠过灰蓝暮色，如一阵清凉晚风。",
+      "previewAsset": {
+        "package": "palette4",
+        "path": "/palette4/maps/dusk-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-001",
+      "revision": 1,
+      "name": "勃艮第之夜",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#351d29",
+        "route": "#e4c58a"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 50,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "酒红底色映着浅金航线，像夜里轻晃的酒杯。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-002",
+      "revision": 1,
+      "name": "樱桃月白",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#3d2430",
+        "route": "#ebdce0"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 51,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "月白航线浮在樱桃红上，柔和如夜色中的灯光。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-003",
+      "revision": 1,
+      "name": "红茶青影",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#382a29",
+        "route": "#acd0c6"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 52,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "青色航线与红茶棕相衬，像暖茶旁的一缕清风。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-004",
+      "revision": 1,
+      "name": "莓果冰蓝",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#342237",
+        "route": "#afd0e2"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 53,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "冰蓝航线穿过莓紫夜色，冷暖交织而不张扬。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-005",
+      "revision": 1,
+      "name": "赤霞杏金",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#492e32",
+        "route": "#e8b594"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 54,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "杏色航线映着赤霞红，像杯中留住的落日。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-006",
+      "revision": 1,
+      "name": "玫瑰流银",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#3d2b3a",
+        "route": "#cfc9df"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 55,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "银紫航线掠过玫瑰灰，轻柔如微醺的夜。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-007",
+      "revision": 1,
+      "name": "葡萄暮金",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#322337",
+        "route": "#d9be8f"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 56,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暖金航线照亮葡萄紫，沉静中带着醇厚。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-008",
+      "revision": 1,
+      "name": "陶红薄雾",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#442f31",
+        "route": "#dccfc0"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 57,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "米白航线浮在陶红底色上，柔和如晚霞散后的雾。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-009",
+      "revision": 1,
+      "name": "酒红粉晶",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#3c2433",
+        "route": "#dda8be"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 58,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "粉晶航线映着深酒红，像玻璃杯上的一抹柔光。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "wine-010",
+      "revision": 1,
+      "name": "晚霞青月",
+      "seriesId": "wine",
+      "colors": {
+        "background": "#392e38",
+        "route": "#b7d8d7"
+      },
+      "appearance": "dark",
+      "status": "draft",
+      "sortOrder": 59,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "浅青航线落在灰紫晚霞中，清凉如夜风。",
+      "previewAsset": {
+        "package": "palette5",
+        "path": "/palette5/maps/wine-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-001",
+      "revision": 1,
+      "name": "晴空来信",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#f3efe7",
+        "route": "#28659c"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 60,
+      "releaseCohort": "starter-free",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暖白纸面映着晴蓝航线，像写给远方的一封信。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-002",
+      "revision": 1,
+      "name": "象牙松影",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#f3f0e5",
+        "route": "#326c57"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 61,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "松绿航线落在象牙白上，清新如纸间夹着的叶片。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-003",
+      "revision": 1,
+      "name": "米白莓红",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#f4ece8",
+        "route": "#91475c"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 62,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "莓红航线划过米白底色，像信笺上的一枚印记。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-004",
+      "revision": 1,
+      "name": "纸上暮紫",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#f0edf2",
+        "route": "#685185"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 63,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暮紫航线铺在浅紫纸面，温柔而含蓄。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-005",
+      "revision": 1,
+      "name": "奶油铜线",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#f5eddd",
+        "route": "#8c5e36"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 64,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暖铜航线映着奶油白，像旧纸上的细致笔迹。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-006",
+      "revision": 1,
+      "name": "白沙靛蓝",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#eeeee8",
+        "route": "#3d5483"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 65,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "靛蓝航线掠过灰白沙面，清爽而沉稳。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-007",
+      "revision": 1,
+      "name": "暖纸青玉",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#f1ebdf",
+        "route": "#367a76"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 66,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "青玉航线落在暖纸色上，温润如手写的问候。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-008",
+      "revision": 1,
+      "name": "素笺砖红",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#f4eae2",
+        "route": "#9a4f3a"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 67,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "砖红航线穿过浅杏纸面，带着落日的暖意。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-009",
+      "revision": 1,
+      "name": "月白石墨",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#eff1ee",
+        "route": "#4a5865"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 68,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "石墨航线映着月白底色，简洁如一张素笺。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "paper-010",
+      "revision": 1,
+      "name": "晨纸橄榄",
+      "seriesId": "paper",
+      "colors": {
+        "background": "#f2efdf",
+        "route": "#67733d"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 69,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "橄榄航线落在米黄晨纸上，安静而自然。",
+      "previewAsset": {
+        "package": "palette6",
+        "path": "/palette6/maps/paper-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-001",
+      "revision": 1,
+      "name": "海盐清风",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#edf5f1",
+        "route": "#267f82"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 70,
+      "releaseCohort": "starter-free",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "浅青海盐底色衬着青绿航线，清新如迎面海风。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-002",
+      "revision": 1,
+      "name": "浅湾靛蓝",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#e5eff1",
+        "route": "#3c6391"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 71,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "靛蓝航线划过浅湾蓝，像水面掠过的一道帆影。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-003",
+      "revision": 1,
+      "name": "薄荷陶红",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#e6f0e8",
+        "route": "#9b574b"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 72,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "陶红航线映着薄荷绿，冷暖相遇而柔和。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-004",
+      "revision": 1,
+      "name": "青雾莓紫",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#e5efed",
+        "route": "#835370"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 73,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "莓紫航线落在淡青雾中，轻盈中带着温度。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-005",
+      "revision": 1,
+      "name": "浅海墨绿",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#dfefec",
+        "route": "#306e61"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 74,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "墨绿航线穿过浅海青，像近岸水下的草影。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-006",
+      "revision": 1,
+      "name": "冰青黄铜",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#e6f2ef",
+        "route": "#84642e"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 75,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "黄铜航线映在冰青底色上，像海面洒下的日光。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-007",
+      "revision": 1,
+      "name": "碧湾灰蓝",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#e1edf1",
+        "route": "#4a6f88"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 76,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "灰蓝航线融入浅碧海湾，平静而通透。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-008",
+      "revision": 1,
+      "name": "绿洲松影",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#e9f0e0",
+        "route": "#4f744e"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 77,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "松绿航线落在嫩绿底色上，像沙地里的一片绿洲。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-009",
+      "revision": 1,
+      "name": "海沫酒红",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#e4f0ea",
+        "route": "#8b4a60"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 78,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "酒红航线浮在浅绿海沫上，给清凉添一点暖意。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "sea-salt-010",
+      "revision": 1,
+      "name": "青盐暮紫",
+      "seriesId": "sea-salt",
+      "colors": {
+        "background": "#e7f0ef",
+        "route": "#655b88"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 79,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暮紫航线映着青盐白，像傍晚渐冷的海岸。",
+      "previewAsset": {
+        "package": "palette7",
+        "path": "/palette7/maps/sea-salt-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-001",
+      "revision": 1,
+      "name": "沙丘余温",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#efe4d3",
+        "route": "#8a563b"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 80,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "沙棕航线落在浅砂底色上，像落日留在沙丘的余温。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-002",
+      "revision": 1,
+      "name": "麦田深蓝",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#f0e4cc",
+        "route": "#345e83"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 81,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "深蓝航线映着麦金背景，像麦田尽头的天空。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-003",
+      "revision": 1,
+      "name": "沙漠青影",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#eadeca",
+        "route": "#356d69"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 82,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "青色航线穿过暖沙底色，仿佛沙漠里的清泉。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-004",
+      "revision": 1,
+      "name": "浅陶莓红",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#efddd3",
+        "route": "#8a475b"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 83,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "莓红航线落在浅陶粉上，柔和如风化的岩壁。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-005",
+      "revision": 1,
+      "name": "杏砂墨绿",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#f1e3d3",
+        "route": "#3b6a50"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 84,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "墨绿航线映着杏砂白，像旷野中的一簇树影。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-006",
+      "revision": 1,
+      "name": "驼色靛紫",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#e8ddce",
+        "route": "#645078"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 85,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "靛紫航线掠过浅驼底色，像傍晚缓缓拉长的影子。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-007",
+      "revision": 1,
+      "name": "落日赭石",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#efddc8",
+        "route": "#9b4e30"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 86,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "赭红航线映亮浅杏沙地，留住落日的温暖。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-008",
+      "revision": 1,
+      "name": "沙金石墨",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#e7dfc9",
+        "route": "#4f5e68"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 87,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "石墨航线穿过灰金底色，沉稳如岩间细纹。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-009",
+      "revision": 1,
+      "name": "杏谷松蓝",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#f2e2d3",
+        "route": "#3d6d79"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 88,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "松蓝航线落在浅杏背景上，像谷地里的一缕凉风。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "dunes-010",
+      "revision": 1,
+      "name": "旷野橄榄",
+      "seriesId": "dunes",
+      "colors": {
+        "background": "#ebe1c9",
+        "route": "#6d7042"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 89,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "橄榄航线映着沙米色，像旷野中低伏的草木。",
+      "previewAsset": {
+        "package": "palette8",
+        "path": "/palette8/maps/dunes-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-001",
+      "revision": 1,
+      "name": "雾城日落",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e9edf0",
+        "route": "#aa4d26"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 90,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暖橙航线穿过雾灰底色，像城市天际线上的落日。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-001.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-002",
+      "revision": 1,
+      "name": "银城靛蓝",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e4e8ee",
+        "route": "#3b5f8d"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 91,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "靛蓝航线落在银灰背景上，清晰如雨后的街道。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-002.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-003",
+      "revision": 1,
+      "name": "水泥玫瑰",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e9e5e8",
+        "route": "#934e69"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 92,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "玫瑰航线映着浅灰紫，给水泥色添一丝温柔。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-003.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-004",
+      "revision": 1,
+      "name": "灰港青玉",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e2e9e8",
+        "route": "#2f7774"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 93,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "青玉航线穿过港湾灰，像雾中透出的水光。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-004.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-005",
+      "revision": 1,
+      "name": "薄雾松绿",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e8ebe5",
+        "route": "#496c4f"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 94,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "松绿航线落在浅雾灰上，像城市里安静的树影。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-005.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-006",
+      "revision": 1,
+      "name": "雨城紫影",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e4e5ef",
+        "route": "#6e5386"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 95,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "紫色航线映着冷灰背景，像雨幕中的傍晚。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-006.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-007",
+      "revision": 1,
+      "name": "霜灰铜线",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e6e8e7",
+        "route": "#8c5b3e"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 96,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "暖铜航线划过霜灰底色，带着旧街的温度。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-007.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-008",
+      "revision": 1,
+      "name": "晨雾墨蓝",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e8eef0",
+        "route": "#365770"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 97,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "墨蓝航线穿过浅蓝晨雾，清爽而安静。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-008.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-009",
+      "revision": 1,
+      "name": "银杏灰巷",
+      "seriesId": "city",
+      "colors": {
+        "background": "#ece9df",
+        "route": "#7c682e"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 98,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "灰金航线映着暖灰街巷，像落在路面的银杏叶。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-009.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    },
+    {
+      "id": "city-010",
+      "revision": 1,
+      "name": "暮灰砖红",
+      "seriesId": "city",
+      "colors": {
+        "background": "#e9e3e0",
+        "route": "#965646"
+      },
+      "appearance": "light",
+      "status": "draft",
+      "sortOrder": 99,
+      "releaseCohort": "launch-unlock",
+      "thumbnail": {
+        "renderer": "poster",
+        "rendererRevision": "0.1.30",
+        "sampleId": "global-four-routes-v1"
+      },
+      "description": "砖红航线落在暮灰底色上，像黄昏时的红墙。",
+      "previewAsset": {
+        "package": "palette9",
+        "path": "/palette9/maps/city-010.jpg",
+        "width": 2160,
+        "height": 1148,
+        "revision": 3
+      }
+    }
+  ]
+}

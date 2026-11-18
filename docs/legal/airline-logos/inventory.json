@@ -1,0 +1,1517 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-14",
+  "scope": "WeChat mini-program only; website images unchanged",
+  "entries": [
+    {
+      "code": "3U",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CSC.png",
+      "originalSha256": "16707424b0c16f8d27eba34382cf522b7ed8ade73932e94d823573bee15c1166",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/sichuan-airlines/icon.svg",
+        "sourceSha256": "799362b517df74a4e4bc95b0b6d620e4b7d104cf1cf5a75d25edafd7794f69ac",
+        "outputSha256": "995c0f906d3ea5bf5990df5d77c71631439a4867ab47aabac905ff7d2ce8f986",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "5J",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CEB.png",
+      "originalSha256": "b33d7a083e939c9877e4ccb9722686c2cbf3c82769c7a61a86be2b7e0d5d420c",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/cebu-pacific/icon.svg",
+        "sourceSha256": "0558ea1d50d41f018a6afdf71d708cd4bf1d21f2a4dea025d9aa50bc5f9570b9",
+        "outputSha256": "2afb5d12c60dbd43402f41dba7e2419b1e721b780c3ca920951b40594b604f11",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "7C",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JJA.png",
+      "originalSha256": "dcf0a4403fe4f67d69c52c19458dc117b39a8c14251e25b6dadb4571dc80a574",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://static.jejuair.net/hpgg/resources/images/icon/favicon.ico",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "9C",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CQH.png",
+      "originalSha256": "013dcc7278fb50b8a91ca5416c18e07c6025c43b500241f81df2ca1936bda9b5",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://media.springairlines.com/cache/style/site5/img/favicon.ico",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "A3",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AEE.png",
+      "originalSha256": "231583812f00803f1f3d0b2b83b07abcbe6c69b71fe060d67a2c18666bf18436",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/aegean-airlines/icon.svg",
+        "sourceSha256": "2a731c6ba54752a4b1e53f0f19e15f2c17cb71b79a59d284048333f86fd6200f",
+        "outputSha256": "4a3a9f3f42ff781151bfcfc7ea0bc34dc074ba1568d9f184504b65ebce1e5bca",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "AA",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AAL.png",
+      "originalSha256": "f13806f7b157b9a1eba6130e643d0239465c31a9961bc81deb4c95bb0a8de0aa",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/american-airlines/icon.svg",
+        "sourceSha256": "ad1523fa2a12b768b6ae3beede80e32903dad345b6797cf953bc3b20059c1874",
+        "outputSha256": "cee36034da118f485871d6f7f966d5949ca51fa3742ee08771287ca235f482a5",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "AC",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ACA.png",
+      "originalSha256": "1b086874561e9700d56a70c4125452772026033b9f343529605f8cd46f4202b3",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/air-canada/icon.svg",
+        "sourceSha256": "1dceb02a8d69f09f5c5bf6613eebadd660ea018a7a16b484d83b0f6e6b12dbc0",
+        "outputSha256": "8916d2ef774f1632eb5618b09c4e8a907c8a45f0b306c047f901a15c14d97849",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "AE",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/MDA.png",
+      "originalSha256": "b80e128d93b3ed54afd3283f32bc5d5972b0ec6f424f4f7f548e30b7f7e42445",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.mandarin-airlines.com/favicon2.ico",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "AF",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AFR.png",
+      "originalSha256": "66ff9b759c7600f033c1a01f7681f07498584aa0cd3d6b4899880daab06a9af9",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/air-france/icon.svg",
+        "sourceSha256": "628828e9848a256611fbdeaba8287368490758c3adcaf4f1086ad2aaf0987064",
+        "outputSha256": "060a7132fcea46c40ac1c0e9c754b87042b988959e16478cd02f9e3d5d980207",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "AK",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AXM.png",
+      "originalSha256": "04d0387f490f9f2705a4e32004835cd942dad287d0cf0c6f62cba11cba07ca68",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "官网当前 favicon 为 MOVE/M 标志，不能直接视为亚洲航空承运航司标志"
+      }
+    },
+    {
+      "code": "AS",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ASA.png",
+      "originalSha256": "396b34c7f362dd052fd11a096ed62aa21317b7452dcbb6a9ce1f66810e4388c5",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "官方品牌下载许可限真实时事及新闻报道；本产品用途未获覆盖"
+      }
+    },
+    {
+      "code": "AT",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/RAM.png",
+      "originalSha256": "eb9352120fe7593ccd2d6da583257b002a136042d0a2443e829632d55be84c33",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/royal-air-maroc/icon.svg",
+        "sourceSha256": "4912dc58c89a08928c058bcd6da408f12f9d330065c31a4fa9be2c322fb42a9a",
+        "outputSha256": "33d3f58ad75049783297380401ab397a2a3081eccf6a179d91b3c3560d3c40ca",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "AY",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/FIN.png",
+      "originalSha256": "2ace150aa52e638f28cf27d7df9c188e022324b65e1950fc3dbce7810230e6be",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/finnair/icon.svg",
+        "sourceSha256": "b80d2f00a267966743075650b20126be72e7493f249b84b878b3d286fc9d481e",
+        "outputSha256": "f4ffef9e21d60544c05b97e5aded1da4f977c89c5085bc9c592499c5f8a94fbc",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "B6",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JBU.png",
+      "originalSha256": "b043813cea6f2128cfc97e06d16722bb0243d132a299f852604732eb03fb801c",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "本次官网请求返回 500，未获得可确认的不含名称图形"
+      }
+    },
+    {
+      "code": "BA",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/BAW.png",
+      "originalSha256": "bfeb216e5db6d8843cd67dba4941507f650d21f02f7a7bb0be56eeba78e410b8",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/british-airways/icon.svg",
+        "sourceSha256": "4f3b041f97708583d2b215e10f0d8786fe1af2f3cddd765817c87b5ca42be002",
+        "outputSha256": "9862cf2ced07409a45cdc99edba40ae19a52866b2f6a3f9dfe6fb8d61ec79574",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "BR",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/EVA.png",
+      "originalSha256": "3113ad223d253cd563ad051a1b770af6dd6c7e0dd12e8b35dd320f207bdc3fff",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/eva-air/icon.svg",
+        "sourceSha256": "559443ab9a7e19e1e67b8608fe86b10031242da385e8e3cc9503181d6b2ba55e",
+        "outputSha256": "84304250b48b3b4b1d8604ae52c08171ead705a7743dedc330e7fb1d29ebdd87",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "CA",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CCA.png",
+      "originalSha256": "b3d38a4e07766fd8f8a19d3ec7a67d5c2205c1360d7763241bc40fe01441af92",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/air-china/icon.svg",
+        "sourceSha256": "0b79c774760c459a82ca85c1d8a44fa17a44bcb203b4374ce3a9bb1494313529",
+        "outputSha256": "6da17b81f34cdb42497c63f7b415a4ad0a230f023b0b0c592bd9c132000c35ba",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "CI",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CAL.png",
+      "originalSha256": "e25e12ce0fa2158e756092ae10b9890caa7729edd3c039aaba82a426d9f50f65",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/china-airlines/icon.svg",
+        "sourceSha256": "7cbff67081a011f83f7dc7d38f9df9daa95a8f944c6111186b3d563148c4950f",
+        "outputSha256": "84668f38b188af705c98ef42e27d1dd8aeb546d76b50dd644beec2850bcbac8a",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "CX",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CPA.png",
+      "originalSha256": "47a0cf974c2513e460afdc098a5d299e1764c30ddef11b0590e92337732db5d9",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/cathay-pacific/icon.svg",
+        "sourceSha256": "35d36b44293b1bfe3794cff4d0f7ba4d569a1d332eb0d4634022b2cab965dc15",
+        "outputSha256": "dfa6ac3b1af295f2e516014245afc9764dad9c5ca5a7a8276d77b9e14dec3572",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "CZ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CSN.png",
+      "originalSha256": "c05139f1bb648a81cb8404b582961175f9fc94ece4e5c5986d4079483068e5ac",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/china-southern-airlines/icon.svg",
+        "sourceSha256": "7e5cce60336e6121401938b2630a2e23e070d73e5f135d91c17acc48579adca3",
+        "outputSha256": "5c843a6d5a79f85499b2634ca4f7c83fa38a6105cb6ca893bdbf4ebe80e378e6",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "DL",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/DAL.png",
+      "originalSha256": "a8ae9f48a769672d71afeb2a8ed85e28ec745221081263bdeb0a9e2c41efd0b8",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/delta-air-lines/icon.svg",
+        "sourceSha256": "272a9c1e201c95bdbb85f85a8cb475e875d1f68be589e57dcef25c2351116a3f",
+        "outputSha256": "ef2236443efb10a5ebbfd5ca2701e8c1601c2c9da0671ce0be1abb653ce609d3",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "EI",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/EIN.png",
+      "originalSha256": "01f8a1eff3a2e8114f41af832c0bc6afb47913d389e1938fa28f60fac14bb40c",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/aer-lingus/icon.svg",
+        "sourceSha256": "b6ab1f48bc3ead3512880aa8a9dfac5a083fffb3d2f31f1e60e515f6573acc5b",
+        "outputSha256": "77b96d99e9eeb208f67ec1742fc2b3fdab75dc70f079b674aa183a16055e9c3c",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "EK",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/UAE.png",
+      "originalSha256": "d01b081168fa29a44482fed835bcffaa3f96a3889d5d057681ea65a1a270065d",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "Available icon still contains airline wordmark",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "已检查的图形仍为阿拉伯文航司名称"
+      }
+    },
+    {
+      "code": "ET",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ETH.png",
+      "originalSha256": "73f3f7486b5819b3134e732b3297af6afe9726d7448867461ddb344cd0aca316",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/ethiopian-airlines/icon.svg",
+        "sourceSha256": "37d6ff50b9b6231391128df5ec0796d6494c651d04e23eeafde839bcef5978e7",
+        "outputSha256": "d5d53f2380d3ed3c8b962a0541decfc38639e52d169af3197cd35e973b381ee0",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "EU",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/UEA.png",
+      "originalSha256": "83fce969b6c5f8361bef64c9eb4301cf25b2db01f9777f949119ee14d9a08f48",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.cdal.com.cn/stdair/airline/eu/images/favicon.png",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "EY",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ETD.png",
+      "originalSha256": "fbee5f361e6f16936e1c47117cb6e6b8d234427e8437453bf5f303366fb915b9",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.etihad.com/content/dam/eag/etihadairways/etihadcom/Global/fav-icon/favicon.png?v=6",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "FM",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CSH.png",
+      "originalSha256": "8de50ea89b9df8b48fcd4fd16d6ef88e2e7ce5b3441c494af0b4e426b6ff2539",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "第三方商业图库有独立图形，但免费使用限非商业并要求署名，未采用"
+      }
+    },
+    {
+      "code": "FZ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/FDB.png",
+      "originalSha256": "e0e54752b07d711421e95c86cf2cf18a63ad38dea758d20f5b839f2a74f1aadc",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.flydubai.com/favicon-32x32.png",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "GA",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/GIA.png",
+      "originalSha256": "82edf3e0703a3f04d373e1ae7eae62d1e3beefb803da7f61c57c89e2fad27089",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/garuda-indonesia/icon.svg",
+        "sourceSha256": "d78b6d585bebde533c9efba0097acfdaae95a34be9be5f70b8dfefafb7a6a536",
+        "outputSha256": "eee93cdc86eaf18fdeec8899e90ecdfd1ad15a05a40cd6798a2673551aad2612",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "GF",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/GFA.png",
+      "originalSha256": "a7f07ea923369309545d8d4e2bcace864f59888a40c2adaef23420ae5f5059af",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.gulfair.com/apple-touch-icon.png",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "GJ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CDC.png",
+      "originalSha256": "c80f6d6dbcaf35052c51a8b51f6c50f066da8143a72d4a50bf91657c7b3cf41b",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.loongair.cn/static/favicon.ico",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "GS",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/GCR.png",
+      "originalSha256": "58267925e34ee12c81a91b303a834da0da83cdebdbb15f0dd3d201edea12b7e9",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.tianjin-air.com/dotCms/images/logo/Favicon.ico?language_id=1",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "GY",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CGH.png",
+      "originalSha256": "90a7b3a84c324570d979ca3f6aeb9b9aa5a7e5cfe303e89d9be35d381414e61c",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "本次未获得可验证的官网独立图形，未使用相似名称企业的图标"
+      }
+    },
+    {
+      "code": "HO",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/DKH.png",
+      "originalSha256": "4a65557c0b14c7bcb2bbd7425023146cdb8b93f67030e33c01d0acdeded78c04",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/juneyao-air/icon.svg",
+        "sourceSha256": "67909348d0a8b14f16aa554599d1f5de66825636caa75d9b07529653d5870af6",
+        "outputSha256": "b7938f3c31efd7dcb86855ed81ae3756ff6d60403014d25681b9e700fefab647",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "HU",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CHH.png",
+      "originalSha256": "2a838ec1cbc3d7e99b74208a4b9f84d365d11c5ea93c6adbae703eb0606c28e2",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/hainan-airlines/icon.svg",
+        "sourceSha256": "7427d377749b2803df3e1e25f10a7caefae813e5c843f84dcbb74bc2c4a33baa",
+        "outputSha256": "c125ffa380154728c2aba3a09f9bdcd42af48078d631df70eec4fd4f65dd1d2a",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "HX",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CRK.png",
+      "originalSha256": "8ba9e3416fa43442c0f6783f1608a357b30bab97dd7c95e0bd1532040a03f009",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.hongkongairlines.com/portal/hka_logo.png",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "IB",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/IBE.png",
+      "originalSha256": "aa399f2875a5d5110db1aeee35c4163253d6719c12a4cb95098d580703751272",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/iberia/icon.svg",
+        "sourceSha256": "52f595288ed1c80ede33f064b0ef7bdf1533820a03f5adc299ca2d5508acac7e",
+        "outputSha256": "5ba95f7366c871d8b0ee5be2d437a9af1331f5305397f535e45c1451a56cb20e",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "JD",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CBJ.png",
+      "originalSha256": "63b27509a7ea72053d07f123617f08bdc0c07f76062405ac5b6f2bd5fc515ada",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.jdair.net/favicon.ico",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "JL",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JAL.png",
+      "originalSha256": "ab12e07767b3b9ffb7055750ce3b8ab17dbe5167574b962724150900746832e5",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/japan-airlines/icon.svg",
+        "sourceSha256": "168b311da049362c371a2893983176ee77ed4f430603a805f1d54f1c514f8301",
+        "outputSha256": "1ddb64109d9cf837df2e24507bcd1a963cb42616713780efc976941c7efb2db7",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "KE",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/KAL.png",
+      "originalSha256": "381ec6d9aef81926157d0efb1c9fc3f690873a3879cdc9aad8e66d6b64874910",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/korean-air/icon.svg",
+        "sourceSha256": "002e3d8d15d2c15f50b595015cbab669628ef916484e53f96f7e9a0e7d58ecab",
+        "outputSha256": "c3bf94949e43d325f868b340abb39038c3494a7cb25acc8fc8c4b4177b313f7a",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "KL",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/KLM.png",
+      "originalSha256": "4c939b309ab639c008f72b076316fc93e0a0b372824152484530fed1916bf666",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "Available icon still contains airline wordmark",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "官网图标仍含 KLM；未裁切皇冠，未确认独立皇冠使用条件"
+      }
+    },
+    {
+      "code": "KN",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CUA.png",
+      "originalSha256": "9fed6cf1c4436db30b15268f82faaeea49e0f036e02ba8a316364dcaa018e9f5",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.flycua.com/favicon.ico",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "KQ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/KQA.png",
+      "originalSha256": "a3e2e3fb5f4e130119a2079754848439f11fdf0e4fd5a16493718250bfee2793",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/kenya-airways/icon.svg",
+        "sourceSha256": "c3a7ac6bcf6c97adaccf96d3c2a5a5f350f7a99d924270f0dbe3b006d0b912bc",
+        "outputSha256": "47736355048e09fd789b7419eb64208301caa25742a2fd58a277646abac47ef6",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "LA",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/LAN.png",
+      "originalSha256": "74052e4f0f4ff69e72ee2c99dc802b7115e55ee948acd285ff4b66f5dff3acbf",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/latam-airlines-chile/icon.svg",
+        "sourceSha256": "99e692643b766076987d287bf69a2f07fba45c2dfaa94986b3f37ed97826e59f",
+        "outputSha256": "b4aa984f2726119058b6cd9e2d5f711ffae79fbe1927d87926a5d33455125692",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "LH",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/DLH.png",
+      "originalSha256": "dd3097a269aada84af376689b0055e69eabe744258dafbe75b2aecb93956dcc8",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/lufthansa/icon.svg",
+        "sourceSha256": "f2d43c9d57f3b6b27a4ccf91e8ab0d8bb7ac8f326d727ef6326534b0d6512b5c",
+        "outputSha256": "5da1b2cc1c4eaccda1aa5f9dc1170b1a77ab7dd9af30eda7b0ff305abe26f7bc",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "LJ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JNA.png",
+      "originalSha256": "bcdffafb558109f8db93a1b7aa1d3636b02bf20308c53879f627333e99734d62",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/jin-air/icon.svg",
+        "sourceSha256": "94ffda4d956da69d3f26df23e7c5150b80d44f8c6b121b2e4006a5534316f189",
+        "outputSha256": "f34fe5f60e766b5ed232985e24d5e0da2c3aec532b803a3db6fd91c68b0c4ecc",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "LO",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/LOT.png",
+      "originalSha256": "e17e9bb5e1b5a5f62329ffcc8bce522b9b268864baa67e4930d8a3285dfa7ebc",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/lot-polish-airlines/icon.svg",
+        "sourceSha256": "0ccce1c14e1b4df37d4b197f3968a89586b18579ecc915036eec1e6dfb7c2f40",
+        "outputSha256": "95615d0517a1ff5f05ed7ba4a6c88b8b793593ade51d1b68437934a655946c55",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "LX",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/SWR.png",
+      "originalSha256": "889dcc4f1e8f5fa8266f67b7403b2ba86308d66b2e1d516e7aa8a19a1f8ae193",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/swiss/icon.svg",
+        "sourceSha256": "0886f662db3efb4c386ef111f1f677cfb2e14e05e863329336c87f3dc446be1c",
+        "outputSha256": "804e33d861a223d268f447f9e7d38e8630d6d8d4b9a4b4d5d060dd1cb1a1e786",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "MF",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CXA.png",
+      "originalSha256": "06bda072d3dac1ebc8e37d681ef77cd2962e87129e84ecdcbb6dcbdd1624d7a9",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/xiamenair/icon.svg",
+        "sourceSha256": "15fa244fcd8f170fa3bcb72475d5e8e251ae71a5596db1212a0ded364081008c",
+        "outputSha256": "027a06edfb19b06764964d9f10a9139f2daf9b3596b86c674e9b4a0d9eaea385",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "MH",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/MAS.png",
+      "originalSha256": "bf6ebb7ce3812629f0bdd0814293a03299eb20089ca6eb0c1cc89785454d643e",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/malaysia-airlines/icon.svg",
+        "sourceSha256": "de726f20cf485d2274a8d1b8ea05c21e41087f45fa34b4b690a40db75bbd399d",
+        "outputSha256": "e844360b6f288141678b0e9f7c6271a24dd6d8861443d061f1b6f6c0562e1df2",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "MM",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/APJ.png",
+      "originalSha256": "f409ae55e56cee555a46c035c6d9bf6fbf2d90c2cea17d85a387288e4e401c2e",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www2.fly-peach.cn/application/files/1017/8003/3608/251219_peach_app_icon.png",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "MS",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/MSR.png",
+      "originalSha256": "72e22dc42c86edd40e310436995b51106518dc1eeba07b4b4896d0b9b92427c0",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/egyptair/icon.svg",
+        "sourceSha256": "e42711619bab2b5ed1b22ce6485dc4977b399e57bdf55d5efcfdef033cc9ccea",
+        "outputSha256": "400280f677e0737cf6160c168e3d0225894bb4a0d39bc6bdb87c7ea272c98e1e",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "MU",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CES.png",
+      "originalSha256": "90ca8e76be5a9095f4471e4d29cfae669fb832874986cfac239a8fd49ff2f3f8",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/china-eastern-airlines/icon.svg",
+        "sourceSha256": "3872cb4e3c59ce4765b5e20fc76a0c504b6e6cc7431bf8a585e5b8674e6b5ad6",
+        "outputSha256": "a4615481fc1d42ef10189e57801a0dbac7aa989ad69cab77f585cfbc74bf9845",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "NH",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ANA.png",
+      "originalSha256": "021c91e9412bcc5f8481272820ed7456e6532940bbb614be6197bdbb1054d74d",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "官网图标仍含 ANA"
+      }
+    },
+    {
+      "code": "NU",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/JTA.png",
+      "originalSha256": "08351d5cbeada4b39184b0b1889b9a0cfdb97a9fc2f8f1f196136345c86e68d0",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "官网图标仍含 JAL 或 JTA；未用集团名称图标冒充无名称版本"
+      }
+    },
+    {
+      "code": "NZ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ANZ.png",
+      "originalSha256": "b6e892d553d85d17da94fdc400d06b2cb49f3694004bc9430251f552d20faf6f",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/air-new-zealand/icon.svg",
+        "sourceSha256": "4ebd3462b1ef4b3e785a32036b570972dad72f467bfb3834151b9862d4eb3b32",
+        "outputSha256": "1402fc1ec0b3059d106ec91882d35132ad4eeeaa9f18d370c09594ad171fa8ea",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "OA",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/OAL.png",
+      "originalSha256": "1f69bc4b417b02c7d294667ee0653be513b66e867dffc6bfbd79962d8cac9ce2",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.olympicair.com/Media/OlympicAir/android-icon-192x192.png",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "OS",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AUA.png",
+      "originalSha256": "17887c5180cc82666af5777c0d213d06d20416be3b4834529fa6a64d5770fc8b",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/austrian-airlines/icon.svg",
+        "sourceSha256": "4bc3a3b776c7f1a186fd6d7e214871a40f3090548761ad7a0bf5aa3bffc4f312",
+        "outputSha256": "2fd4bf4c57573a75ae26ab7b6ae733165ef132a71bd1de36093ee18219402e13",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "OZ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/AAR.png",
+      "originalSha256": "a1012a16cd2b85cc53e5fb77a7563e0d214176948f0ff43af1c39ea794559101",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/asiana-airlines/icon.svg",
+        "sourceSha256": "d7afa88dded761ed2c0b12ced5c060cc749ec8e483a16bc7df8a1574cd65ab99",
+        "outputSha256": "8cdb9f30fda940a0a093dd1feb61901bf4b0b193a13c36906357a5e9ff9e3ee3",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "PR",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/PAL.png",
+      "originalSha256": "18f1722cae57f0af2de8db9e6f0da4fdf136764f7909d86a0544e73493964484",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/philippine-airlines/icon.svg",
+        "sourceSha256": "d419836de7875d44c498acbc1d22b13b7dcab7b6669c23962bb8f30e37ae73f8",
+        "outputSha256": "ebdc3bbc76095b4556fcfa557432b9e6907a410d5705572a88aed2c06499dc4c",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "QF",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/QFA.png",
+      "originalSha256": "99feaf204e525c1185fe9f8bdeea76f315556e4135f90832d551fa2ca36aacda",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/qantas/icon-mono.svg",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "QR",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/QTR.png",
+      "originalSha256": "00c0deaf55f05393ed8c34b594b261b1753d8a26cff4dceafdaa8da9ab8ab9db",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/qatar-airways/icon.svg",
+        "sourceSha256": "94ace167b39313ce2ffb7255731b30812ff649ceb6fc64843a9c5b9aa45bb357",
+        "outputSha256": "fe3a9291be3ccb0c4ffc751e56db16fd708e145563a9eb9a31738c97a4027187",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "QW",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/QDA.png",
+      "originalSha256": "69bb1b73c0329761623c1d766fae3621a41730ea6d2a731b158265e2ef2d58d8",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.qdairlines.com/favicon.ico",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "SC",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CDG.png",
+      "originalSha256": "aa9bca303d018b30fd7b7ef3e719440fc20e1bc4f8047f06faa6f115ea323abd",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/shandong-airlines/icon.svg",
+        "sourceSha256": "2c515d7368bf2f892dfae8291605c12e1eefe8d831a4e2cae9ff54456ddd9ab0",
+        "outputSha256": "375cade1deba185d0d556ada3eb36df3072fbe540812f373b00e4efce1597604",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "SK",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/SAS.png",
+      "originalSha256": "a881dded75271064c4aeffbb759166ba011e74796fd2f4b4cb7252bb9ff8e72a",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "仍以 SAS 字标为主，未得到不含名称的合适图形"
+      }
+    },
+    {
+      "code": "SM",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/MSC.png",
+      "originalSha256": "2c0a739b282a482ecceac1ad8a4df1e7be65b8da2e1061eed34f36f5c8d622dd",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "第三方商业图库有独立图形，但免费使用范围有限，未采用"
+      }
+    },
+    {
+      "code": "SQ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/SIA.png",
+      "originalSha256": "6f4c21e4c4d61342e5a35741f6b0ffd117c0f4d0397dbba0483645423ee25809",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/singapore-airlines/icon.svg",
+        "sourceSha256": "259e51e317f12322f949c5ebff03d0e127b4128563b2301edb452bec335eeea5",
+        "outputSha256": "790134b9743f741c900b06936265eea1c2830d27efc4088d47e727b439e6a207",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "SV",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/SVA.png",
+      "originalSha256": "835db35e3227410bccdf1e9f5957d6eaefdcce3f200f49d809173a5afb0f9af9",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/saudia/icon.svg",
+        "sourceSha256": "a75142b65a25a65a8eabefe0d37c5d4ac77f0c4268e8f68494774ef358889a57",
+        "outputSha256": "12b35d9176c486ae284b7c437da24429613359eaf377561d8db33c037c240cd9",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "TG",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/THA.png",
+      "originalSha256": "862d848bd21c553d639f99dbd03e56ada15ec8c01d068bb87a7be183f6eb3ad9",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/thai-airways/icon.svg",
+        "sourceSha256": "8b7f65aed27891ac29fed821746d1c74ed09e93b25b1d9fd6a228499a7370ce4",
+        "outputSha256": "06a398451d252a2e7afc28d6de2301b84cf06f4b15109f25defaf23f95a40f01",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "TK",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/THY.png",
+      "originalSha256": "fac09fe35315de42cfa76d4ca963d3fc9a3bcfcc356ad6a4a92761ab093769c1",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/turkish-airlines/icon.svg",
+        "sourceSha256": "88310282bba0279d9947f75e8b0975e402b48d69d205e5d40d514f23e88051a8",
+        "outputSha256": "0439b0e07adab5942effda8082b88196809c2adcf311e80d54662c6ea20c3f2e",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "TP",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/TAP.png",
+      "originalSha256": "1adca2673d7b4e28ce7b864f761e880e824ff3bc54c2098f0e17e7b5d5ccad86",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "Available icon still contains airline wordmark",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "官网 SVG、PNG、ICO 均仍含 TAP 字标"
+      }
+    },
+    {
+      "code": "TW",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/TWB.png",
+      "originalSha256": "1769ec869cc74eb332c3e4266f02578c60b195699afafafe3111ee94969beccb",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/trinity-airways/icon.svg",
+        "sourceSha256": "bd8c22a68401536aeb9cb32dd658eda331f66ac0869c35fd91a5af4ed639e3e0",
+        "outputSha256": "264e781c1ecc81d6b4a053f44642a0e7b7ade7c6364ecd8775cc3cc50fa1505c",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "UA",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/UAL.png",
+      "originalSha256": "0143da7cd52ebd7c518e9e7ce1f7f84dc126c35d050da4794cab6606ea322bab",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/united-airlines/icon.svg",
+        "sourceSha256": "468fd4faa748a20d141b8a595ac9d1ffbe684bd6b2a134d63a7d86751b9de95c",
+        "outputSha256": "77ad65b33deadb84edc7a44f4fdf1682a75d41ede805e7fd48ac4b8a20ddb4eb",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "UO",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/HKE.png",
+      "originalSha256": "e62bf6fb1757f4a0a18dcc5f1e0e41ad01bacfc2980168eff96015245abc5d76",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/hk-express/icon.svg",
+        "sourceSha256": "e7d881ed306fee2c8018ca6d1d938283011cef62b5f586ae2eb1de5c8dcfdee3",
+        "outputSha256": "1f99b65cece04dc8bdbbbf0c5d19300e5a02b7d5929e7959ed9fa513fe38cfa0",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "VJ",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/VJC.png",
+      "originalSha256": "98c1217f9833a5dddf68c7cdb336897f76b37618b2d29878b63caa5898733889",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "candidate-found",
+        "candidateSource": "https://www.vietjetair.com.cn/logo192.png",
+        "note": "Visible symbol has no complete airline name; retained for review, not deployed"
+      }
+    },
+    {
+      "code": "WF",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/WIF.png",
+      "originalSha256": "73b43c5de848edaa0a217b792d9a2e02fa7cd05b30fd6d551ae92784982221a2",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "官方品牌手册提供组合标志并要求保持元素；未裁切或借用 Wideroe Zero 子品牌图标"
+      }
+    },
+    {
+      "code": "WN",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/SWA.png",
+      "originalSha256": "8228ee50f858b10475592e20a3f4fd7aa0571e1011f7d6aa7d5e7ee022184658",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/southwest-airlines/icon.svg",
+        "sourceSha256": "0fe13b528056a057e0015306160193686bae4f50e1bb65735d786815bcc0b70a",
+        "outputSha256": "78fa25c9bb7cfdd96983508c46f9fd22236c6f2131f10b33dd22c1906d66037c",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "WS",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/WJA.png",
+      "originalSha256": "62bcb0b42c99b5530cef0b3d890db54d2658eac06b4ce54ab8746ee0b8cc82ea",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/westjet/icon.svg",
+        "sourceSha256": "b963a514b54b7b6dc08f2fb2fe0b4a8b0d3ed367c433fa2cd15ea47905477b11",
+        "outputSha256": "6b67e7c753db2f1ddfd0ae552436582c9e51b0bbbee2d1da1efc4275feff857b",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "WY",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/OMA.png",
+      "originalSha256": "3802f30c31d08c42cd74e4fc664ef9901c6f4b03c079e72adcc8762b1c493f85",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/oman-air/icon.svg",
+        "sourceSha256": "a7921feea57ecd01f5c1c326ce541105de54b93deae3e69dac2274fd3057c5ab",
+        "outputSha256": "ba9b1b8f1a21051241e29eb914a0fccfc130de7f403b12fc06ba637dbe57bc6b",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    },
+    {
+      "code": "ZE",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/ESR.png",
+      "originalSha256": "06953d52ca1741a3f97164d68fa9c399c4ae42a5b3b37a2a041fc56bbbb3537b",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": null,
+      "action": "text-fallback",
+      "reason": "No independent symbol found in reviewed upstream revision",
+      "expandedSearch": {
+        "date": "2026-11-14",
+        "result": "not-adopted",
+        "candidateSource": null,
+        "note": "官网返回 403，其他公开 CI 资料仍以 EASTAR JET 字标为主"
+      }
+    },
+    {
+      "code": "ZH",
+      "originalSource": "https://github.com/imgmongelli/airlines-logos-dataset/blob/7b001fb8d5d0a2f875d57b2b5a8a8056b2fbc63a/images/CSZ.png",
+      "originalSha256": "42589957bf7e3afbac2931ea26ec602b265111d1f3e246ed841dd6dd6fb5e7d5",
+      "originalExactBlobMatch": true,
+      "originalRepositoryLicense": "README declares MIT; no airline-specific authorization evidence",
+      "airlineAuthorization": "not established",
+      "checkedAt": "2026-11-14",
+      "replacement": {
+        "source": "https://github.com/soaring-symbols/soaring-symbols/blob/0d0ff8c1f7c3133412f3cce595caa12abc52cdfd/assets/shenzhen-airlines/icon.svg",
+        "sourceSha256": "977f71219a63f85ea0398aeff521e66b7a61ec0422360264d3e7ac20b119a532",
+        "outputSha256": "8e28b85f18237804745d4f43b00da26f2c10de6512f05d2af305f5565a757841",
+        "repositoryLicense": "MIT, Copyright (c) 2024 Anh Thang",
+        "rightsCaveat": "Upstream explicitly retains airline trademark/copyright ownership; not proof of airline permission",
+        "conversion": "Original SVG geometry/colors preserved; explicit 256px decode viewport, rasterized to transparent 128px PNG with 8px padding",
+        "review": "No full airline name visibly present"
+      },
+      "action": "symbol"
+    }
+  ],
+  "runtimeStatus": "All official logo/symbol assets retired from mini-program; replaced by plain airline-code marks. Historical source audit retained.",
+  "retiredAt": "2026-11-14"
+}

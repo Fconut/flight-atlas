@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "添加航班",
+  "navigationBarBackgroundColor": "#f4f5f3",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "airport-input": "/airport-picker/components/airport-input/index"
+  },
+  "componentPlaceholder": {
+    "airport-input": "view"
+  }
+}

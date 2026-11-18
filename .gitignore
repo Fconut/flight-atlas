@@ -6,3 +6,9 @@ node_modules/
 *.log
 
 .wrangler/
+
+# Developer-local settings and generated diagnostics
+project.private.config.json
+*.pem
+*.key
+

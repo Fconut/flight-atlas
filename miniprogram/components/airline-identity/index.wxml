@@ -1,0 +1,1 @@
+<view class="airline-identity"><text wx:if="{{identity.code}}" class="airline-code-mark" style="color:{{identity.color}};background:{{identity.background}}">{{identity.code}}</text><text class="airline-flight-number">{{identity.number}}</text></view>

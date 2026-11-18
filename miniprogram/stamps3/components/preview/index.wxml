@@ -1,0 +1,1 @@
+<image class="art" src="/stamps3/assets/{{stampId}}.png" mode="aspectFit" bindload="ready" binderror="failed"/>

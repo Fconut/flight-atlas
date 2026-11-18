@@ -1,0 +1,1 @@
+<image class="badge-image" bindload="assetLoaded" binderror="assetFailed" src="{{src}}" mode="aspectFit" style="display:block;width:100%;height:{{size}}rpx;transform:{{transform}}"/>

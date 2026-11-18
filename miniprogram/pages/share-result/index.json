@@ -1,0 +1,19 @@
+{
+  "navigationBarTitleText": "分享预览",
+  "navigationBarBackgroundColor": "#f4f5f3",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "badge-art0": "/badges0/components/badge/index",
+    "badge-art1": "/badges1/components/badge/index",
+    "badge-art2": "/badges2/components/badge/index",
+    "badge-art3": "/badges3/components/badge/index",
+    "badge-art4": "/badges4/components/badge/index"
+  },
+  "componentPlaceholder": {
+    "badge-art0": "view",
+    "badge-art1": "view",
+    "badge-art2": "view",
+    "badge-art3": "view",
+    "badge-art4": "view"
+  }
+}

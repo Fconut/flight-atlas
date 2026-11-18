@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "累计签到",
+  "navigationBarBackgroundColor": "#f4f5f3",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "stamp-preview0": "/stamps0/components/preview/index",
+    "stamp-preview1": "/stamps1/components/preview/index",
+    "stamp-preview2": "/stamps2/components/preview/index",
+    "stamp-preview3": "/stamps3/components/preview/index"
+  },
+  "componentPlaceholder": {
+    "stamp-preview0": "view",
+    "stamp-preview1": "view",
+    "stamp-preview2": "view",
+    "stamp-preview3": "view"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "navigationBarTitleText": "海报配色",
+  "navigationBarBackgroundColor": "#f4f5f3",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "palette-preview0": "/palette0/components/preview/index",
+    "palette-preview1": "/palette1/components/preview/index",
+    "palette-preview2": "/palette2/components/preview/index",
+    "palette-preview3": "/palette3/components/preview/index",
+    "palette-preview4": "/palette4/components/preview/index",
+    "palette-preview5": "/palette5/components/preview/index",
+    "palette-preview6": "/palette6/components/preview/index",
+    "palette-preview7": "/palette7/components/preview/index",
+    "palette-preview8": "/palette8/components/preview/index",
+    "palette-preview9": "/palette9/components/preview/index"
+  },
+  "componentPlaceholder": {
+    "palette-preview0": "view",
+    "palette-preview1": "view",
+    "palette-preview2": "view",
+    "palette-preview3": "view",
+    "palette-preview4": "view",
+    "palette-preview5": "view",
+    "palette-preview6": "view",
+    "palette-preview7": "view",
+    "palette-preview8": "view",
+    "palette-preview9": "view"
+  }
+}
