@@ -54,6 +54,6 @@ test('fleet details use the same departure-time order as the flight list',()=>{
  Object.assign(c,{document:{createElement:()=>({children:[],append(...items){this.children.push(...items)}})},recordAirportName:x=>x,fleetDialog:node('dialog')});
  vm.runInContext(section(read('dist/fleet.js'),'function fleetDetail','function fleetMaker'),c);
  c.fleetDetail({name:'A320',rows:[{date:'2024-01-01',departureTime:'08:00',airline:'MU',flight:'early',from:'SHA',to:'NRT'},{date:'2024-01-01',departureTime:'18:00',airline:'MU',flight:'late',from:'NRT',to:'SHA'}]});
- assert.match(node('fleet-detail').children[0].children[1].textContent,/late/);
- assert.match(node('fleet-detail').children[1].children[1].textContent,/early/);
+ assert.match(node('fleet-detail').children[0].children[0].children[1].children[0].textContent,/late/);
+ assert.match(node('fleet-detail').children[1].children[0].children[1].children[0].textContent,/early/);
 });

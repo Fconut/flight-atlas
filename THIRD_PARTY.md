@@ -41,3 +41,5 @@ Mini-program symbols now use Soaring Symbols revision 0d0ff8c1f7c3133412f3cce595
 ## Airline code marks (2026-11-14)
 
 The mini-program now draws plain airline codes in a common typeface and shape, using existing representative UI colors. All 50 airline symbol PNGs and their runtime catalog have been removed from the mini-program package. Airline image provenance and upstream license records above are retained as historical audit evidence in docs/legal/airline-logos; they do not describe currently shipped mini-program images. Website assets are unchanged.
+## Airport search names
+Chinese airport full names and city labels in airport-search-data.js include Timeon1/TMC_Dataset (MIT, Copyright 2024 YanWei). License: licenses/TMC_Dataset-MIT.txt. ICAO identifiers use the existing OurAirports/airport-codes snapshot. See docs/airport-search.md.
