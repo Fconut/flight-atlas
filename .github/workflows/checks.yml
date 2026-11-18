@@ -22,3 +22,11 @@ jobs:
           for file in dist/*.js; do node --check "$file"; done
       - name: Run regression tests
         run: node --test tests/*.test.cjs
+
+      - name: Run mini-program and cloud regression tests
+        run: node --test miniprogram-tests/*.test.cjs
+      - name: Verify collection manifests and source artwork
+        run: |
+          node scripts/stamps/build.cjs --check
+          node scripts/checkin/sync-rewards.cjs --check
+          node scripts/palette-library/build.cjs --check
