@@ -14,7 +14,33 @@ function parseScreenshotDetail(text){
  const model=lines.slice(0,planIndex+2).map(screenshotAircraft).find(Boolean)||'';
  return {date:date[1]+'-'+date[2].padStart(2,'0')+'-'+date[3].padStart(2,'0'),airline:flight[1],flight:flight[2],from:cleanScreenshotAirport(route[1]),to:cleanScreenshotAirport(route[2]),rawFrom:route[1].trim(),rawTo:route[2].trim(),departureTime:time?time[1]+':'+time[2]:'',aircraft:model,rawAircraft:model};
 }
+// Order itineraries place each departure before the flight number, unlike history lists.
+function parseOrderItinerary(text){
+ const normalized=String(text).normalize('NFKC').replace(/([\u3400-\u9fff])[ \t]+(?=[\u3400-\u9fff])/g,'$1');
+ if(!/订单|中转/.test(normalized))return null;
+ const lines=normalized.split(/\r?\n/).map(s=>s.trim()).filter(Boolean),rows=[];
+ const date=normalized.match(/(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})/);
+ let departure=null,active=null;
+ for(let i=0;i<lines.length;i++){
+  const line=lines[i],time=line.match(/^(\d{1,2})\s*:\s*([0-5]\d)(?=\s|[^0-9]|$)/);
+  if(time){
+   const raw=line.slice(time[0].length).trim()||lines[i+1]||'';
+   if(/机场/.test(raw)){
+    const airport=cleanScreenshotAirport(raw.replace(/\s*T\d+.*$/i,''));
+    if(active){active.to=airport;active.rawTo=raw;active=null;departure=null}
+    else departure={from:airport,rawFrom:raw,departureTime:time[1].padStart(2,'0')+':'+time[2]};
+   }
+  }
+  const flight=line.match(/(?:^|[^A-Z0-9])([A-Z][A-Z0-9]|[0-9][A-Z])\s*(\d{2,4})\b/i);
+  if(flight&&departure){
+   const model=line.match(/波音\s*(737)(?![0-9-])|\b(C919)\b/i);
+   active={...departure,date:date?date[1]+'-'+date[2].padStart(2,'0')+'-'+date[3].padStart(2,'0'):'',dateIssue:!date&&/\d{1,2}月\d{1,2}日/.test(normalized)?'missing-year':'',airline:flight[1].toUpperCase(),flight:flight[2],to:'',aircraft:model?(model[2]||'BOEING 737'):'',rawAircraft:model?model[0]:''};rows.push(active);
+  }
+ }
+ return rows.length?rows:null;
+}
 function parseFlightScreenshot(text){
+ const order=parseOrderItinerary(text);if(order)return order;
  const detail=parseScreenshotDetail(text);if(detail)return [detail];
  const lines=String(text).normalize('NFKC').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),rows=[];let pendingDate='',pendingYear='',active=null;
  for(const line of lines){

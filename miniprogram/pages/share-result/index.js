@@ -158,8 +158,9 @@ Page({
   },
   shareImage() {
     if (
+      !this.data.ready ||
+      !this.payload?.id ||
       !this.data.posterPath ||
-      !this.payload ||
       this.payload.scope !== account.activeScope()
     )
       return;
@@ -169,6 +170,8 @@ Page({
     }
     wx.showShareImageMenu({
       path: this.data.posterPath,
+      needShowEntrance: true,
+      entrancePath: this.onShareAppMessage().path,
       fail: (error) => {
         if (!this.disposed && !/cancel/i.test(error.errMsg || ''))
           this.setData({ message: '图片分享暂不可用，请重试' });

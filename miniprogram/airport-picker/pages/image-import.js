@@ -17,7 +17,7 @@ function validate(row, search) {
   const value = Object.fromEntries(fields.map(f => [f.key, String(row[f.key] || '').trim()]));
   value.from = search.resolve(value.from); value.to = search.resolve(value.to); value.airline = normalizeAirlineCode(value.airline);
   const errors = {};
-  if (!dateValue(value.date)) errors.date = '请补齐有效日期';
+  if (!dateValue(value.date)) errors.date = !value.date&&row.dateIssue==='missing-year'?'截图未包含年份，请补充完整日期':!value.date?'未识别到完整日期，请手动填写':'日期无效，请重新选择';
   if (!/^[A-Z0-9]{2}$/.test(value.airline || '')) errors.airline = '请填写航空公司的 IATA 两位代码';
   if (!/^\d{1,4}$/.test(value.flight)) errors.flight = '航班号请填写 1–4 位数字';
   if (!value.from) errors.from = '请明确选择出发机场';
@@ -30,16 +30,25 @@ function validate(row, search) {
 Page({
   data: { fields, fieldGroups: [{id:'date',items:[fields[0]]},{id:'flight',items:[fields[1],fields[2]]},{id:'from',items:[fields[3]]},{id:'to',items:[fields[4]]},{id:'optional',items:[fields[5],fields[6]]}], rows: [], processing: false, selectedCount: 0, invalidCount: 0, message: '建议使用清晰、完整的截图；缺失的日期和机场需手动补齐。' },
   onLoad() {
-    this.scope = account.activeScope(); this.search = AirportSearch.create(airports, names, metadata);
-    this.getOpenerEventChannel().on('selectedImage', file => this.recognizeFile(file));
+    this.scope = account.activeScope();
+    this.getOpenerEventChannel().on('selectedImage', file => { if(this.pageReady)this.recognizeFile(file);else this.pendingImage=file; });
     this.getOpenerEventChannel().on('importResult', result => {
       if (this.disposed) return;
       if (result.ok) importComplete(result);
       else { this.confirmed = false; this.setData({ message: result.message || '记录尚未保存，请重试' }); }
     });
   },
-  onUnload() { this.disposed = true; },
-  close() { wx.navigateBack(); },
+  onReady() {
+    wx.nextTick(()=>{
+      if(this.disposed)return;
+      this.search=AirportSearch.create(airports,names,metadata);
+      this.pageReady=true;
+      const file=this.pendingImage;this.pendingImage=null;
+      if(file)this.recognizeFile(file);
+    });
+  },
+  onUnload() { this.disposed = true;this.pendingImage=null; },
+  close() { if(this.closing||this.disposed||this.confirmed)return;this.closing=true;wx.navigateBack({fail:()=>{this.closing=false}}); },
   preview() { if (this.data.image) wx.previewImage({ urls: [this.data.image] }); },
   toggleRaw() { this.setData({ showRaw: !this.data.showRaw }); },
   toggleImage() { this.setData({ showImage: !this.data.showImage }); },
@@ -55,7 +64,7 @@ Page({
     return response.result;
   },
   async choose() {
-    if (this.data.processing) return;
+    if (this.data.processing || !this.pageReady || this.closing || this.confirmed) return;
     this.setData({ processing: true });
     let selected;
     try {
@@ -68,6 +77,7 @@ Page({
   },
   async recognizeFile(file) {
     if (this.data.processing || this.disposed) return;
+    this.confirmed=false;
     this.setData({ processing: true }); let fileID;
     try {
       const image = file.path;
@@ -75,11 +85,13 @@ Page({
       this.setData({ image, rows: [], rawText: '', showRaw: false, showImage: false, selectedCount: 0, invalidCount: 0, issuesOnly: false, message: '正在准备图片…' });
       const owner = account.activeScope();
       const digest = await new Promise(resolve => wx.getFileSystemManager().getFileInfo({filePath:image,digestAlgorithm:'md5',success:r=>resolve(r.digest||''),fail:()=>resolve('')}));
+      if(this.disposed || account.activeScope()!==owner)return;
       const cacheKey = digest ? owner + ':' + digest : '';
       let result;
       if (cacheKey && this.ocrCache?.key === cacheKey) result = {text:this.ocrCache.text};
       else {
       const info = await wx.getImageInfo({ src: image });
+      if(this.disposed)return;
       const sizePlan = imageSize(info.width, info.height);
       const compressed = await wx.compressImage({ src: image, quality: 85, compressedWidth: sizePlan.width, compressedHeight: sizePlan.height });
       const size = await new Promise((resolve, reject) => wx.getFileSystemManager().getFileInfo({ filePath: compressed.tempFilePath, success: r => resolve(r.size), fail: reject }));
@@ -95,7 +107,6 @@ Page({
       }
       if (account.activeScope()!==owner) throw Error('微信账号已切换，请重新选择截图');
       if (this.disposed) return;
-      this.setData({ rawText: result.text });
       const parsed = parseFlightScreenshot(result.text);
       if (parsed.length > 100) throw Error('识别到 ' + parsed.length + ' 条航班，超过单次核对上限 100 条。请分批截图，本次没有导入任何航班。');
       const rows = parsed.map((row, i) => ({ ...row, from: this.search.resolve(row.from) || row.from, to: this.search.resolve(row.to) || row.to, selected: true, _key: i }));
@@ -114,12 +125,13 @@ Page({
       for (const key of ['from', 'to']) recommendations[key] = row.selected && !this.search.resolve(row[key]) ? this.search.query(row[key] || row[key === 'from' ? 'rawFrom' : 'rawTo'], 4) : [];
       const model=aircraftModels.resolveAircraft(row.aircraft);
       const modelOptions=row.selected&&!model&&String(row.aircraft||'').trim()?aircraftModels.searchAircraft(row.aircraft):[];
-      return { ...row, modelOptions, modelName:model?.name||'', modelUnmatched:!!row.aircraft&&!model, errors, recommendations, invalid: Object.keys(errors).length > 0 };
+      return { ...row, modelOptions, modelName:model?.name||'', modelUnmatched:!!row.aircraft&&!model, modelHint:!model&&/^(?:BOEING\s*)?737(?:\s*[(（]中[)）])?$/i.test(String(row.aircraft||'').trim())?'截图仅标明波音737，具体子型号未确定；可留空或核对后填写':'', errors, recommendations, invalid: Object.keys(errors).length > 0 };
   },
   refreshCounts() {
     const rows = this.data.rows;
-    const selectedCount = rows.filter(row => row.selected).length;
-    this.setData({ selectedCount, invalidCount: rows.filter(row => row.selected && row.invalid).length, allSelected: selectedCount > 0 && selectedCount === rows.length });
+    let selectedCount=0,invalidCount=0;
+    for(const row of rows){if(row.selected){selectedCount++;if(row.invalid)invalidCount++}}
+    this.setData({selectedCount,invalidCount,allSelected:selectedCount>0&&selectedCount===rows.length});
   },
   revalidate() {
     this.setData({ rows: this.data.rows.map(row => this.reviewRow(row)) });

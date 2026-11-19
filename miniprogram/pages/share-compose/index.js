@@ -63,10 +63,10 @@ Page({
     return{title:'我的 '+summary.total+' 次飞行，累计 '+Math.round(summary.km).toLocaleString('en-US')+' 公里',path:'/pages/share-view/index?id='+this.readyShare.id,imageUrl:this.data.cardPath};
   },
   shareImage(){
-    if(!this.data.ready||this.data.busy||!this.data.posterPath)return;
+    if(!this.data.ready||this.data.busy||!this.data.posterPath||!this.readyShare?.id)return;
     try{this.ensureOwner()}catch(error){this.setData({message:error.message});return}
     if(typeof wx.showShareImageMenu!=='function'){wx.previewImage({urls:[this.data.posterPath]});this.setData({message:'当前微信暂不支持直接分享图片，可在预览中长按图片发送。'});return}
-    wx.showShareImageMenu({path:this.data.posterPath,fail:error=>{if(!this.disposed&&!/cancel/i.test(error.errMsg||''))this.setData({message:'暂时无法分享图片，请重试或选择分享卡片。'})}});
+    wx.showShareImageMenu({path:this.data.posterPath,needShowEntrance:true,entrancePath:'/pages/share-view/index?id='+this.readyShare.id,fail:error=>{if(!this.disposed&&!/cancel/i.test(error.errMsg||''))this.setData({message:'暂时无法分享图片，请重试或选择分享卡片。'})}});
   },
   preview(){if(this.data.posterPath)wx.previewImage({urls:[this.data.posterPath]})},
 });

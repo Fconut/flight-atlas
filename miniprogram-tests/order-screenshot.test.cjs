@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict');const {parseFlightScreenshot}=require('../miniprogram/airport-picker/lib/screenshot-parser');
+test('connecting order splits actual legs without inventing a year or 737 subtype',()=>{const rows=parseFlightScreenshot('订单详情\n单程 9月20日 拉萨 → 上海\n17:35\n贡嘎机场 T3\n东航 MU5826 | 经济舱 | 波音737(中)\n19:40\n天府机场 T2\n中转成都 1h40m\n21:20\n天府机场 T2\n东航 MU9184 | 经济舱 | C919(中)\n23:40\n虹桥机场 T2');assert.equal(rows.length,2);assert.deepEqual(rows.map(r=>[r.date,r.from,r.to,r.departureTime,r.flight,r.aircraft]),[['','贡嘎机场','天府机场','17:35','5826','BOEING 737'],['','天府机场','虹桥机场','21:20','9184','C919']])});
+
+
+test('OCR spaces inside Chinese airport names do not shift arrival into departure',()=>{const rows=parseFlightScreenshot('订 单 详 情\n17 : 35 贡 嘎 机 场 T3\n东航 MU5826 波音737(中)\n19:40 天 府 机 场 T2\n中 转 成 都\n21:20 天 府 机 场 T2\n东航 MU9184 C919(中)\n23:40 虹 桥 机 场 T2');assert.equal(rows.length,2);assert.equal(rows[0].from,'贡嘎机场');assert.equal(rows[0].to,'天府机场');assert.equal(rows[1].from,'天府机场');assert.equal(rows[1].to,'虹桥机场')});
