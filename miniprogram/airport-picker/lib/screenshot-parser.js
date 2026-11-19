@@ -40,6 +40,7 @@ function parseOrderItinerary(text){
  return rows.length?rows:null;
 }
 function parseFlightScreenshot(text){
+ text=String(text).normalize('NFKC').replace(/(\d)[ \t]*([年月日])[ \t]*/g,'$1$2');
  const order=parseOrderItinerary(text);if(order)return order;
  const detail=parseScreenshotDetail(text);if(detail)return [detail];
  const lines=String(text).normalize('NFKC').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),rows=[];let pendingDate='',pendingYear='',active=null;
@@ -55,7 +56,7 @@ function parseFlightScreenshot(text){
   const time=line.match(/\b([0-2]?\d)\s*[:：]\s*([0-5]\d)/);
   if(active&&time){const airport=cleanScreenshotAirport(line.slice(time.index+time[0].length));if(!active.departureTime){active.departureTime=time[1].padStart(2,'0')+':'+time[2];active.from=airport;active.rawFrom=line.slice(time.index+time[0].length).trim();}else if(!active.to){active.to=airport;active.rawTo=line.slice(time.index+time[0].length).trim();}}
  }
- let lastDate='';return rows.map(({_monthDay,...row})=>{if(row.date)lastDate=row.date;else if(!_monthDay&&lastDate)row.date=lastDate;else if(_monthDay)lastDate='';return row;});
+ let lastDate='';return rows.map(({_monthDay,...row})=>{if(row.date)lastDate=row.date;else if(!_monthDay&&lastDate)row.date=lastDate;else if(_monthDay){lastDate='';row.dateIssue='missing-year';}return row;});
 }
 
 module.exports = { parseFlightScreenshot };

@@ -3,3 +3,5 @@ test('connecting order splits actual legs without inventing a year or 737 subtyp
 
 
 test('OCR spaces inside Chinese airport names do not shift arrival into departure',()=>{const rows=parseFlightScreenshot('订 单 详 情\n17 : 35 贡 嘎 机 场 T3\n东航 MU5826 波音737(中)\n19:40 天 府 机 场 T2\n中 转 成 都\n21:20 天 府 机 场 T2\n东航 MU9184 C919(中)\n23:40 虹 桥 机 场 T2');assert.equal(rows.length,2);assert.equal(rows[0].from,'贡嘎机场');assert.equal(rows[0].to,'天府机场');assert.equal(rows[1].from,'天府机场');assert.equal(rows[1].to,'虹桥机场')});
+
+test('spaced month and day retain the missing-year hint',()=>{const rows=parseFlightScreenshot('订 单 详 情\n单程 9 月 20 日 拉萨 → 上海\n17:35 贡 嘎 机 场 T3\nMU5826 波音737(中)\n19:40 天 府 机 场 T2\n中 转 成 都\n21:20 天 府 机 场 T2\nMU9184 C919(中)\n23:40 虹 桥 机 场 T2');assert.equal(rows.length,2);for(const row of rows){assert.equal(row.dateIssue,'missing-year');assert.equal(row.date,'')}});
