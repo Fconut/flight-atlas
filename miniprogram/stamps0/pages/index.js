@@ -2,8 +2,8 @@ const library=require('../../lib/stamp-library');
 const updateView=require('../../lib/view-state');
 Page({
  data:{series:[],seriesId:'',seriesName:'',items:[],ownedCount:0,filter:'all',total:100,capacity:library.CAPACITY,selected:null,error:''},
- onLoad(options={}){const series=library.catalog.series.find(s=>s.id===options.series);this.setData({seriesId:series?.id||'',seriesName:series?.name||'',filter:options.filter==='owned'?'owned':'all'})},
- onShow(){this.disposed=false;this.refresh();require('../../lib/checkin').status(false,{passive:true}).then(()=>{if(!this.disposed)this.refresh()}).catch(()=>{})},
+ onLoad(options={}){const target=library.item(options.item);this.rewardTarget=target?.id;const series=library.catalog.series.find(s=>s.id===(target?.seriesId||options.series));this.setData({seriesId:series?.id||'',seriesName:series?.name||'',filter:options.filter==='owned'?'owned':'all'})},
+ onShow(){this.disposed=false;this.refresh();if(this.rewardTarget){const id=this.rewardTarget;this.rewardTarget=null;if(library.snapshot().owned(library.item(id)))this.open({currentTarget:{dataset:{id}}});}require('../../lib/checkin').status(false,{passive:true}).then(()=>{if(!this.disposed)this.refresh()}).catch(()=>{})},
  onHide(){this.disposed=true},onUnload(){this.disposed=true},
  refresh(){try{const s=library.snapshot();updateView(this,{ownedCount:library.ownedItems().length,series:this.data.seriesId?[]:library.series(this.data.filter),items:library.catalog.items.filter(x=>x.seriesId===this.data.seriesId&&(this.data.filter!=='owned'||s.owned(x))).map(s.decorate),selected:this.data.selected?s.decorate(library.item(this.data.selected.id)):null,error:''})}catch(e){this.setData({error:e.message})}},
  filter(e){const filter=e.currentTarget.dataset.filter;if(!['all','owned'].includes(filter)||filter===this.data.filter)return;this.setData({filter});this.refresh()},

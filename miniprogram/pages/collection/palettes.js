@@ -14,7 +14,9 @@ Page({
     error: '',
   },
   onLoad(options = {}) {
-    const series = library.catalog.series.find((s) => s.id === options.series);
+    const target=library.item(options.item);
+    this.rewardTarget=target?.id;
+    const series = library.catalog.series.find((s) => s.id === (target?.seriesId||options.series));
     this.setData({
       seriesId: series?.id || '',
       seriesName: series?.name || '',
@@ -24,6 +26,7 @@ Page({
   onShow() {
     this.disposed = false;
     this.refresh();
+    if(this.rewardTarget){const id=this.rewardTarget;this.rewardTarget=null;if(library.snapshot().isOwned(library.item(id)))this.open({currentTarget:{dataset:{id}}});}
     require('../../lib/checkin')
       .status(false, { passive: true })
       .then(() => {

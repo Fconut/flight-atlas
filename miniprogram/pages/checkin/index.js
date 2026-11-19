@@ -115,6 +115,17 @@ Page({
     if (selectedReward?.reward && !this.data.busy)
       this.setData({ selectedReward, claimedReward: null });
   },
+  viewClaimedReward() {
+    const item=this.data.claimedReward;
+    if(this.rewardOpening||!item?.id||!item.seriesId)return;
+    this.rewardOpening=true;
+    const page=item.type==='stamp'?'/stamps0/pages/index':'/pages/collection/palettes';
+    wx.navigateTo({url:page+'?series='+encodeURIComponent(item.seriesId)+'&item='+encodeURIComponent(item.id),
+      success:()=>{if(!this.disposed)this.setData({claimedReward:null})},
+      fail:()=>{if(!this.disposed)this.setData({error:'暂时无法打开收藏，请重试'})},
+      complete:()=>{this.rewardOpening=false}
+    });
+  },
   closeReward() {
     if (!this.data.busy)
       this.setData({ selectedReward: null, claimedReward: null });

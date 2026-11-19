@@ -276,3 +276,6 @@ button::after {
 }
 
 .calendar-map.calendar-stamp{width:76rpx;height:76rpx;background:#f6f3e9}.calendar-stamp+.calendar-name{font-size:18rpx;margin-top:3rpx}.stamp-reward-art{height:340rpx;max-height:35vh;background:#f6f3e9;border-radius:12rpx;padding:12rpx}.calendar-day.has-reward .calendar-stamp{margin-top:6rpx}.calendar-day.claimable .calendar-stamp{height:62rpx;width:62rpx}
+
+.claim-success .secondary{margin-top:16rpx;background:transparent;color:#52716c;font-size:26rpx;line-height:64rpx}.claim-success .secondary::after{border:0}
+
